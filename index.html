@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landslide Risk Framework</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f4f5f1;
+    --ink: #1b241e;
+    --ink-muted: #55645a;
+    --border: rgba(27,36,30,0.16);
+    --border-strong: rgba(27,36,30,0.32);
+    --soil: #96551f;
+    --soil-soft: #f1e2cd;
+    --soil-glow: rgba(150,85,31,0.55);
+    --historical: #7a3350;
+    --historical-soft: #f2e0e8;
+    --historical-glow: rgba(122,51,80,0.55);
+    --rainfall: #2f6690;
+    --rainfall-soft: #dbe9f1;
+    --rainfall-glow: rgba(47,102,144,0.55);
+    --hazard: #ad6c0c;
+    --hazard-soft: #f4e5c4;
+    --hazard-glow: rgba(197,130,20,0.6);
+    --shadow: 0 24px 48px -24px rgba(20,26,20,0.28);
+  }
+
+  /* Deliberately single-theme: this document is designed to read as a white
+     printed report regardless of the viewer's OS theme, so no dark-mode
+     palette is defined — every color above is painted explicitly. */
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 { font-family: "Fraunces", Georgia, "Times New Roman", serif; text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace; }
+
+  .page { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem) 5rem; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: clamp(3rem, 8vw, 5.5rem) 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--historical);
+    font-weight: 600;
+  }
+  .hero h1 {
+    font-size: clamp(2.1rem, 5vw, 3.4rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    max-width: 18ch;
+  }
+  .hero .lede {
+    max-width: 62ch;
+    font-size: 1.08rem;
+    line-height: 1.65;
+    color: var(--ink-muted);
+  }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    background: var(--surface);
+  }
+  .chip b { color: var(--ink); font-weight: 600; }
+  .chip .dot { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+
+  /* ---------- Sections ---------- */
+  section { padding: clamp(2.75rem, 6vw, 4rem) 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  .section-head { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2.25rem; max-width: 74ch; }
+  .section-num { font-size: 0.72rem; letter-spacing: 0.12em; color: var(--ink-muted); text-transform: uppercase; }
+  section h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; letter-spacing: -0.005em; }
+  .section-intro { color: var(--ink-muted); font-size: 1rem; line-height: 1.65; max-width: 68ch; }
+
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* ---------- Figures ---------- */
+  figure { margin: 0; }
+  .diagram-frame {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: clamp(1rem, 3vw, 1.75rem);
+    box-shadow: var(--shadow);
+    overflow-x: auto;
+  }
+  .diagram-frame svg { width: 100%; height: auto; display: block; min-width: 560px; color: var(--ink); }
+  figcaption {
+    margin-top: 0.85rem;
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    line-height: 1.55;
+    max-width: 68ch;
+  }
+  figcaption .mono { font-size: 0.78rem; }
+
+  .flow-line { stroke: var(--ink-muted); stroke-width: 1.6; fill: none; opacity: 0.55; }
+  .flow-line.animated { stroke-dasharray: 5 5; animation: dash 18s linear infinite; }
+  @keyframes dash { to { stroke-dashoffset: -200; } }
+  @media (prefers-reduced-motion: reduce) { .flow-line.animated { animation: none; } }
+
+  .node-box { fill: var(--surface); stroke: var(--border-strong); stroke-width: 1.4; }
+  .node-title { font-family: "Public Sans", sans-serif; font-weight: 600; fill: var(--ink); }
+  .node-sub { font-family: "IBM Plex Mono", monospace; fill: var(--ink-muted); }
+
+  /* ---------- Glow accents ---------- */
+  .glow-soil { filter: drop-shadow(0 0 3px var(--soil-glow)) drop-shadow(0 0 10px var(--soil-glow)); }
+  .glow-historical { filter: drop-shadow(0 0 3px var(--historical-glow)) drop-shadow(0 0 10px var(--historical-glow)); }
+  .glow-rainfall { filter: drop-shadow(0 0 3px var(--rainfall-glow)) drop-shadow(0 0 10px var(--rainfall-glow)); }
+  .glow-hazard { filter: drop-shadow(0 0 4px var(--hazard-glow)) drop-shadow(0 0 14px var(--hazard-glow)); }
+  @media (prefers-reduced-motion: no-preference) {
+    .glow-hazard.pulse { animation: pulseGlow 2.6s ease-in-out infinite; }
+  }
+  @keyframes pulseGlow {
+    0%, 100% { filter: drop-shadow(0 0 4px var(--hazard-glow)) drop-shadow(0 0 14px var(--hazard-glow)); }
+    50% { filter: drop-shadow(0 0 6px var(--hazard-glow)) drop-shadow(0 0 22px var(--hazard-glow)); }
+  }
+
+  /* ---------- Argument cards (thesis) ---------- */
+  .arg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+  .arg-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent, var(--historical));
+    border-radius: 14px;
+    padding: 1.4rem 1.3rem;
+    box-shadow: var(--shadow);
+  }
+  .arg-card .arg-tag { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent, var(--historical)); font-weight: 700; }
+  .arg-card h3 { font-size: 1.05rem; font-weight: 700; font-family: "Public Sans", sans-serif; margin: 0.5rem 0 0.5rem; color: var(--ink); }
+  .arg-card p { font-size: 0.88rem; line-height: 1.55; color: var(--ink-muted); }
+
+  /* ---------- Factor cards ---------- */
+  .factor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.25rem; }
+  .factor-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+  .factor-card:hover { transform: translateY(-4px); border-color: var(--border-strong); }
+  .factor-card .swatch { width: 34px; height: 34px; border-radius: 9px; margin-bottom: 0.9rem; display: flex; align-items: center; justify-content: center; }
+  .factor-card .swatch svg { width: 18px; height: 18px; }
+  .factor-card h3 { font-family: "Public Sans", sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.75rem; }
+  .factor-card dl { margin: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+  .factor-card dt { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); font-weight: 600; }
+  .factor-card dd { margin: 0.15rem 0 0; font-size: 0.86rem; line-height: 1.5; color: var(--ink); }
+
+  .f-soil .swatch { background: var(--soil-soft); color: var(--soil); box-shadow: 0 0 16px -2px var(--soil-glow); }
+  .f-hist .swatch { background: var(--historical-soft); color: var(--historical); box-shadow: 0 0 16px -2px var(--historical-glow); }
+  .f-rain .swatch { background: var(--rainfall-soft); color: var(--rainfall); box-shadow: 0 0 16px -2px var(--rainfall-glow); }
+  .f-soil { border-top: 3px solid var(--soil); }
+  .f-hist { border-top: 3px solid var(--historical); }
+  .f-rain { border-top: 3px solid var(--rainfall); }
+
+  /* ---------- Pipeline steps ---------- */
+  .step-list { display: flex; flex-direction: column; gap: 0; margin-top: 2rem; border-top: 1px solid var(--border); }
+  .step {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1.25rem;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .step .step-n { font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; color: var(--ink-muted); padding-top: 0.15rem; }
+  .step .step-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.25rem; }
+  .step .step-body { font-size: 0.87rem; color: var(--ink-muted); line-height: 1.55; max-width: 62ch; }
+
+  /* ---------- Stack grid ---------- */
+  .stack-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
+  .stack-group h3 { font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); font-weight: 600; margin-bottom: 0.85rem; }
+  .stack-items { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .stack-pill {
+    font-size: 0.82rem;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    background: var(--surface);
+  }
+
+  /* ---------- Legend ---------- */
+  .legend-row { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1rem; }
+  .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; color: var(--ink-muted); }
+  .legend-item .sw { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+  .legend-item .tri { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    padding: 2.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .sources { font-size: 0.82rem; color: var(--ink-muted); line-height: 1.8; }
+  footer .sources a { color: var(--ink-muted); }
+  footer .sources a:hover { color: var(--ink); }
+  footer .credit { font-size: 0.78rem; color: var(--ink-muted); }
+
+  a { color: inherit; }
+
+  @media (max-width: 760px) {
+    .arg-grid, .factor-grid, .stack-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="hero reveal">
+    <span class="eyebrow mono">Research Component — Probabilistic Landslide Forecasting</span>
+    <h1>Reading landslide risk from soil, history and rain</h1>
+    <p class="lede">A three-factor machine learning framework for the Nuwara Eliya highlands — built on the premise that where slopes have already failed teaches a model more than the angle at which they currently stand.</p>
+    <div class="meta-row">
+      <span class="chip"><span class="dot" style="background:var(--historical); box-shadow:0 0 8px 1px var(--historical-glow)"></span>Study area <b>&nbsp;Walapane · Ambagamuwa · Kotmale</b></span>
+      <span class="chip"><span class="dot" style="background:var(--soil); box-shadow:0 0 8px 1px var(--soil-glow)"></span>Core factors <b>&nbsp;Soil · History · Rainfall</b></span>
+      <span class="chip"><span class="dot" style="background:var(--rainfall); box-shadow:0 0 8px 1px var(--rainfall-glow)"></span>Model <b>&nbsp;XGBoost / LightGBM + SHAP</b></span>
+    </div>
+  </header>
+
+  <!-- ================= FULL ARCHITECTURE ================= -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="section-num mono">01 — Architecture</span>
+      <h2>Full system architecture</h2>
+      <p class="section-intro">The complete path from raw datasets to a village-facing alert, in one view: three input datasets, the spatial processing layer that fuses them, the classifier, the explainability layer, and the two things that actually leave the system — a risk score and a map.</p>
+    </div>
+
+    <figure>
+      <div class="diagram-frame">
+        <svg viewBox="0 0 1100 800" role="img" aria-label="Full architecture diagram: soil, historical landslide, and rainfall datasets flow into a spatial data processing layer, then into an XGBoost or LightGBM model, then into a SHAP explainability layer, which produces two outputs — a risk probability score and a Web-GIS village alert.">
+          <defs>
+            <marker id="arrow-soil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--soil)"/>
+            </marker>
+            <marker id="arrow-historical" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--historical)"/>
+            </marker>
+            <marker id="arrow-rainfall" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--rainfall)"/>
+            </marker>
+            <marker id="arrow-hazard" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--hazard)"/>
+            </marker>
+
+            <symbol id="icon-soil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </symbol>
+            <symbol id="icon-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 12h4"/><path d="M3 12l2-3"/><path d="M3 12l2 3"/><path d="M12 7v5l3 3"/>
+            </symbol>
+            <symbol id="icon-rain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 16.5a4.5 4.5 0 0 1 .5-9 5.5 5.5 0 0 1 10.6 1.8A4 4 0 0 1 18 17H8Z"/><path d="M8 20l1-2"/><path d="M12 21l1-2"/><path d="M16 20l1-2"/>
+            </symbol>
+            <symbol id="icon-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>
+            </symbol>
+            <symbol id="icon-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M9 2v3"/><path d="M15 2v3"/><path d="M9 19v3"/><path d="M15 19v3"/><path d="M2 9h3"/><path d="M2 15h3"/><path d="M19 9h3"/><path d="M19 15h3"/>
+            </symbol>
+            <symbol id="icon-shap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 20V11"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M2 20h20"/>
+            </symbol>
+            <symbol id="icon-output" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3Z"/><path d="M9 12l2 2 4-4"/>
+            </symbol>
+            <symbol id="icon-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.2"/>
+            </symbol>
+          </defs>
+
+          <!-- Row 1: datasets -->
+          <rect class="node-box glow-soil" x="10" y="20" width="340" height="110" rx="14" style="stroke:var(--soil)"/>
+          <use href="#icon-soil" x="30" y="34" width="30" height="30" style="color:var(--soil)"/>
+          <text x="74" y="52" class="node-title" font-size="15">Soil Dataset</text>
+          <text x="74" y="70" class="node-sub" font-size="10.5">geotechnical layers · QGIS digitized</text>
+          <text x="74" y="86" class="node-sub" font-size="10.5">permeability · shear strength</text>
+
+          <rect class="node-box glow-historical" x="380" y="20" width="340" height="110" rx="14" style="stroke:var(--historical)"/>
+          <use href="#icon-history" x="400" y="34" width="30" height="30" style="color:var(--historical)"/>
+          <text x="444" y="52" class="node-title" font-size="15">Historical Dataset</text>
+          <text x="444" y="70" class="node-sub" font-size="10.5">NBRO · DMC failure inventory</text>
+          <text x="444" y="86" class="node-sub" font-size="10.5">confirmed slide locations</text>
+
+          <rect class="node-box glow-rainfall" x="750" y="20" width="340" height="110" rx="14" style="stroke:var(--rainfall)"/>
+          <use href="#icon-rain" x="770" y="34" width="30" height="30" style="color:var(--rainfall)"/>
+          <text x="814" y="52" class="node-title" font-size="15">Rainfall Dataset</text>
+          <text x="814" y="70" class="node-sub" font-size="10.5">NBRO gauge network</text>
+          <text x="814" y="86" class="node-sub" font-size="10.5">live + antecedent readings</text>
+
+          <path class="flow-line animated glow-soil" marker-end="url(#arrow-soil)" style="stroke:var(--soil)" opacity="0.85" d="M180,130 C180,165 500,165 542,188" />
+          <path class="flow-line animated glow-historical" marker-end="url(#arrow-historical)" style="stroke:var(--historical)" opacity="0.85" d="M550,130 L550,186" />
+          <path class="flow-line animated glow-rainfall" marker-end="url(#arrow-rainfall)" style="stroke:var(--rainfall)" opacity="0.85" d="M920,130 C920,165 600,165 558,188" />
+
+          <!-- Row 2: processing -->
+          <rect class="node-box" x="330" y="190" width="440" height="110" rx="14"/>
+          <use href="#icon-db" x="354" y="222" width="30" height="30" style="color:var(--ink)"/>
+          <text x="398" y="238" class="node-title" font-size="15">Spatial Data Processing</text>
+          <text x="398" y="256" class="node-sub" font-size="10.5">PostgreSQL + PostGIS spatial join</text>
+          <text x="398" y="272" class="node-sub" font-size="10.5">OSMnx road-cut extraction · rainfall interpolation</text>
+
+          <path class="flow-line animated glow-hazard" marker-end="url(#arrow-hazard)" style="stroke:var(--hazard)" opacity="0.85" d="M550,300 L550,338" />
+
+          <!-- Row 3: model -->
+          <rect class="node-box glow-hazard" x="280" y="340" width="540" height="120" rx="16" style="stroke:var(--hazard)"/>
+          <use href="#icon-cpu" x="308" y="376" width="34" height="34" style="color:var(--hazard)"/>
+          <text x="358" y="392" class="node-title" font-size="16">XGBoost / LightGBM Classifier</text>
+          <text x="358" y="412" class="node-sub" font-size="11">fused feature matrix — soil + history + rainfall, per grid cell</text>
+          <text x="358" y="429" class="node-sub" font-size="11">trained &amp; validated against the historical failure inventory</text>
+
+          <path class="flow-line animated glow-hazard" marker-end="url(#arrow-hazard)" style="stroke:var(--hazard)" opacity="0.85" d="M550,460 L550,498" />
+
+          <!-- Row 4: explainability -->
+          <rect class="node-box" x="280" y="500" width="540" height="130" rx="16" style="stroke:var(--hazard)"/>
+          <use href="#icon-shap" x="308" y="534" width="30" height="30" style="color:var(--hazard)"/>
+          <text x="352" y="550" class="node-title" font-size="15">SHAP Explainability Layer</text>
+          <text x="352" y="568" class="node-sub" font-size="10.5">per-prediction percentage breakdown</text>
+
+          <circle cx="358" cy="596" r="5" class="glow-soil" fill="var(--soil)"/>
+          <text x="372" y="600" class="node-sub" font-size="10">Soil contribution</text>
+          <circle cx="358" cy="616" r="5" class="glow-historical" fill="var(--historical)"/>
+          <text x="372" y="620" class="node-sub" font-size="10">Historical contribution</text>
+          <circle cx="600" cy="596" r="5" class="glow-rainfall" fill="var(--rainfall)"/>
+          <text x="614" y="600" class="node-sub" font-size="10">Rainfall contribution</text>
+
+          <path class="flow-line animated glow-hazard" marker-end="url(#arrow-hazard)" style="stroke:var(--hazard)" opacity="0.85" d="M470,630 C470,650 340,650 330,658" />
+          <path class="flow-line animated glow-rainfall" marker-end="url(#arrow-rainfall)" style="stroke:var(--rainfall)" opacity="0.85" d="M630,630 C630,650 760,650 770,658" />
+
+          <!-- Row 5: outputs -->
+          <rect class="node-box glow-hazard pulse" x="140" y="660" width="380" height="110" rx="14" style="stroke:var(--hazard);fill:var(--hazard-soft)"/>
+          <use href="#icon-output" x="164" y="694" width="30" height="30" style="color:var(--hazard)"/>
+          <text x="208" y="712" class="node-title" font-size="14.5" style="fill:var(--hazard)">Risk Probability Output</text>
+          <text x="208" y="730" class="node-sub" font-size="10.5">per grid-cell % score, refreshed as rainfall updates</text>
+          <text x="208" y="746" class="node-sub" font-size="10.5">tech: FastAPI / scikit-learn scoring endpoint</text>
+
+          <rect class="node-box glow-rainfall" x="580" y="660" width="380" height="110" rx="14" style="stroke:var(--rainfall);fill:var(--rainfall-soft)"/>
+          <use href="#icon-alert" x="604" y="694" width="30" height="30" style="color:var(--rainfall)"/>
+          <text x="648" y="712" class="node-title" font-size="14.5" style="fill:var(--rainfall)">Web-GIS Village Alert</text>
+          <text x="648" y="730" class="node-sub" font-size="10.5">MapLibre GL JS · high-contrast theme</text>
+          <text x="648" y="746" class="node-sub" font-size="10.5">i18next — Sinhala / Tamil localisation</text>
+        </svg>
+      </div>
+      <figcaption><span class="mono">Fig. 0</span> — End-to-end view: three datasets in, spatial processing, model, explainability, and the two artefacts that reach a user — a probability and a map. Arrows are colour-coded to the factor they carry and animate to show data moving downstream.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ================= THESIS ================= -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="section-num mono">02 — Position</span>
+      <h2>The methodological bet</h2>
+      <p class="section-intro">Most susceptibility models start from a Digital Elevation Model and derive slope angle as the primary predictor. This component reverses the emphasis: historical failure records become the backbone, with soil and rainfall layered on as the static and dynamic modifiers around them. A slope's angle is one fact about it; a slope's failure record is a fact about everything that made it fail.</p>
+    </div>
+
+    <div class="arg-grid">
+      <div class="arg-card" style="--accent:var(--rainfall)">
+        <span class="arg-tag mono">Resolution</span>
+        <h3>DEM data is too coarse</h3>
+        <p>Freely available SRTM/ASTER elevation rasters sit around 30m resolution. A village-level, site-specific prediction needs finer granularity than a single elevation cell can offer across a whole hillside.</p>
+      </div>
+      <div class="arg-card" style="--accent:var(--soil)">
+        <span class="arg-tag mono">Causation</span>
+        <h3>Slope angle is one variable of many</h3>
+        <p>Failures at Walapane, Ambagamuwa and Kotmale are rarely angle alone — road cuts, building loads, soil saturation and land-use change compound with gradient. Angle-only models miss the human layer entirely.</p>
+      </div>
+      <div class="arg-card" style="--accent:var(--historical)">
+        <span class="arg-tag mono">Ground truth</span>
+        <h3>History is the label, not a proxy</h3>
+        <p>A historical inventory is literally the outcome the model is trying to predict, recorded at real sites. Training against it directly, rather than against a geometric proxy, is a shorter inferential distance to accuracy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STUDY AREA ================= -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="section-num mono">03 — Study Area</span>
+      <h2>Three divisional secretariats, one highland catchment</h2>
+      <p class="section-intro">The pilot zone sits inside Nuwara Eliya District's central highlands — steep tea-estate terrain with a long monsoon exposure window. Each of the three target divisions carries a different dominant risk signature, which is why the map below is colour-coded to the same factor palette used throughout this document.</p>
+    </div>
+
+    <figure>
+      <div class="diagram-frame">
+        <svg viewBox="0 0 760 400" role="img" aria-label="Schematic map of the three study divisions: Kotmale in the northwest tied to rainfall catchment, Ambagamuwa in the southwest tied to soil and road-cut exposure, and Walapane in the east tied to the densest historical failure record.">
+          <path class="flow-line" style="opacity:0.12" d="M20,70 Q380,15 740,90" />
+          <path class="flow-line" style="opacity:0.12" d="M20,160 Q380,105 740,180" />
+          <path class="flow-line" style="opacity:0.12" d="M20,350 Q380,300 740,365" />
+
+          <polygon class="glow-rainfall" points="50,50 320,30 340,190 170,215 70,190" fill="var(--rainfall-soft)" style="stroke:var(--rainfall)" stroke-width="2" opacity="0.9"/>
+          <polygon class="glow-soil" points="70,190 170,215 250,370 60,390 20,260" fill="var(--soil-soft)" style="stroke:var(--soil)" stroke-width="2" opacity="0.9"/>
+          <polygon class="glow-historical" points="340,190 660,140 720,320 360,390 250,370" fill="var(--historical-soft)" style="stroke:var(--historical)" stroke-width="2" opacity="0.9"/>
+
+          <g class="mono" font-size="10.5" fill="var(--historical)">
+            <polygon class="glow-historical" points="450,215 458,231 442,231" fill="var(--historical)"/>
+            <polygon class="glow-historical" points="550,255 558,271 542,271" fill="var(--historical)"/>
+            <polygon class="glow-historical" points="420,295 428,311 412,311" fill="var(--historical)"/>
+            <polygon class="glow-historical" points="600,190 608,206 592,206" fill="var(--historical)"/>
+            <polygon class="glow-rainfall" points="150,110 158,126 142,126" fill="var(--rainfall)"/>
+            <polygon class="glow-rainfall" points="250,140 258,156 242,156" fill="var(--rainfall)"/>
+            <polygon class="glow-soil" points="100,280 108,296 92,296" fill="var(--soil)"/>
+            <polygon class="glow-soil" points="150,330 158,346 142,346" fill="var(--soil)"/>
+          </g>
+
+          <circle cx="300" cy="225" r="4" fill="var(--ink)"/>
+          <text x="300" y="212" text-anchor="middle" font-size="10" class="mono" fill="var(--ink-muted)">NUWARA ELIYA</text>
+
+          <text x="155" y="115" text-anchor="middle" font-weight="700" font-size="15" fill="var(--ink)" font-family="Public Sans, sans-serif">KOTMALE</text>
+          <text x="155" y="132" text-anchor="middle" font-size="10.5" class="mono" fill="var(--rainfall)">reservoir catchment</text>
+
+          <text x="130" y="285" text-anchor="middle" font-weight="700" font-size="15" fill="var(--ink)" font-family="Public Sans, sans-serif">AMBAGAMUWA</text>
+          <text x="130" y="302" text-anchor="middle" font-size="10.5" class="mono" fill="var(--soil)">road-cut corridor</text>
+
+          <text x="480" y="245" text-anchor="middle" font-weight="700" font-size="15" fill="var(--ink)" font-family="Public Sans, sans-serif">WALAPANE</text>
+          <text x="480" y="262" text-anchor="middle" font-size="10.5" class="mono" fill="var(--historical)">densest failure record</text>
+        </svg>
+      </div>
+      <figcaption><span class="mono">Fig. 1</span> — Schematic layout of the pilot zone, not to GIS scale. Region colour ties each division to its dominant risk driver; triangle markers indicate illustrative failure-site placement, not counted totals.</figcaption>
+    </figure>
+
+    <div class="legend-row">
+      <span class="legend-item"><span class="sw" style="background:var(--rainfall); box-shadow:0 0 8px 1px var(--rainfall-glow)"></span>Kotmale — rainfall / catchment exposure</span>
+      <span class="legend-item"><span class="sw" style="background:var(--soil); box-shadow:0 0 8px 1px var(--soil-glow)"></span>Ambagamuwa — soil & human static factors</span>
+      <span class="legend-item"><span class="sw" style="background:var(--historical); box-shadow:0 0 8px 1px var(--historical-glow)"></span>Walapane — historical failure density</span>
+    </div>
+  </section>
+
+  <!-- ================= THREE-FACTOR FUSION ================= -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="section-num mono">04 — Mechanism</span>
+      <h2>How the three factors connect</h2>
+      <p class="section-intro">Soil supplies the static ceiling on how much saturation a slope can take before it gives way. Rainfall supplies the dynamic trigger that pushes toward that ceiling. History supplies the label the model is actually learning to predict, and the spatial pattern that tells the model which combinations of the other two have mattered before. All three are fused into one feature vector per grid cell before the classifier ever sees them.</p>
+    </div>
+
+    <figure>
+      <div class="diagram-frame">
+        <svg viewBox="0 0 900 680" role="img" aria-label="Diagram showing soil type, historical records, and rainfall converging into a feature matrix, then an XGBoost or LightGBM model, then a SHAP attribution layer that splits the prediction into a percentage breakdown per factor, ending in a risk probability output.">
+          <defs>
+            <marker id="arrow1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--ink-muted)"/>
+            </marker>
+          </defs>
+
+          <path class="flow-line animated glow-soil" marker-end="url(#arrow1)" style="stroke:var(--soil)" opacity="0.85" d="M150,110 C150,150 430,150 448,188" />
+          <path class="flow-line animated glow-historical" marker-end="url(#arrow1)" style="stroke:var(--historical)" opacity="0.85" d="M450,110 L450,186" />
+          <path class="flow-line animated glow-rainfall" marker-end="url(#arrow1)" style="stroke:var(--rainfall)" opacity="0.85" d="M750,110 C750,150 470,150 452,188" />
+
+          <rect class="node-box glow-soil" x="20" y="20" width="260" height="90" rx="12" style="stroke:var(--soil)"/>
+          <text x="150" y="52" text-anchor="middle" class="node-title" font-size="15">Soil Type</text>
+          <text x="150" y="72" text-anchor="middle" class="node-sub" font-size="10.5">permeability · shear strength</text>
+          <text x="150" y="88" text-anchor="middle" class="node-sub" font-size="10.5">static factor</text>
+
+          <rect class="node-box glow-historical" x="320" y="20" width="260" height="90" rx="12" style="stroke:var(--historical)"/>
+          <text x="450" y="52" text-anchor="middle" class="node-title" font-size="15">Historical Records</text>
+          <text x="450" y="72" text-anchor="middle" class="node-sub" font-size="10.5">spatial failure inventory</text>
+          <text x="450" y="88" text-anchor="middle" class="node-sub" font-size="10.5">ground-truth pattern</text>
+
+          <rect class="node-box glow-rainfall" x="620" y="20" width="260" height="90" rx="12" style="stroke:var(--rainfall)"/>
+          <text x="750" y="52" text-anchor="middle" class="node-title" font-size="15">Rainfall</text>
+          <text x="750" y="72" text-anchor="middle" class="node-sub" font-size="10.5">antecedent + live intensity</text>
+          <text x="750" y="88" text-anchor="middle" class="node-sub" font-size="10.5">dynamic trigger</text>
+
+          <rect class="node-box" x="290" y="190" width="320" height="80" rx="12"/>
+          <text x="450" y="225" text-anchor="middle" class="node-title" font-size="15">Feature Matrix</text>
+          <text x="450" y="245" text-anchor="middle" class="node-sub" font-size="10.5">per grid-cell fusion vector</text>
+
+          <path class="flow-line animated" marker-end="url(#arrow1)" d="M450,270 L450,318" />
+
+          <rect class="node-box glow-hazard" x="270" y="320" width="360" height="80" rx="12" style="stroke:var(--hazard)"/>
+          <text x="450" y="355" text-anchor="middle" class="node-title" font-size="15">XGBoost / LightGBM Classifier</text>
+          <text x="450" y="375" text-anchor="middle" class="node-sub" font-size="10.5">trained against the failure inventory</text>
+
+          <path class="flow-line animated" marker-end="url(#arrow1)" d="M450,400 L450,438" />
+
+          <rect class="node-box" x="250" y="440" width="400" height="130" rx="12" style="stroke:var(--hazard)"/>
+          <text x="450" y="465" text-anchor="middle" class="node-title" font-size="14">SHAP Attribution Layer</text>
+          <text x="450" y="482" text-anchor="middle" class="node-sub" font-size="9.5">illustrative contribution split — not measured data</text>
+
+          <rect class="glow-soil" x="280" y="495" width="102" height="24" fill="var(--soil)"/>
+          <rect class="glow-historical" x="382" y="495" width="153" height="24" fill="var(--historical)"/>
+          <rect class="glow-rainfall" x="535" y="495" width="85" height="24" fill="var(--rainfall)"/>
+          <text x="331" y="537" text-anchor="middle" class="node-sub" font-size="10">Soil 30%</text>
+          <text x="458" y="537" text-anchor="middle" class="node-sub" font-size="10">History 45%</text>
+          <text x="577" y="537" text-anchor="middle" class="node-sub" font-size="10">Rainfall 25%</text>
+
+          <path class="flow-line animated glow-hazard" marker-end="url(#arrow1)" style="stroke:var(--hazard)" opacity="0.85" d="M450,570 L450,598" />
+
+          <rect class="glow-hazard pulse" x="300" y="600" width="300" height="50" rx="10" fill="var(--hazard-soft)" style="stroke:var(--hazard)" stroke-width="1.4"/>
+          <text x="450" y="631" text-anchor="middle" class="node-title" font-size="13.5" style="fill:var(--hazard)">Risk Probability Output</text>
+        </svg>
+      </div>
+      <figcaption><span class="mono">Fig. 2</span> — The fusion mechanism: three inputs become one feature vector, one classifier, and one explainable output. The stacked bar illustrates the shape of a SHAP percentage breakdown; actual splits vary per grid cell and are produced only once the model is trained.</figcaption>
+    </figure>
+
+    <div class="factor-grid">
+      <div class="factor-card f-soil">
+        <div class="swatch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M5 20V10l4-3 4 3v10M13 20v-6l4-3 4 3v6"/></svg></div>
+        <h3>Soil Type</h3>
+        <dl>
+          <div><dt>Role</dt><dd>Static ceiling on saturation capacity and slip resistance.</dd></div>
+          <div><dt>Source</dt><dd>Digitized soil/geotechnical layers, Census & Statistics shapefiles, OSM building & road-cut features.</dd></div>
+          <div><dt>Method</dt><dd>QGIS digitization, clipped to the Walapane / Ambagamuwa / Kotmale pilot zones.</dd></div>
+          <div><dt>Feature output</dt><dd>Permeability class, shear-strength proxy, distance-to-road-cut.</dd></div>
+        </dl>
+      </div>
+      <div class="factor-card f-hist">
+        <div class="swatch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9M3 12h4M3 12l2-3M3 12l2 3M12 7v5l3 3"/></svg></div>
+        <h3>Historical Landslides</h3>
+        <dl>
+          <div><dt>Role</dt><dd>Ground-truth label and spatial-pattern prior — replaces the DEM/slope proxy.</dd></div>
+          <div><dt>Source</dt><dd>NBRO landslide portal records, DMC early-warning reports for the district.</dd></div>
+          <div><dt>Method</dt><dd>Spatial clustering and frequency-ratio weighting of confirmed failure points.</dd></div>
+          <div><dt>Feature output</dt><dd>Local failure density, nearest-event distance, recurrence weighting.</dd></div>
+        </dl>
+      </div>
+      <div class="factor-card f-rain">
+        <div class="swatch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 16.5a4.5 4.5 0 0 1 .5-9 5.5 5.5 0 0 1 10.6 1.8A4 4 0 0 1 18 17H8Z"/><path d="M8 20l1-2M12 21l1-2M16 20l1-2"/></svg></div>
+        <h3>Rainfall</h3>
+        <dl>
+          <div><dt>Role</dt><dd>Dynamic trigger — the variable that turns a stable slope into a failing one.</dd></div>
+          <div><dt>Source</dt><dd>Nearby NBRO rain-gauge network, live and historical readings.</dd></div>
+          <div><dt>Method</dt><dd>Spatial interpolation (IDW/Kriging) to grid cells, 3-day antecedent accumulation.</dd></div>
+          <div><dt>Feature output</dt><dd>Cumulative antecedent rainfall, live intensity threshold flag.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPARISON ================= -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="section-num mono">05 — Comparison</span>
+      <h2>Where the two approaches actually diverge</h2>
+      <p class="section-intro">Both approaches start from the same terrain and site data. The conventional path stops at geometry — an elevation raster reduced to a slope angle. This component's path continues into the record of what actually happened on that geometry, which is where soil, land-use and human factors leave their fingerprints.</p>
+    </div>
+
+    <figure>
+      <div class="diagram-frame">
+        <svg viewBox="0 0 1000 480" role="img" aria-label="Comparison diagram: both approaches start from terrain and site data, then fork. The conventional path goes DEM elevation raster to slope and aspect derivatives to a generalized susceptibility index, limited by coarse resolution. The historical-data path goes historical failure inventory to spatial clustering and frequency ratio to a site-calibrated, ground-truthed susceptibility.">
+          <defs>
+            <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--ink-muted)"/>
+            </marker>
+          </defs>
+
+          <rect class="node-box" x="20" y="195" width="160" height="80" rx="12"/>
+          <text x="100" y="230" text-anchor="middle" class="node-title" font-size="13.5">Terrain &amp;</text>
+          <text x="100" y="247" text-anchor="middle" class="node-title" font-size="13.5">Site Data</text>
+
+          <path class="flow-line" marker-end="url(#arrow2)" d="M180,215 C210,180 200,110 228,80" />
+          <path class="flow-line" marker-end="url(#arrow2)" d="M180,255 C210,300 200,370 228,378" />
+
+          <text x="230" y="20" font-size="10.5" class="mono" fill="var(--ink-muted)" letter-spacing="0.08em">CONVENTIONAL</text>
+          <rect x="230" y="40" width="210" height="80" rx="10" fill="var(--surface)" stroke="var(--border-strong)" stroke-width="1.4"/>
+          <text x="335" y="72" text-anchor="middle" class="node-title" font-size="13">DEM Elevation</text>
+          <text x="335" y="90" text-anchor="middle" class="node-title" font-size="13">Raster</text>
+          <text x="335" y="107" text-anchor="middle" class="node-sub" font-size="9.5">SRTM / ASTER, ~30m</text>
+
+          <path class="flow-line" marker-end="url(#arrow2)" d="M440,80 L488,80" />
+          <rect x="490" y="40" width="210" height="80" rx="10" fill="var(--surface)" stroke="var(--border-strong)" stroke-width="1.4"/>
+          <text x="595" y="72" text-anchor="middle" class="node-title" font-size="13">Slope / Aspect</text>
+          <text x="595" y="90" text-anchor="middle" class="node-title" font-size="13">Derivatives</text>
+
+          <path class="flow-line" marker-end="url(#arrow2)" d="M700,80 L748,80" />
+          <rect x="750" y="40" width="220" height="80" rx="10" fill="var(--surface)" stroke="var(--border-strong)" stroke-width="1.4"/>
+          <text x="860" y="72" text-anchor="middle" class="node-title" font-size="13">Generalized</text>
+          <text x="860" y="90" text-anchor="middle" class="node-title" font-size="13">Susceptibility Index</text>
+
+          <text x="750" y="140" font-size="10.5" class="mono" fill="var(--ink-muted)">△ coarse resolution — misses soil &amp; human factors</text>
+
+          <text x="230" y="358" font-size="10.5" class="mono" fill="var(--historical)" letter-spacing="0.08em">THIS COMPONENT</text>
+          <rect class="glow-historical" x="230" y="378" width="210" height="80" rx="10" fill="var(--historical-soft)" style="stroke:var(--historical)" stroke-width="1.6"/>
+          <text x="335" y="410" text-anchor="middle" class="node-title" font-size="13">Historical Failure</text>
+          <text x="335" y="428" text-anchor="middle" class="node-title" font-size="13">Inventory</text>
+          <text x="335" y="445" text-anchor="middle" class="node-sub" font-size="9.5">NBRO / DMC records</text>
+
+          <path class="flow-line glow-historical" marker-end="url(#arrow2)" style="stroke:var(--historical)" opacity="0.85" d="M440,418 L488,418" />
+          <rect class="glow-historical" x="490" y="378" width="210" height="80" rx="10" fill="var(--historical-soft)" style="stroke:var(--historical)" stroke-width="1.6"/>
+          <text x="595" y="410" text-anchor="middle" class="node-title" font-size="13">Spatial Clustering +</text>
+          <text x="595" y="428" text-anchor="middle" class="node-title" font-size="13">Frequency Ratio</text>
+
+          <path class="flow-line glow-historical" marker-end="url(#arrow2)" style="stroke:var(--historical)" opacity="0.85" d="M700,418 L748,418" />
+          <rect class="glow-historical" x="750" y="378" width="220" height="80" rx="10" fill="var(--historical-soft)" style="stroke:var(--historical)" stroke-width="1.6"/>
+          <text x="860" y="405" text-anchor="middle" class="node-title" font-size="13">Site-Calibrated</text>
+          <text x="860" y="422" text-anchor="middle" class="node-title" font-size="13">Susceptibility</text>
+          <text x="860" y="439" text-anchor="middle" class="node-sub" font-size="9.5">ground-truthed</text>
+        </svg>
+      </div>
+      <figcaption><span class="mono">Fig. 3</span> — Same starting data, two different third steps. The historical path is the one this component trains and validates against.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ================= PIPELINE ================= -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="section-num mono">06 — Pipeline</span>
+      <h2>End-to-end, from raw records to a village alert</h2>
+      <p class="section-intro">The framework above is the mechanism; this is the build order — the tools each stage actually runs on, from source data through to the Web-GIS interface a village-level user sees.</p>
+    </div>
+
+    <figure>
+      <div class="diagram-frame">
+        <svg viewBox="0 0 1000 280" role="img" aria-label="Pipeline diagram: three data sources — soil and terrain database, historical inventory, rainfall gauges — feed into spatial processing with PostGIS and OSMnx, then into feature fusion and model training with XGBoost, LightGBM and SHAP, then into a Web-GIS alert built with MapLibre and i18next.">
+          <defs>
+            <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--ink-muted)"/>
+            </marker>
+          </defs>
+
+          <rect class="node-box glow-soil" x="20" y="20" width="190" height="60" rx="10" style="stroke:var(--soil)"/>
+          <text x="115" y="45" text-anchor="middle" class="node-title" font-size="12">Soil &amp; Terrain DB</text>
+          <text x="115" y="62" text-anchor="middle" class="node-sub" font-size="9.5">QGIS · shapefiles</text>
+
+          <rect class="node-box glow-historical" x="20" y="100" width="190" height="60" rx="10" style="stroke:var(--historical)"/>
+          <text x="115" y="125" text-anchor="middle" class="node-title" font-size="12">Historical Inventory</text>
+          <text x="115" y="142" text-anchor="middle" class="node-sub" font-size="9.5">NBRO · DMC records</text>
+
+          <rect class="node-box glow-rainfall" x="20" y="180" width="190" height="60" rx="10" style="stroke:var(--rainfall)"/>
+          <text x="115" y="205" text-anchor="middle" class="node-title" font-size="12">Rainfall Gauges</text>
+          <text x="115" y="222" text-anchor="middle" class="node-sub" font-size="9.5">NBRO network</text>
+
+          <path class="flow-line animated" marker-end="url(#arrow3)" d="M210,50 C240,50 240,120 268,130" />
+          <path class="flow-line animated" marker-end="url(#arrow3)" d="M210,130 L268,130" />
+          <path class="flow-line animated" marker-end="url(#arrow3)" d="M210,210 C240,210 240,140 268,130" />
+
+          <rect class="node-box" x="270" y="60" width="200" height="140" rx="12"/>
+          <text x="370" y="120" text-anchor="middle" class="node-title" font-size="13">Spatial Processing</text>
+          <text x="370" y="140" text-anchor="middle" class="node-sub" font-size="10">PostGIS + OSMnx</text>
+          <text x="370" y="157" text-anchor="middle" class="node-sub" font-size="10">spatial join &amp; clip</text>
+
+          <path class="flow-line animated glow-hazard" marker-end="url(#arrow3)" style="stroke:var(--hazard)" opacity="0.85" d="M470,130 L528,130" />
+
+          <rect class="node-box glow-hazard" x="530" y="60" width="200" height="140" rx="12" style="stroke:var(--hazard)"/>
+          <text x="630" y="112" text-anchor="middle" class="node-title" font-size="13">Feature Fusion +</text>
+          <text x="630" y="130" text-anchor="middle" class="node-title" font-size="13">Model Training</text>
+          <text x="630" y="150" text-anchor="middle" class="node-sub" font-size="10">XGBoost / LightGBM</text>
+          <text x="630" y="167" text-anchor="middle" class="node-sub" font-size="10">SHAP explainability</text>
+
+          <path class="flow-line animated glow-rainfall" marker-end="url(#arrow3)" style="stroke:var(--rainfall)" opacity="0.85" d="M730,130 L788,130" />
+
+          <rect class="node-box glow-rainfall" x="790" y="60" width="190" height="140" rx="12" style="stroke:var(--rainfall)"/>
+          <text x="885" y="118" text-anchor="middle" class="node-title" font-size="13">Web-GIS Alert</text>
+          <text x="885" y="138" text-anchor="middle" class="node-sub" font-size="10">MapLibre GL JS</text>
+          <text x="885" y="155" text-anchor="middle" class="node-sub" font-size="10">i18next — Sinhala / Tamil</text>
+        </svg>
+      </div>
+      <figcaption><span class="mono">Fig. 4</span> — Implementation view of the same pipeline: which tool runs which stage.</figcaption>
+    </figure>
+
+    <div class="step-list">
+      <div class="step">
+        <span class="step-n mono">01</span>
+        <div><div class="step-title">Ingest &amp; digitize</div><div class="step-body">Pull Census/Statistics shapefiles and OSM building/road data into QGIS; digitize the Walapane, Ambagamuwa and Kotmale pilot boundaries.</div></div>
+      </div>
+      <div class="step">
+        <span class="step-n mono">02</span>
+        <div><div class="step-title">Spatially join</div><div class="step-body">Load layers into PostgreSQL + PostGIS; run OSMnx extraction for road-cut proximity; interpolate rain-gauge readings onto the grid.</div></div>
+      </div>
+      <div class="step">
+        <span class="step-n mono">03</span>
+        <div><div class="step-title">Engineer the feature matrix</div><div class="step-body">Combine static soil/history features with dynamic antecedent-rainfall features into one row per grid cell per time step.</div></div>
+      </div>
+      <div class="step">
+        <span class="step-n mono">04</span>
+        <div><div class="step-title">Train &amp; validate</div><div class="step-body">Fit XGBoost/LightGBM against the historical failure inventory as ground truth; validate on held-out events and non-failure sites.</div></div>
+      </div>
+      <div class="step">
+        <span class="step-n mono">05</span>
+        <div><div class="step-title">Explain</div><div class="step-body">Run SHAP over each prediction to produce the per-factor percentage breakdown behind a flagged grid cell.</div></div>
+      </div>
+      <div class="step">
+        <span class="step-n mono">06</span>
+        <div><div class="step-title">Deploy &amp; alert</div><div class="step-body">Serve live risk layers through MapLibre GL JS, styled for high-contrast accessibility, with Sinhala/Tamil alerts via i18next.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TOOLCHAIN ================= -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="section-num mono">07 — Reference</span>
+      <h2>Toolchain reference</h2>
+    </div>
+
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h3>ML &amp; Explainability</h3>
+        <div class="stack-items">
+          <span class="stack-pill">XGBoost</span>
+          <span class="stack-pill">LightGBM</span>
+          <span class="stack-pill">SHAP</span>
+          <span class="stack-pill">LIME</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>GIS &amp; Data</h3>
+        <div class="stack-items">
+          <span class="stack-pill">QGIS</span>
+          <span class="stack-pill">PostgreSQL + PostGIS</span>
+          <span class="stack-pill">OSMnx</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>Frontend &amp; Alerts</h3>
+        <div class="stack-items">
+          <span class="stack-pill">MapLibre GL JS</span>
+          <span class="stack-pill">Leaflet</span>
+          <span class="stack-pill">React / Vue</span>
+          <span class="stack-pill">Tailwind CSS</span>
+          <span class="stack-pill">Radix UI</span>
+          <span class="stack-pill">i18next</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="reveal">
+    <div class="sources mono">
+      Sources referenced —
+      <a href="https://www.researchgate.net/publication/366114343_Geoinformatics_approach_to_classifying_landslide_hazard_in_The_Hantana_Mountain_and_its_vicinity_in_Sri_Lanka" target="_blank" rel="noopener">Geoinformatics approach to classifying landslide hazard, Hantana Mountain (ResearchGate)</a> ·
+      <a href="https://lrip.nbro.gov.lk/portal/apps/webappviewer/index.html?id=7524ad70c98e4124a6f4dfed6ea615fe" target="_blank" rel="noopener">NBRO Landslide Risk Information Portal</a> ·
+      <a href="https://www.dmc.gov.lk/index.php?option=com_dmcreports&view=reports&Itemid=276&report_type_id=5&lang=en" target="_blank" rel="noopener">DMC Early Warning Reports</a>
+    </div>
+    <div class="credit">Prepared for supervisor / colleague review — Probabilistic Assessment and Forecasting of Landslide Occurrences using Machine Learning.</div>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
