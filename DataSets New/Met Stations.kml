@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Met Stations</name>
+    <description/>
+    <NetworkLink>
+      <name>Met Stations</name>
+      <Link>
+        <href><![CDATA[https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1we4iBoHrY8m_sRqPRd7TSvt3zI4]]></href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>
