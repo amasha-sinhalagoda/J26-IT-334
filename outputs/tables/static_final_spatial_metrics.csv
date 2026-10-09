@@ -1,0 +1,2 @@
+model,test_fold,threshold,roc_auc,average_precision,precision,recall,f1,true_negatives,false_positives,false_negatives,true_positives,brier_score
+LightGBM,4,0.1,0.7721949221949221,0.587148025853256,0.42696629213483145,0.9129129129129129,0.5818181818181818,362,408,29,304,0.1897366715221161
