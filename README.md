@@ -78,3 +78,26 @@ concurrent-reuse proxy; because `status_time` is not confirmed resource-release
 time, this does not establish the proposal's duplicate-assignment target.
 The supplied assignment workbook is not identified as the manual-dispatch
 baseline, so a baseline improvement claim is not supported by these results.
+
+## Same-scenario allocation benchmark
+
+After preparing the allocation inputs, run
+`python scripts/compare_allocation_methods.py` to compare the deterministic
+nearest-resource greedy benchmark with the CP-SAT optimizer on the same requests,
+available inventory, and candidate resource pairs. The report and CSV outputs
+are written to
+`processed_data/allocation/results/same_scenario_comparison/`. The greedy method
+is a reproducible reference heuristic, not a reconstruction of manual DDMC
+dispatch.
+
+On the current prepared scenario, both methods cover 5/5 districts and 4/5
+scarcity-affected districts, with the same fulfillment quantities by resource
+type: AMB 26/50, BOAT 5/5, RLF 2,087/2,087, RT 8/61, and SHL 3,493/3,493.
+Their priority/scarcity-weighted dispatch scores are also the same. The
+optimizer's allocated-quantity-weighted straight-line distance is 27,570.04
+km-units, compared with 28,102.32 km-units for greedy (about 1.89% lower).
+This distance measure is not routed travel distance or travel time, and the
+coverage results are eventual allocations, not ETA-window coverage. The
+comparison does not demonstrate a live inventory feed or optimizer ETA: the
+inventory source remains a workbook snapshot, and route, travel-time, and
+arrival-time data are not available to the optimizer.
