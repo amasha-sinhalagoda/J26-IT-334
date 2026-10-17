@@ -1,0 +1,11 @@
+﻿method,requested_resource_type,requested_quantity,allocated_quantity,unfilled_quantity,available_quantity,resources_used,resources_available,fulfillment_rate,quantity_utilization_rate,resource_record_utilization_rate
+greedy_nearest,AMB,50,26,24,26,19,19,0.52,1.0,1.0
+greedy_nearest,BOAT,5,5,0,14,5,10,1.0,0.35714285714285715,0.5
+greedy_nearest,RLF,2087,2087,0,17533,19,30,1.0,0.11903268122968118,0.6333333333333333
+greedy_nearest,RT,61,8,53,8,6,6,0.13114754098360656,1.0,1.0
+greedy_nearest,SHL,3493,3493,0,11537,30,55,1.0,0.3027650169021409,0.5454545454545454
+cp_sat_optimizer,AMB,50,26,24,26,19,19,0.52,1.0,1.0
+cp_sat_optimizer,BOAT,5,5,0,14,5,10,1.0,0.35714285714285715,0.5
+cp_sat_optimizer,RLF,2087,2087,0,17533,19,30,1.0,0.11903268122968118,0.6333333333333333
+cp_sat_optimizer,RT,61,8,53,8,6,6,0.13114754098360656,1.0,1.0
+cp_sat_optimizer,SHL,3493,3493,0,11537,30,55,1.0,0.3027650169021409,0.5454545454545454

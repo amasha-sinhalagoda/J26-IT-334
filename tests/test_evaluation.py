@@ -72,6 +72,10 @@ class DispatchEvaluationTests(unittest.TestCase):
         self.assertEqual(result["scarce_districts"], 2)
         self.assertEqual(result["scarce_districts_covered"], 1)
         self.assertEqual(result["scarcity_district_coverage_rate"], 0.5)
+        self.assertEqual(
+            set(result["district_resource_results"]["requested_resource_type"]),
+            {"AMB", "RT"},
+        )
 
     def test_historical_metrics_apply_response_window_and_detect_overlapping_reuse(self):
         assignments = pd.DataFrame([

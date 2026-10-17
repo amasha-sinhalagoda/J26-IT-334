@@ -1,0 +1,26 @@
+Same-scenario allocation method comparison
+Methods: deterministic greedy nearest-resource benchmark and CP-SAT optimizer.
+Both methods receive identical prepared requests, inventory availability, and candidate resource pairs.
+This greedy benchmark is not a reconstruction of actual manual DDMC operations.
+District coverage is eventual allocation coverage, not coverage within a response-time window.
+Resource quantity utilization is reported by resource type because units differ across types.
+
+District coverage:
+greedy_nearest: districts 5/5, scarce districts 4/5, weighted dispatch score 2718.70, straight-line quantity-distance 28102.32 km-units
+cp_sat_optimizer: districts 5/5, scarce districts 4/5, weighted dispatch score 2718.70, straight-line quantity-distance 27570.04 km-units
+
+Fulfillment and utilization by resource type:
+greedy_nearest AMB: allocated 26/50, unfilled 24, fulfillment 52.00%, quantity utilization 100.00%, resource records used 19/19
+greedy_nearest BOAT: allocated 5/5, unfilled 0, fulfillment 100.00%, quantity utilization 35.71%, resource records used 5/10
+greedy_nearest RLF: allocated 2087/2087, unfilled 0, fulfillment 100.00%, quantity utilization 11.90%, resource records used 19/30
+greedy_nearest RT: allocated 8/61, unfilled 53, fulfillment 13.11%, quantity utilization 100.00%, resource records used 6/6
+greedy_nearest SHL: allocated 3493/3493, unfilled 0, fulfillment 100.00%, quantity utilization 30.28%, resource records used 30/55
+cp_sat_optimizer AMB: allocated 26/50, unfilled 24, fulfillment 52.00%, quantity utilization 100.00%, resource records used 19/19
+cp_sat_optimizer BOAT: allocated 5/5, unfilled 0, fulfillment 100.00%, quantity utilization 35.71%, resource records used 5/10
+cp_sat_optimizer RLF: allocated 2087/2087, unfilled 0, fulfillment 100.00%, quantity utilization 11.90%, resource records used 19/30
+cp_sat_optimizer RT: allocated 8/61, unfilled 53, fulfillment 13.11%, quantity utilization 100.00%, resource records used 6/6
+cp_sat_optimizer SHL: allocated 3493/3493, unfilled 0, fulfillment 100.00%, quantity utilization 30.28%, resource records used 30/55
+
+The optimizer maximizes its priority/scarcity-weighted objective and need not maximize raw filled units or geographic coverage.
+Weighted dispatch score uses the same 80/20 priority/scarcity blend as the allocator. Straight-line quantity-distance is an un-routed proxy (allocated units multiplied by straight-line distance), not travel time.
+Metrics and per-request allocation differences are saved under C:\Users\palih\Desktop\J26-IT-334\processed_data\allocation\results\same_scenario_comparison

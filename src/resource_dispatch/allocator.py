@@ -314,8 +314,8 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
 
     candidate_allocations = candidates.copy()
     candidate_allocations["allocated_quantity"] = pd.Series(
-        allocations_by_candidate
-    ).astype(int)
+        allocations_by_candidate, dtype="int64"
+    )
     allocation_columns = [
         "alert_id", "requested_resource_type", "district", "GN_division",
         "priority_score", "priority_rank", "local_scarcity_score",

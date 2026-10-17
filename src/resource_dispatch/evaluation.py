@@ -91,6 +91,7 @@ def evaluate_district_coverage(requests, service_records, district_column,
         ["_district_key", "_resource_type_key"], as_index=False
     ).agg(
         district=("district", "first"),
+        requested_resource_type=("requested_resource_type", "first"),
         local_scarcity_score=("local_scarcity_score", "max"),
     )
     served_by_area = served.groupby(

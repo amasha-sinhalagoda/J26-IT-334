@@ -1,0 +1,3 @@
+﻿method,alerted_districts,districts_covered,district_coverage_rate,scarce_districts,scarce_districts_covered,scarcity_district_coverage_rate,requested_resource_type_units,dispatch_score_weighted_units,straight_line_quantity_distance_km
+greedy_nearest,5,5,1.0,5,4,0.8,Not aggregated across types: unit scales differ by type.,2718.702001487224,28102.323120400695
+cp_sat_optimizer,5,5,1.0,5,4,0.8,Not aggregated across types: unit scales differ by type.,2718.702001487224,27570.03792113303
