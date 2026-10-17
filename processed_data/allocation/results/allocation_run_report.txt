@@ -4,6 +4,7 @@ Dispatch score = 0.80*alert priority score + 0.20*local scarcity score.
 Local scarcity is the district/resource demand fraction not covered by local supply.
 Stage 1 maximizes dispatch-score-weighted allocated units.
 Stage 2 minimizes straight-line distance while preserving the stage-1 objective.
+Dispatch plan validated against current recorded workbook availability.
 This is a research prototype using the supplied project datasets; coordinates are approximate and distances are not route distances.
 Request rows: 99
 Fully satisfied requests: 59

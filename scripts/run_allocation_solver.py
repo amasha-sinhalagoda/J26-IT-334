@@ -10,6 +10,7 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR / "src"))
 
 from resource_dispatch import solve_allocation
+from resource_dispatch.dispatch_safety import validate_dispatch_plan
 
 
 ALLOCATION_DIR = PROJECT_DIR / "processed_data" / "allocation"
@@ -20,8 +21,12 @@ def main():
     requests_path = ALLOCATION_DIR / "allocation_requests.csv"
     supply_path = ALLOCATION_DIR / "available_resource_supply.csv"
     candidates_path = ALLOCATION_DIR / "allocation_candidates.csv"
+    inventory_path = PROJECT_DIR / "Resource_Inventory_5Districts.xlsx"
     missing = [
-        path.name for path in [requests_path, supply_path, candidates_path]
+        path.name
+        for path in [
+            requests_path, supply_path, candidates_path, inventory_path,
+        ]
         if not path.exists()
     ]
     if missing:
@@ -35,6 +40,12 @@ def main():
         requests=pd.read_csv(requests_path),
         supply=pd.read_csv(supply_path),
         candidates=pd.read_csv(candidates_path),
+    )
+    current_inventory = pd.read_excel(
+        inventory_path, sheet_name="Resource_Inventory"
+    )
+    result["dispatch_validation"] = validate_dispatch_plan(
+        result["allocations"], current_inventory
     )
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -59,6 +70,7 @@ def main():
         "Local scarcity is the district/resource demand fraction not covered by local supply.",
         "Stage 1 maximizes dispatch-score-weighted allocated units.",
         "Stage 2 minimizes straight-line distance while preserving the stage-1 objective.",
+        "Dispatch plan validated against current recorded workbook availability.",
         "This is a research prototype using the supplied project datasets; coordinates are approximate and distances are not route distances.",
         "Request rows: {}".format(len(summary)),
         "Fully satisfied requests: {}".format(
