@@ -11,4 +11,7 @@ The local scarcity score is calculated per district and resource type as
 `max(local demand - local available supply, 0) / local demand`. It ranges from
 0 (local supply covers demand) to 1 (no local supply). Cross-district inventory
 is excluded from this diagnostic. The score is included on each prepared request
-and candidate, but the current optimizer does not yet use it to rank allocations.
+and candidate. The optimizer combines it with alert priority as
+`0.80 * alert priority score + 0.20 * local scarcity score` when ranking
+allocations. This is a documented prototype weighting, not a calibrated
+operational policy.

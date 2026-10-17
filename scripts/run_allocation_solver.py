@@ -55,7 +55,9 @@ def main():
     report = [
         "Resource allocation solver run",
         "Method: OR-Tools CP-SAT, solved separately for each resource type.",
-        "Stage 1 maximizes priority-score-weighted allocated units.",
+        "Dispatch score = 0.80*alert priority score + 0.20*local scarcity score.",
+        "Local scarcity is the district/resource demand fraction not covered by local supply.",
+        "Stage 1 maximizes dispatch-score-weighted allocated units.",
         "Stage 2 minimizes straight-line distance while preserving the stage-1 objective.",
         "This is a research prototype using the supplied project datasets; coordinates are approximate and distances are not route distances.",
         "Request rows: {}".format(len(summary)),
@@ -72,8 +74,11 @@ def main():
         "Solver status by resource type:",
     ]
     report.extend(
-        "{}: priority={}, distance={}".format(
+        "{}: combined priority/scarcity={}, alert priority={}, scarcity={}, priority_status={}, distance_status={}".format(
             row.resource_type,
+            row.combined_priority_scarcity_units,
+            row.alert_priority_weighted_units,
+            row.scarcity_weighted_units,
             row.priority_stage_status,
             row.distance_stage_status,
         )

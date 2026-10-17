@@ -8,16 +8,18 @@ from ortools.sat.python import cp_model
 
 REQUEST_COLUMNS = {
     "alert_id", "requested_resource_type", "requested_quantity",
-    "priority_score", "priority_rank",
+    "priority_score", "priority_rank", "local_scarcity_score",
 }
 SUPPLY_COLUMNS = {"resource_id", "resource_type", "available_count"}
 CANDIDATE_COLUMNS = {
     "alert_id", "requested_resource_type", "requested_quantity",
     "priority_score", "resource_id", "candidate_resource_type",
-    "available_quantity", "straight_line_distance_km",
+    "available_quantity", "straight_line_distance_km", "local_scarcity_score",
 }
 PRIORITY_SCALE = 1_000_000
 DISTANCE_SCALE = 1_000
+ALERT_PRIORITY_WEIGHT = 0.8
+LOCAL_SCARCITY_WEIGHT = 0.2
 
 
 def _require_columns(table, required, label):
@@ -40,9 +42,11 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
 
     The solver runs one CP-SAT model per resource type because units differ
     between resource types (for example, vehicles, people, and relief kits).
-    Within each type it maximizes priority-weighted allocated quantities, then
-    minimizes straight-line distance among solutions with the same priority
-    objective. Distance is only a proxy, not a route or travel-time estimate.
+    The dispatch score is 80% alert priority and 20% local scarcity, where
+    scarcity is the local demand fraction not covered by local supply. It first
+    maximizes score-weighted allocated quantities, then minimizes straight-line
+    distance among solutions with the same score objective. Distance is only a
+    proxy, not a route or travel-time estimate.
     """
     _require_columns(requests, REQUEST_COLUMNS, "Requests")
     _require_columns(supply, SUPPLY_COLUMNS, "Supply")
@@ -83,6 +87,12 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
     candidates["priority_score"] = pd.to_numeric(
         candidates["priority_score"], errors="coerce"
     )
+    requests["local_scarcity_score"] = pd.to_numeric(
+        requests["local_scarcity_score"], errors="coerce"
+    )
+    candidates["local_scarcity_score"] = pd.to_numeric(
+        candidates["local_scarcity_score"], errors="coerce"
+    )
     candidates["straight_line_distance_km"] = pd.to_numeric(
         candidates["straight_line_distance_km"], errors="coerce"
     )
@@ -103,6 +113,18 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
         or (requests["priority_score"] > 1).any()
     ):
         raise ValueError("Priority scores must be numeric values between 0 and 1")
+    if (
+        requests["local_scarcity_score"].isna().any()
+        or (requests["local_scarcity_score"] < 0).any()
+        or (requests["local_scarcity_score"] > 1).any()
+    ):
+        raise ValueError("Local scarcity scores must be numeric values between 0 and 1")
+    if (
+        candidates["local_scarcity_score"].isna().any()
+        or (candidates["local_scarcity_score"] < 0).any()
+        or (candidates["local_scarcity_score"] > 1).any()
+    ):
+        raise ValueError("Candidate scarcity scores must be numeric values between 0 and 1")
     if (
         candidates["straight_line_distance_km"].isna().any()
         or (candidates["straight_line_distance_km"] < 0).any()
@@ -126,7 +148,7 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
 
     request_values = requests.set_index(
         ["alert_id", "requested_resource_type"]
-    )[["requested_quantity", "priority_score"]]
+    )[["requested_quantity", "priority_score", "local_scarcity_score"]]
     request_join = candidates.merge(
         request_values.reset_index(),
         on=["alert_id", "requested_resource_type"],
@@ -139,8 +161,10 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
          != request_join["requested_quantity_request"]).any()
         or (request_join["priority_score_candidate"]
             - request_join["priority_score_request"]).abs().gt(1e-9).any()
+        or (request_join["local_scarcity_score_candidate"]
+            - request_join["local_scarcity_score_request"]).abs().gt(1e-9).any()
     ):
-        raise ValueError("Candidate request values disagree with request input")
+        raise ValueError("Candidate request values or scarcity disagree with request input")
 
     supply_index = supply.set_index("resource_id")
     if not candidates["resource_id"].isin(supply_index.index).all():
@@ -169,6 +193,8 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
         model = cp_model.CpModel()
         variables = {}
         priority_coefficients = {}
+        alert_priority_coefficients = {}
+        scarcity_coefficients = {}
         distance_costs = {}
         request_candidate_indices = defaultdict(list)
         resource_candidate_indices = defaultdict(list)
@@ -180,8 +206,19 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
             variables[index] = model.NewIntVar(
                 0, upper_bound, "assign_{}".format(index)
             )
+            alert_priority_coefficients[index] = int(round(
+                float(row["priority_score"]) * PRIORITY_SCALE
+            ))
+            scarcity_coefficients[index] = int(round(
+                float(row["local_scarcity_score"]) * PRIORITY_SCALE
+            ))
             priority_coefficients[index] = max(
-                1, int(round(float(row["priority_score"]) * PRIORITY_SCALE))
+                1,
+                int(round(
+                    ALERT_PRIORITY_WEIGHT
+                    * alert_priority_coefficients[index]
+                    + LOCAL_SCARCITY_WEIGHT * scarcity_coefficients[index]
+                )),
             )
             distance_costs[index] = int(round(
                 float(row["straight_line_distance_km"]) * DISTANCE_SCALE
@@ -248,11 +285,23 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
 
         for index, variable in variables.items():
             allocations_by_candidate[index] = second_solver.Value(variable)
+        allocated_priority_value = sum(
+            alert_priority_coefficients[index]
+            * second_solver.Value(variables[index])
+            for index in variables
+        )
+        allocated_scarcity_value = sum(
+            scarcity_coefficients[index]
+            * second_solver.Value(variables[index])
+            for index in variables
+        )
         solver_results.append({
             "resource_type": resource_type,
             "priority_stage_status": first_solver.StatusName(first_status),
             "distance_stage_status": second_solver.StatusName(second_status),
-            "priority_weighted_units": best_priority_value,
+            "combined_priority_scarcity_units": best_priority_value,
+            "alert_priority_weighted_units": allocated_priority_value,
+            "scarcity_weighted_units": allocated_scarcity_value,
             "total_distance_cost_m": int(round(second_solver.ObjectiveValue())),
         })
 
@@ -262,7 +311,8 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
     ).astype(int)
     allocation_columns = [
         "alert_id", "requested_resource_type", "district", "GN_division",
-        "priority_score", "priority_rank", "requested_quantity", "resource_id",
+        "priority_score", "priority_rank", "local_scarcity_score",
+        "requested_quantity", "resource_id",
         "resource_district", "available_quantity", "allocated_quantity",
         "straight_line_distance_km", "is_same_district",
     ]
