@@ -42,8 +42,9 @@ supplied dispatch history and optimizer allocations:
 - District coverage counts an alerted district/resource pair as covered when
   it receives at least one assigned unit. Scarcity coverage is calculated only
   over pairs with a positive local scarcity score.
-- Historical first-response coverage uses `estimated_arrival` relative to the
-  alert timestamp and requires an explicit response-window duration.
+- Historical ETA-based coverage uses `estimated_arrival` relative to the alert
+  timestamp and requires an explicit response-window duration. The ETA is not
+  an actual arrival observation.
 - Historical concurrent resource reuse is a proxy: it flags assignment rows
   whose recorded `assignment_time`–`status_time` intervals overlap for the same
   resource across different alerts. `status_time` is not confirmed to be a
@@ -51,3 +52,21 @@ supplied dispatch history and optimizer allocations:
 - Optimized allocations do not have estimated arrival times; their district
   coverage must not be reported as coverage within the historical response
   window or compared as if route travel time were known.
+
+Run `python scripts/evaluate_dispatch.py` to create a comparison report and CSV
+tables under `processed_data/allocation/results/evaluation/`. The default
+ETA-based windows are 30, 60, and 120 minutes; use `--windows` to select
+different positive durations. These window results and the concurrent-reuse
+proxy are descriptive dataset metrics, not proof that the proposal's response
+time or duplicate-dispatch targets have been met.
+
+On the current supplied records, the 30-minute ETA-based coverage is 5/5
+districts (100%) and 5/5 scarcity-affected districts (100%). The optimized
+plan's eventual coverage is 5/5 districts (100%) and 4/5 scarcity-affected
+districts (80%), but it has no ETA and cannot be evaluated against the
+first-response-window target. The recorded assignment rows have a mean first
+ETA of 18.46 minutes. Four of 148 assignment rows (2.70%) are flagged by the
+concurrent-reuse proxy; because `status_time` is not confirmed resource-release
+time, this does not establish the proposal's duplicate-assignment target.
+The supplied assignment workbook is not identified as the manual-dispatch
+baseline, so a baseline improvement claim is not supported by these results.

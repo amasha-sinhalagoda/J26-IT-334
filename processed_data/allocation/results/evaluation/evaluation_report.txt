@@ -1,0 +1,22 @@
+Resource-aware dispatch evaluation
+Recorded workbook assignments are used as historical observations; they are not asserted to be a manual-dispatch baseline.
+The optimizer is evaluated as a proposed allocation plan, not an arrived response.
+estimated_arrival is an ETA, not an actual arrival time. Mean ETA differences cannot establish achieved first-response-time improvements.
+The optimizer has no ETA outputs, so the proposal target of at least 30% response-time reduction cannot be evaluated.
+Recorded concurrent resource reuse is an interval-overlap proxy using status_time, not definitive duplicate-dispatch evidence.
+Optimizer eventual district coverage is not first-response-window coverage.
+Response windows evaluated (minutes): 30, 60, 120
+Recorded assignment rows: 148
+Assignments with ETA within 30 minutes: 52
+Alerts with an assignment ETA: 24
+Mean first ETA (minutes, per alert's earliest estimated arrival): 18.46
+Rows flagged by concurrent-reuse proxy: 4 (2.70%)
+ETA-based district coverage by response window:
+30.0 min: 5/5 districts (100.00%); scarce districts 5/5 (100.00%)
+60.0 min: 5/5 districts (100.00%); scarce districts 5/5 (100.00%)
+120.0 min: 5/5 districts (100.00%); scarce districts 5/5 (100.00%)
+Optimizer eventual distinct-district coverage: 5/5 (100.00%)
+Optimizer eventual scarce-district coverage: 4/5 (80.00%)
+
+Coverage and fulfillment tables are saved under C:\Users\palih\Desktop\J26-IT-334\processed_data\allocation\results\evaluation
+Recorded and optimized resource-type quantities should be interpreted separately: recorded assignments may represent a different operational status/time scope than the optimizer's plan.

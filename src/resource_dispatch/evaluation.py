@@ -140,13 +140,13 @@ def evaluate_district_coverage(requests, service_records, district_column,
 
 def evaluate_historical_dispatch(requests, assignments,
                                  first_response_window_minutes):
-    """Measure observed first-response coverage and concurrent reuse proxy.
+    """Measure ETA-based response-window coverage and concurrent reuse proxy.
 
-    First-response coverage uses estimated_arrival minus alert timestamp.
-    Concurrent reuse is a proxy based on overlaps between assignment_time and
-    status_time for the same resource serving different alerts. status_time is
-    not a confirmed resource-release time, so this is not definitive proof of
-    duplicate dispatch.
+    Response estimates use estimated_arrival minus alert timestamp; ETAs are
+    not actual arrival observations. Concurrent reuse is a proxy based on
+    overlaps between assignment_time and status_time for the same resource
+    serving different alerts. status_time is not a confirmed resource-release
+    time, so this is not definitive proof of duplicate dispatch.
     """
     if (
         not isinstance(first_response_window_minutes, (int, float))
@@ -228,6 +228,17 @@ def evaluate_historical_dispatch(requests, assignments,
         first_response_window_minutes, unit="m"
     )
     arrived_in_window = history["estimated_arrival"] <= deadline
+    response_times = (
+        history.assign(
+            first_response_minutes=(
+                history["estimated_arrival"] - history["timestamp"]
+            ).dt.total_seconds() / 60.0
+        )
+        .groupby("alert_id")["first_response_minutes"]
+        .min()
+    )
+    if (response_times < 0).any():
+        raise ValueError("An estimated arrival precedes its alert timestamp")
     timed_service = history.loc[
         arrived_in_window,
         [
@@ -271,6 +282,10 @@ def evaluate_historical_dispatch(requests, assignments,
         "first_response_window_minutes": float(first_response_window_minutes),
         "assignments_in_window": int(arrived_in_window.sum()),
         "assignment_count": assignment_count,
+        "alerts_with_response": int(response_times.count()),
+        "mean_first_eta_minutes": (
+            float(response_times.mean()) if not response_times.empty else None
+        ),
         "concurrent_reuse_rows": len(duplicate_rows),
         "concurrent_reuse_rate": (
             len(duplicate_rows) / assignment_count if assignment_count else 0.0

@@ -110,6 +110,8 @@ class DispatchEvaluationTests(unittest.TestCase):
 
         self.assertEqual(result["assignments_in_window"], 1)
         self.assertEqual(result["assignment_count"], 3)
+        self.assertEqual(result["alerts_with_response"], 3)
+        self.assertAlmostEqual(result["mean_first_eta_minutes"], 30)
         self.assertEqual(result["concurrent_reuse_rows"], 2)
         self.assertAlmostEqual(result["concurrent_reuse_rate"], 2 / 3)
         self.assertEqual(
