@@ -31,6 +31,14 @@ quantities from both the matching request and resource availability; over-
 reservation is rejected. The ledger is the prototype's reservation record:
 the workbook is not edited and no live DDMC inventory API is connected.
 
+The runner reads inventory through the `InventoryProvider` contract in
+`src/resource_dispatch/inventory_provider.py`. Its current
+`WorkbookInventoryProvider` implementation validates and reads the workbook
+snapshot. A future live integration can implement the same
+`get_current_inventory()` method and return `resource_id`, `resource_type`,
+`district`, and `available_count`; the allocation and reservation logic can
+then stay unchanged. The current provider is not a network API or a live feed.
+
 To run the dispatch and reservation unit tests, use
 `python -m unittest discover -s tests -v`.
 

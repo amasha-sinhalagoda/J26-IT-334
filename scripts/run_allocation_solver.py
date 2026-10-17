@@ -17,6 +17,7 @@ from resource_dispatch.dispatch_safety import (
     reserve_dispatch_plan,
     validate_dispatch_plan,
 )
+from resource_dispatch.inventory_provider import WorkbookInventoryProvider
 from resource_dispatch.scarcity import calculate_local_scarcity
 
 
@@ -145,9 +146,8 @@ def main():
 
     requests = pd.read_csv(requests_path)
     candidates = pd.read_csv(candidates_path)
-    current_inventory = pd.read_excel(
-        inventory_path, sheet_name="Resource_Inventory"
-    )
+    inventory_provider = WorkbookInventoryProvider(inventory_path)
+    current_inventory = inventory_provider.get_current_inventory()
     reservations = load_reservations(RESERVATIONS_PATH)
     pending_requests, available_supply, pending_candidates = _prepare_pending_inputs(
         requests, candidates, current_inventory, reservations
@@ -200,6 +200,7 @@ def main():
         "Stage 1 maximizes dispatch-score-weighted allocated units.",
         "Stage 2 minimizes straight-line distance while preserving the stage-1 objective.",
         "Mode: {}".format("approved and reserved" if args.approve else "preview"),
+        "Inventory provider: WorkbookInventoryProvider (recorded workbook snapshot).",
         "Existing reserved units subtracted before optimization: {}".format(
             reserved_before_run
         ),
