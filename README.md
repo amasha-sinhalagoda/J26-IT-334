@@ -33,3 +33,21 @@ the workbook is not edited and no live DDMC inventory API is connected.
 
 To run the dispatch and reservation unit tests, use
 `python -m unittest discover -s tests -v`.
+
+## Dispatch evaluation metrics
+
+`resource_dispatch.evaluation` provides reusable metrics for evaluating the
+supplied dispatch history and optimizer allocations:
+
+- District coverage counts an alerted district/resource pair as covered when
+  it receives at least one assigned unit. Scarcity coverage is calculated only
+  over pairs with a positive local scarcity score.
+- Historical first-response coverage uses `estimated_arrival` relative to the
+  alert timestamp and requires an explicit response-window duration.
+- Historical concurrent resource reuse is a proxy: it flags assignment rows
+  whose recorded `assignment_time`–`status_time` intervals overlap for the same
+  resource across different alerts. `status_time` is not confirmed to be a
+  resource-release time, so this is not definitive duplicate-dispatch evidence.
+- Optimized allocations do not have estimated arrival times; their district
+  coverage must not be reported as coverage within the historical response
+  window or compared as if route travel time were known.
