@@ -15,3 +15,21 @@ and candidate. The optimizer combines it with alert priority as
 `0.80 * alert priority score + 0.20 * local scarcity score` when ranking
 allocations. This is a documented prototype weighting, not a calibrated
 operational policy.
+
+## Validate and reserve a dispatch plan
+
+Run `scripts/run_allocation_solver.py` for a **preview**. It reads the current
+`Resource_Inventory_5Districts.xlsx` availability, subtracts existing
+reservations, solves the remaining requests, validates the plan, and writes the
+results under `processed_data/allocation/results/`. Preview mode does not write
+the reservation ledger.
+
+After reviewing the generated plan, run `scripts/run_allocation_solver.py
+--approve` to persist its allocated quantities in
+`processed_data/allocation/reservations.csv`. Future runs subtract those
+quantities from both the matching request and resource availability; over-
+reservation is rejected. The ledger is the prototype's reservation record:
+the workbook is not edited and no live DDMC inventory API is connected.
+
+To run the dispatch and reservation unit tests, use
+`python -m unittest discover -s tests -v`.
