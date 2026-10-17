@@ -141,9 +141,9 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
     candidate_keys = set(zip(
         candidates["alert_id"], candidates["requested_resource_type"]
     ))
-    if request_keys != candidate_keys:
+    if not candidate_keys.issubset(request_keys):
         raise ValueError(
-            "Candidate request keys do not exactly cover the request table"
+            "Candidates contain keys absent from the request table"
         )
 
     request_values = requests.set_index(
@@ -186,9 +186,16 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
             candidates["requested_resource_type"] == resource_type
         ]
         if type_candidates.empty:
-            raise ValueError(
-                "No candidates for requested resource type {}".format(resource_type)
-            )
+            solver_results.append({
+                "resource_type": resource_type,
+                "priority_stage_status": "NO_CANDIDATES",
+                "distance_stage_status": "NO_CANDIDATES",
+                "combined_priority_scarcity_units": 0,
+                "alert_priority_weighted_units": 0,
+                "scarcity_weighted_units": 0,
+                "total_distance_cost_m": 0,
+            })
+            continue
 
         model = cp_model.CpModel()
         variables = {}
@@ -232,7 +239,7 @@ def solve_allocation(requests, supply, candidates, max_time_seconds=20):
             key = (request["alert_id"], request["requested_resource_type"])
             indices = request_candidate_indices.get(key, [])
             if not indices:
-                raise ValueError("Request {} has no resource candidates".format(key))
+                continue
             model.Add(
                 sum(variables[index] for index in indices)
                 <= int(request["requested_quantity"])
