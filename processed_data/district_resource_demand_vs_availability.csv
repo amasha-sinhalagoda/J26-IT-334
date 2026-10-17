@@ -1,0 +1,24 @@
+﻿district,requested_resource_type,requested_quantity,alert_count,available_quantity,listed_capacity,inventory_records,shortage_quantity,surplus_quantity,comparison_scope
+Badulla,AMB,11,4,4,8,6,7,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Badulla,RLF,197,4,3353,3550,6,0,3156,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Badulla,RT,13,4,1,8,6,12,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Badulla,SHL,757,4,2403,3160,12,0,1646,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kalutara,AMB,12,5,10,13,6,2,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kalutara,BOAT,2,1,5,5,3,0,3,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kalutara,RLF,544,5,3709,4100,6,0,3165,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kalutara,RT,15,5,4,8,6,11,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kalutara,SHL,834,5,2076,2910,12,0,1242,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kegalle,AMB,10,4,1,4,4,9,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kegalle,BOAT,2,1,2,5,3,0,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kegalle,RLF,550,4,3400,3950,6,0,2850,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kegalle,RT,13,4,3,8,6,10,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Kegalle,SHL,754,4,2156,2910,12,0,1402,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Nuwara Eliya,AMB,11,6,5,6,6,6,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Nuwara Eliya,RLF,609,6,3308,3800,6,0,2699,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Nuwara Eliya,RT,13,6,0,9,6,13,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Nuwara Eliya,SHL,821,6,2269,3090,12,0,1448,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Ratnapura,AMB,6,5,6,8,6,0,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Ratnapura,BOAT,1,1,4,5,3,0,3,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Ratnapura,RLF,187,5,3763,3950,6,0,3576,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Ratnapura,RT,7,5,0,8,6,7,0,Same-district inventory snapshot; excludes cross-district reassignment and travel
+Ratnapura,SHL,327,5,2633,2960,12,0,2306,Same-district inventory snapshot; excludes cross-district reassignment and travel

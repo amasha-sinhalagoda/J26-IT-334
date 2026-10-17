@@ -196,7 +196,7 @@ def main():
         "Vulnerability score = (GN population aged 0-14 + aged 65+) / GN total population.",
         "Priority score = 0.50*severity_score + 0.30*exposure_score + 0.20*vulnerability_score.",
         "This is a transparent prototype heuristic, not a trained or empirically validated model.",
-        "Alerts and resource data are synthetic; GN population is provisional census data.",
+        "Alert and resource records come from the supplied project datasets; GN population is provisional census data.",
         "The exposure score is batch-relative and may change when alerts are added or removed.",
     ]
     (DATA_DIR / "priority_scoring_methodology.txt").write_text(

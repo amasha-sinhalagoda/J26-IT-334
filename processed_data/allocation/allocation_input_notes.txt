@@ -1,0 +1,17 @@
+Allocation input preparation
+Requests come from the supplied alert dataset and inherit the prototype priority scores.
+Supply uses the available_count values recorded in the resource inventory workbook.
+Local scarcity score = max(local demand - local available supply, 0) / local demand.
+Scarcity is measured by district and resource type; cross-district supply is excluded from the score.
+The score is an allocation input diagnostic only; the current optimizer does not yet use it.
+Candidates pair each request with every available inventory record of the same resource type.
+Cross-district resources are included; the optimization stage must enforce resource capacity across requests.
+straight_line_distance_km is only a proximity proxy, not road travel time or a safe route.
+Resource coordinates are labeled as approximate DS-centre locations in the source workbook.
+A future routing stage should replace this proxy with road-network travel costs and hazard closures.
+Requested resource types without any available supply: none
+Request rows: 99
+Available inventory records: 120
+Compatible candidate pairs: 2670
+Same-district candidate pairs: 538
+Cross-district candidate pairs: 2132

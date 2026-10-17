@@ -1,0 +1,18 @@
+Resource allocation solver run
+Method: OR-Tools CP-SAT, solved separately for each resource type.
+Stage 1 maximizes priority-score-weighted allocated units.
+Stage 2 minimizes straight-line distance while preserving the stage-1 objective.
+This is a research prototype using the supplied project datasets; coordinates are approximate and distances are not route distances.
+Request rows: 99
+Fully satisfied requests: 59
+Partially/unfilled requests: 40
+Requested quantity: 5696
+Allocated quantity: 5619
+Unfilled quantity: 77
+
+Solver status by resource type:
+AMB: priority=OPTIMAL, distance=OPTIMAL
+BOAT: priority=OPTIMAL, distance=OPTIMAL
+RLF: priority=OPTIMAL, distance=OPTIMAL
+RT: priority=OPTIMAL, distance=OPTIMAL
+SHL: priority=OPTIMAL, distance=OPTIMAL

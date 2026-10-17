@@ -1,0 +1,100 @@
+﻿alert_id,timestamp,hazard_type,severity,confidence,district,DS_division,GN_division,latitude,longitude,affected_population,affected_households,requested_resource_type,requested_quantity
+ALR-20251129-0001,2025-11-29 03:15:00,Cutting failure,Critical,0.89,Nuwara Eliya,Walapane,Brookside,7.04716,80.74115,1739,423,AMB,6
+ALR-20251129-0001,2025-11-29 03:15:00,Cutting failure,Critical,0.89,Nuwara Eliya,Walapane,Brookside,7.04716,80.74115,1739,423,RT,6
+ALR-20251129-0001,2025-11-29 03:15:00,Cutting failure,Critical,0.89,Nuwara Eliya,Walapane,Brookside,7.04716,80.74115,1739,423,SHL,609
+ALR-20251129-0001,2025-11-29 03:15:00,Cutting failure,Critical,0.89,Nuwara Eliya,Walapane,Brookside,7.04716,80.74115,1739,423,RLF,423
+ALR-20251129-0002,2025-11-29 03:55:00,Cutting failure,Low,0.56,Badulla,Bandarawela,Diganathenna,6.83852,80.99999,120,11,AMB,1
+ALR-20251129-0002,2025-11-29 03:55:00,Cutting failure,Low,0.56,Badulla,Bandarawela,Diganathenna,6.83852,80.99999,120,11,RT,1
+ALR-20251129-0002,2025-11-29 03:55:00,Cutting failure,Low,0.56,Badulla,Bandarawela,Diganathenna,6.83852,80.99999,120,11,SHL,42
+ALR-20251129-0002,2025-11-29 03:55:00,Cutting failure,Low,0.56,Badulla,Bandarawela,Diganathenna,6.83852,80.99999,120,11,RLF,11
+ALR-20251129-0003,2025-11-29 04:00:00,Landslide,High,0.88,Kegalle,Rambukkana,Dombemada East,7.1745,80.3,108,29,AMB,1
+ALR-20251129-0003,2025-11-29 04:00:00,Landslide,High,0.88,Kegalle,Rambukkana,Dombemada East,7.1745,80.3,108,29,RT,1
+ALR-20251129-0003,2025-11-29 04:00:00,Landslide,High,0.88,Kegalle,Rambukkana,Dombemada East,7.1745,80.3,108,29,SHL,38
+ALR-20251129-0003,2025-11-29 04:00:00,Landslide,High,0.88,Kegalle,Rambukkana,Dombemada East,7.1745,80.3,108,29,RLF,29
+ALR-20251128-0004,2025-11-28 04:10:00,Cutting failure,Medium,0.72,Nuwara Eliya,Hanguranketha,Makempe,7.064,80.73118,30,27,AMB,1
+ALR-20251128-0004,2025-11-28 04:10:00,Cutting failure,Medium,0.72,Nuwara Eliya,Hanguranketha,Makempe,7.064,80.73118,30,27,RT,1
+ALR-20251128-0004,2025-11-28 04:10:00,Cutting failure,Medium,0.72,Nuwara Eliya,Hanguranketha,Makempe,7.064,80.73118,30,27,SHL,10
+ALR-20251128-0004,2025-11-28 04:10:00,Cutting failure,Medium,0.72,Nuwara Eliya,Hanguranketha,Makempe,7.064,80.73118,30,27,RLF,27
+ALR-20251130-0005,2025-11-30 04:10:00,Landslide,Medium,0.65,Kalutara,Horana,Ihala Millewa South,6.69058,80.04769,331,39,AMB,2
+ALR-20251130-0005,2025-11-30 04:10:00,Landslide,Medium,0.65,Kalutara,Horana,Ihala Millewa South,6.69058,80.04769,331,39,RT,2
+ALR-20251130-0005,2025-11-30 04:10:00,Landslide,Medium,0.65,Kalutara,Horana,Ihala Millewa South,6.69058,80.04769,331,39,SHL,116
+ALR-20251130-0005,2025-11-30 04:10:00,Landslide,Medium,0.65,Kalutara,Horana,Ihala Millewa South,6.69058,80.04769,331,39,RLF,39
+ALR-20251127-0006,2025-11-27 04:15:00,Landslide,Low,0.45,Ratnapura,Kuruvita,Pahala Kuruvita,6.61617,80.52849,100,15,AMB,1
+ALR-20251127-0006,2025-11-27 04:15:00,Landslide,Low,0.45,Ratnapura,Kuruvita,Pahala Kuruvita,6.61617,80.52849,100,15,RT,1
+ALR-20251127-0006,2025-11-27 04:15:00,Landslide,Low,0.45,Ratnapura,Kuruvita,Pahala Kuruvita,6.61617,80.52849,100,15,SHL,35
+ALR-20251127-0006,2025-11-27 04:15:00,Landslide,Low,0.45,Ratnapura,Kuruvita,Pahala Kuruvita,6.61617,80.52849,100,15,RLF,15
+ALR-20251128-0007,2025-11-28 04:20:00,Landslide,High,0.71,Kegalle,Mawanella,Muruthawala,7.23956,80.45531,1161,272,AMB,5
+ALR-20251128-0007,2025-11-28 04:20:00,Landslide,High,0.71,Kegalle,Mawanella,Muruthawala,7.23956,80.45531,1161,272,RT,6
+ALR-20251128-0007,2025-11-28 04:20:00,Landslide,High,0.71,Kegalle,Mawanella,Muruthawala,7.23956,80.45531,1161,272,SHL,406
+ALR-20251128-0007,2025-11-28 04:20:00,Landslide,High,0.71,Kegalle,Mawanella,Muruthawala,7.23956,80.45531,1161,272,RLF,272
+ALR-20251130-0008,2025-11-30 04:40:00,Rock fall,Medium,0.71,Badulla,Passara,Bibilegama West,6.86399,81.09306,115,19,AMB,1
+ALR-20251130-0008,2025-11-30 04:40:00,Rock fall,Medium,0.71,Badulla,Passara,Bibilegama West,6.86399,81.09306,115,19,RT,1
+ALR-20251130-0008,2025-11-30 04:40:00,Rock fall,Medium,0.71,Badulla,Passara,Bibilegama West,6.86399,81.09306,115,19,SHL,40
+ALR-20251130-0008,2025-11-30 04:40:00,Rock fall,Medium,0.71,Badulla,Passara,Bibilegama West,6.86399,81.09306,115,19,RLF,19
+ALR-20251127-0009,2025-11-27 06:05:00,Flood,High,0.72,Kalutara,Kalutara,Pohoddaramulla East,6.6123,79.95168,610,112,AMB,3
+ALR-20251127-0009,2025-11-27 06:05:00,Flood,High,0.72,Kalutara,Kalutara,Pohoddaramulla East,6.6123,79.95168,610,112,RT,4
+ALR-20251127-0009,2025-11-27 06:05:00,Flood,High,0.72,Kalutara,Kalutara,Pohoddaramulla East,6.6123,79.95168,610,112,BOAT,2
+ALR-20251127-0009,2025-11-27 06:05:00,Flood,High,0.72,Kalutara,Kalutara,Pohoddaramulla East,6.6123,79.95168,610,112,SHL,214
+ALR-20251127-0009,2025-11-27 06:05:00,Flood,High,0.72,Kalutara,Kalutara,Pohoddaramulla East,6.6123,79.95168,610,112,RLF,112
+ALR-20251129-0010,2025-11-29 07:25:00,Landslide,High,0.84,Ratnapura,Eheliyagoda,Yakudagoda,6.84462,80.31576,469,49,AMB,2
+ALR-20251129-0010,2025-11-29 07:25:00,Landslide,High,0.84,Ratnapura,Eheliyagoda,Yakudagoda,6.84462,80.31576,469,49,RT,3
+ALR-20251129-0010,2025-11-29 07:25:00,Landslide,High,0.84,Ratnapura,Eheliyagoda,Yakudagoda,6.84462,80.31576,469,49,SHL,164
+ALR-20251129-0010,2025-11-29 07:25:00,Landslide,High,0.84,Ratnapura,Eheliyagoda,Yakudagoda,6.84462,80.31576,469,49,RLF,49
+ALR-20251129-0011,2025-11-29 07:55:00,Cutting failure,High,0.88,Kalutara,Mathugama,Badugama,6.48313,80.14254,443,187,AMB,2
+ALR-20251129-0011,2025-11-29 07:55:00,Cutting failure,High,0.88,Kalutara,Mathugama,Badugama,6.48313,80.14254,443,187,RT,3
+ALR-20251129-0011,2025-11-29 07:55:00,Cutting failure,High,0.88,Kalutara,Mathugama,Badugama,6.48313,80.14254,443,187,SHL,155
+ALR-20251129-0011,2025-11-29 07:55:00,Cutting failure,High,0.88,Kalutara,Mathugama,Badugama,6.48313,80.14254,443,187,RLF,187
+ALR-20251128-0012,2025-11-28 08:30:00,Cutting failure,High,0.85,Badulla,Badulla,Badulupitiya,6.98626,81.0436,1104,97,AMB,5
+ALR-20251128-0012,2025-11-28 08:30:00,Cutting failure,High,0.85,Badulla,Badulla,Badulupitiya,6.98626,81.0436,1104,97,RT,6
+ALR-20251128-0012,2025-11-28 08:30:00,Cutting failure,High,0.85,Badulla,Badulla,Badulupitiya,6.98626,81.0436,1104,97,SHL,386
+ALR-20251128-0012,2025-11-28 08:30:00,Cutting failure,High,0.85,Badulla,Badulla,Badulupitiya,6.98626,81.0436,1104,97,RLF,97
+ALR-20251129-0013,2025-11-29 09:50:00,Landslide,Medium,0.77,Nuwara Eliya,Hanguranketha,Udawatta Kumbura,7.0492,80.7074,82,32,AMB,1
+ALR-20251129-0013,2025-11-29 09:50:00,Landslide,Medium,0.77,Nuwara Eliya,Hanguranketha,Udawatta Kumbura,7.0492,80.7074,82,32,RT,1
+ALR-20251129-0013,2025-11-29 09:50:00,Landslide,Medium,0.77,Nuwara Eliya,Hanguranketha,Udawatta Kumbura,7.0492,80.7074,82,32,SHL,29
+ALR-20251129-0013,2025-11-29 09:50:00,Landslide,Medium,0.77,Nuwara Eliya,Hanguranketha,Udawatta Kumbura,7.0492,80.7074,82,32,RLF,32
+ALR-20251128-0014,2025-11-28 10:05:00,Slope failure,High,0.81,Kalutara,Panadura,Gorakana South,6.68632,79.90953,713,53,AMB,3
+ALR-20251128-0014,2025-11-28 10:05:00,Slope failure,High,0.81,Kalutara,Panadura,Gorakana South,6.68632,79.90953,713,53,RT,4
+ALR-20251128-0014,2025-11-28 10:05:00,Slope failure,High,0.81,Kalutara,Panadura,Gorakana South,6.68632,79.90953,713,53,SHL,250
+ALR-20251128-0014,2025-11-28 10:05:00,Slope failure,High,0.81,Kalutara,Panadura,Gorakana South,6.68632,79.90953,713,53,RLF,53
+ALR-20251128-0015,2025-11-28 10:15:00,Cutting failure,Medium,0.74,Nuwara Eliya,Walapane,Napatawela,7.0303,80.71875,34,10,AMB,1
+ALR-20251128-0015,2025-11-28 10:15:00,Cutting failure,Medium,0.74,Nuwara Eliya,Walapane,Napatawela,7.0303,80.71875,34,10,RT,1
+ALR-20251128-0015,2025-11-28 10:15:00,Cutting failure,Medium,0.74,Nuwara Eliya,Walapane,Napatawela,7.0303,80.71875,34,10,SHL,12
+ALR-20251128-0015,2025-11-28 10:15:00,Cutting failure,Medium,0.74,Nuwara Eliya,Walapane,Napatawela,7.0303,80.71875,34,10,RLF,10
+ALR-20251130-0016,2025-11-30 10:50:00,Flood,Low,0.62,Ratnapura,Ratnapura,Batugedara,6.6673,80.37307,90,9,AMB,1
+ALR-20251130-0016,2025-11-30 10:50:00,Flood,Low,0.62,Ratnapura,Ratnapura,Batugedara,6.6673,80.37307,90,9,RT,1
+ALR-20251130-0016,2025-11-30 10:50:00,Flood,Low,0.62,Ratnapura,Ratnapura,Batugedara,6.6673,80.37307,90,9,BOAT,1
+ALR-20251130-0016,2025-11-30 10:50:00,Flood,Low,0.62,Ratnapura,Ratnapura,Batugedara,6.6673,80.37307,90,9,SHL,31
+ALR-20251130-0016,2025-11-30 10:50:00,Flood,Low,0.62,Ratnapura,Ratnapura,Batugedara,6.6673,80.37307,90,9,RLF,9
+ALR-20251129-0017,2025-11-29 11:05:00,Cutting failure,Critical,0.84,Ratnapura,Eheliyagoda,Miyanakolathenna,6.87122,80.31299,147,88,AMB,1
+ALR-20251129-0017,2025-11-29 11:05:00,Cutting failure,Critical,0.84,Ratnapura,Eheliyagoda,Miyanakolathenna,6.87122,80.31299,147,88,RT,1
+ALR-20251129-0017,2025-11-29 11:05:00,Cutting failure,Critical,0.84,Ratnapura,Eheliyagoda,Miyanakolathenna,6.87122,80.31299,147,88,SHL,51
+ALR-20251129-0017,2025-11-29 11:05:00,Cutting failure,Critical,0.84,Ratnapura,Eheliyagoda,Miyanakolathenna,6.87122,80.31299,147,88,RLF,88
+ALR-20251128-0018,2025-11-28 12:00:00,Rock fall,Medium,0.73,Ratnapura,Eheliyagoda,Kendangamuwa,6.87961,80.3087,130,26,AMB,1
+ALR-20251128-0018,2025-11-28 12:00:00,Rock fall,Medium,0.73,Ratnapura,Eheliyagoda,Kendangamuwa,6.87961,80.3087,130,26,RT,1
+ALR-20251128-0018,2025-11-28 12:00:00,Rock fall,Medium,0.73,Ratnapura,Eheliyagoda,Kendangamuwa,6.87961,80.3087,130,26,SHL,46
+ALR-20251128-0018,2025-11-28 12:00:00,Rock fall,Medium,0.73,Ratnapura,Eheliyagoda,Kendangamuwa,6.87961,80.3087,130,26,RLF,26
+ALR-20251128-0019,2025-11-28 12:15:00,Rock fall,High,0.73,Kegalle,Warakapola,Thalgama,7.16007,80.20922,230,66,AMB,1
+ALR-20251128-0019,2025-11-28 12:15:00,Rock fall,High,0.73,Kegalle,Warakapola,Thalgama,7.16007,80.20922,230,66,RT,2
+ALR-20251128-0019,2025-11-28 12:15:00,Rock fall,High,0.73,Kegalle,Warakapola,Thalgama,7.16007,80.20922,230,66,SHL,80
+ALR-20251128-0019,2025-11-28 12:15:00,Rock fall,High,0.73,Kegalle,Warakapola,Thalgama,7.16007,80.20922,230,66,RLF,66
+ALR-20251130-0020,2025-11-30 13:00:00,Flood,High,0.87,Kegalle,Warakapola,Tholangamuwa,7.19001,80.2158,656,183,AMB,3
+ALR-20251130-0020,2025-11-30 13:00:00,Flood,High,0.87,Kegalle,Warakapola,Tholangamuwa,7.19001,80.2158,656,183,RT,4
+ALR-20251130-0020,2025-11-30 13:00:00,Flood,High,0.87,Kegalle,Warakapola,Tholangamuwa,7.19001,80.2158,656,183,BOAT,2
+ALR-20251130-0020,2025-11-30 13:00:00,Flood,High,0.87,Kegalle,Warakapola,Tholangamuwa,7.19001,80.2158,656,183,SHL,230
+ALR-20251130-0020,2025-11-30 13:00:00,Flood,High,0.87,Kegalle,Warakapola,Tholangamuwa,7.19001,80.2158,656,183,RLF,183
+ALR-20251129-0021,2025-11-29 13:05:00,Landslide,Critical,0.89,Kalutara,Agalawatta,Polgampala,6.4173,80.13767,283,153,AMB,2
+ALR-20251129-0021,2025-11-29 13:05:00,Landslide,Critical,0.89,Kalutara,Agalawatta,Polgampala,6.4173,80.13767,283,153,RT,2
+ALR-20251129-0021,2025-11-29 13:05:00,Landslide,Critical,0.89,Kalutara,Agalawatta,Polgampala,6.4173,80.13767,283,153,SHL,99
+ALR-20251129-0021,2025-11-29 13:05:00,Landslide,Critical,0.89,Kalutara,Agalawatta,Polgampala,6.4173,80.13767,283,153,RLF,153
+ALR-20251128-0022,2025-11-28 13:15:00,Cutting failure,Low,0.66,Nuwara Eliya,Thalawakelle,Nagasena,6.96943,80.66168,228,53,AMB,1
+ALR-20251128-0022,2025-11-28 13:15:00,Cutting failure,Low,0.66,Nuwara Eliya,Thalawakelle,Nagasena,6.96943,80.66168,228,53,RT,2
+ALR-20251128-0022,2025-11-28 13:15:00,Cutting failure,Low,0.66,Nuwara Eliya,Thalawakelle,Nagasena,6.96943,80.66168,228,53,SHL,80
+ALR-20251128-0022,2025-11-28 13:15:00,Cutting failure,Low,0.66,Nuwara Eliya,Thalawakelle,Nagasena,6.96943,80.66168,228,53,RLF,53
+ALR-20251129-0023,2025-11-29 14:20:00,Landslide,Critical,0.9,Badulla,Bandarawela,Inikambedda,6.83352,80.95874,825,70,AMB,4
+ALR-20251129-0023,2025-11-29 14:20:00,Landslide,Critical,0.9,Badulla,Bandarawela,Inikambedda,6.83352,80.95874,825,70,RT,5
+ALR-20251129-0023,2025-11-29 14:20:00,Landslide,Critical,0.9,Badulla,Bandarawela,Inikambedda,6.83352,80.95874,825,70,SHL,289
+ALR-20251129-0023,2025-11-29 14:20:00,Landslide,Critical,0.9,Badulla,Bandarawela,Inikambedda,6.83352,80.95874,825,70,RLF,70
+ALR-20251128-0024,2025-11-28 14:30:00,Landslide,High,0.8,Nuwara Eliya,Kothmale West,Dombagasthalawa,7.07656,80.52786,231,64,AMB,1
+ALR-20251128-0024,2025-11-28 14:30:00,Landslide,High,0.8,Nuwara Eliya,Kothmale West,Dombagasthalawa,7.07656,80.52786,231,64,RT,2
+ALR-20251128-0024,2025-11-28 14:30:00,Landslide,High,0.8,Nuwara Eliya,Kothmale West,Dombagasthalawa,7.07656,80.52786,231,64,SHL,81
+ALR-20251128-0024,2025-11-28 14:30:00,Landslide,High,0.8,Nuwara Eliya,Kothmale West,Dombagasthalawa,7.07656,80.52786,231,64,RLF,64

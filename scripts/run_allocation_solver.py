@@ -57,7 +57,7 @@ def main():
         "Method: OR-Tools CP-SAT, solved separately for each resource type.",
         "Stage 1 maximizes priority-score-weighted allocated units.",
         "Stage 2 minimizes straight-line distance while preserving the stage-1 objective.",
-        "This is a synthetic research prototype; coordinates are approximate and distances are not route distances.",
+        "This is a research prototype using the supplied project datasets; coordinates are approximate and distances are not route distances.",
         "Request rows: {}".format(len(summary)),
         "Fully satisfied requests: {}".format(
             int((summary["unfilled_quantity"] == 0).sum())

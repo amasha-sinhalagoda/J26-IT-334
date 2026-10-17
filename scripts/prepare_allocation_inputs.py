@@ -1,10 +1,17 @@
 from pathlib import Path
+import sys
 
 import numpy as np
 import pandas as pd
 
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
+
+sys.path.insert(0, str(PROJECT_DIR / "src"))
+
+from resource_dispatch.scarcity import SCARCITY_COLUMNS, calculate_local_scarcity
+
+
 PROCESSED_DIR = PROJECT_DIR / "processed_data"
 OUTPUT_DIR = PROCESSED_DIR / "allocation"
 REQUESTS_FILE = PROCESSED_DIR / "alert_requests_prioritized.csv"
@@ -91,6 +98,11 @@ def main():
         raise ValueError("Requested quantities must be positive")
     if requests[["latitude", "longitude"]].isna().any().any():
         raise ValueError("Some request locations have missing coordinates")
+    if requests[["district", "requested_resource_type"]].isna().any().any():
+        raise ValueError("Requests must have a district and resource type")
+    if (inventory["available_count"].isna().any()
+            or (inventory["available_count"] < 0).any()):
+        raise ValueError("Inventory availability must be present and nonnegative")
 
     available_supply = inventory[
         inventory["available_count"].fillna(0) > 0
@@ -101,6 +113,25 @@ def main():
         raise ValueError("Available inventory has duplicate resource IDs")
     if available_supply[["latitude", "longitude"]].isna().any().any():
         raise ValueError("Available resources have missing coordinates")
+
+    scarcity = calculate_local_scarcity(requests, inventory)
+    requests["_district_key"] = requests["district"].astype("string").str.strip().str.casefold()
+    requests["_resource_type_key"] = requests[
+        "requested_resource_type"
+    ].astype("string").str.strip().str.casefold()
+    requests = requests.merge(
+        scarcity[
+            [
+                "_district_key", "_resource_type_key",
+            ] + [
+                "local_demand_quantity", "local_available_quantity",
+                "local_shortage_quantity", "local_scarcity_score",
+            ]
+        ],
+        on=["_district_key", "_resource_type_key"],
+        how="left",
+        validate="many_to_one",
+    ).drop(columns=["_district_key", "_resource_type_key"])
 
     requested_types = set(requests["requested_resource_type"].dropna())
     supplied_types = set(available_supply["resource_type"].dropna())
@@ -185,11 +216,19 @@ def main():
     candidates.to_csv(
         OUTPUT_DIR / "allocation_candidates.csv", index=False, encoding="utf-8-sig"
     )
+    scarcity[SCARCITY_COLUMNS].to_csv(
+        OUTPUT_DIR / "district_resource_scarcity.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
 
     notes = [
         "Allocation input preparation",
-        "Requests are synthetic and inherit the prototype priority scores.",
-        "Supply is the available_count snapshot from the synthetic inventory workbook.",
+        "Requests come from the supplied alert dataset and inherit the prototype priority scores.",
+        "Supply uses the available_count values recorded in the resource inventory workbook.",
+        "Local scarcity score = max(local demand - local available supply, 0) / local demand.",
+        "Scarcity is measured by district and resource type; cross-district supply is excluded from the score.",
+        "The score is an allocation input diagnostic only; the current optimizer does not yet use it.",
         "Candidates pair each request with every available inventory record of the same resource type.",
         "Cross-district resources are included; the optimization stage must enforce resource capacity across requests.",
         "straight_line_distance_km is only a proximity proxy, not road travel time or a safe route.",
@@ -212,6 +251,7 @@ def main():
     print("Request rows: {}".format(len(requests)))
     print("Available inventory records: {}".format(len(available_supply)))
     print("Compatible candidate pairs: {}".format(len(candidates)))
+    print("District/resource scarcity rows: {}".format(len(scarcity)))
     print("Output folder: {}".format(OUTPUT_DIR))
 
 

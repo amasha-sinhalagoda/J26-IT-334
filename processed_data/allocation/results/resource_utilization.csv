@@ -1,0 +1,121 @@
+﻿resource_id,resource_type,station_name,district,DS_division,GN_division,latitude,longitude,coordinate_source,capacity,offline_count,available_count,unit,status,last_updated,allocated_quantity,remaining_quantity
+BAD-AMB-BAD-01,AMB,Badulla Ambulance base 1,Badulla,Badulla,Badulupitiya,6.98292,81.05308,Approximate DS centre,2,0,2,vehicle,Available,2025-11-30 17:49:00,2,0
+BAD-AMB-MAH-01,AMB,Mahiyanganaya Ambulance base 1,Badulla,Mahiyanganaya,Girandurukotte,7.32671,81.00024,Approximate DS centre,1,0,1,vehicle,Available,2025-11-27 16:52:00,1,0
+BAD-AMB-PAS-01,AMB,Passara Ambulance base 1,Badulla,Passara,Pelgahathenna,6.85613,81.1034,Approximate DS centre,1,0,1,vehicle,Available,2025-11-30 17:54:00,1,0
+KAL-AMB-BER-01,AMB,Beruwala Ambulance base 1,Kalutara,Beruwala,Maradana,6.47447,79.98118,Approximate DS centre,2,0,2,vehicle,Available,2025-11-28 17:59:00,2,0
+KAL-AMB-HOR-01,AMB,Horana Ambulance base 1,Kalutara,Horana,Thalagala North,6.70605,80.05555,Approximate DS centre,2,0,2,vehicle,Available,2025-11-28 17:27:00,2,0
+KAL-AMB-KAL-01,AMB,Kalutara Ambulance base 1,Kalutara,Kalutara,Thekkawatta,6.57938,79.96697,Approximate DS centre,3,1,2,vehicle,Available,2025-11-28 16:44:00,2,0
+KAL-AMB-MAT-01,AMB,Mathugama Ambulance base 1,Kalutara,Mathugama,Welipenna West,6.48267,80.11774,Approximate DS centre,2,0,2,vehicle,Available,2025-11-30 17:32:00,2,0
+KAL-AMB-PAN-01,AMB,Panadura Ambulance base 1,Kalutara,Panadura,Keselwatta,6.71749,79.9011,Approximate DS centre,2,0,2,vehicle,Available,2025-11-28 17:09:00,2,0
+KEG-AMB-WAR-01,AMB,Warakapola Ambulance base 1,Kegalle,Warakapola,Ganithapura,7.17988,80.20871,Approximate DS centre,1,0,1,vehicle,Available,2025-11-29 17:08:00,1,0
+NWE-AMB-AMB-01,AMB,Ambagamuwa Koralaya Ambulance base 1,Nuwara Eliya,Ambagamuwa Koralaya,Watawala,6.98885,80.49288,Approximate DS centre,1,0,1,vehicle,Available,2025-11-30 17:35:00,1,0
+NWE-AMB-HAN-01,AMB,Hanguranketha Ambulance base 1,Nuwara Eliya,Hanguranketha,Hope,7.06186,80.71553,Approximate DS centre,1,0,1,vehicle,Available,2025-11-29 17:53:00,1,0
+NWE-AMB-NUW-01,AMB,Nuwara Eliya Ambulance base 1,Nuwara Eliya,Nuwara Eliya,Park,6.94237,80.78912,Approximate DS centre,1,0,1,vehicle,Available,2025-11-28 17:55:00,1,0
+NWE-AMB-THA-01,AMB,Thalawakelle Ambulance base 1,Nuwara Eliya,Thalawakelle,Waltrim,6.98474,80.64019,Approximate DS centre,1,0,1,vehicle,Available,2025-11-27 17:17:00,1,0
+NWE-AMB-WAL-01,AMB,Walapane Ambulance base 1,Nuwara Eliya,Walapane,Brookside,7.04225,80.74391,Approximate DS centre,1,0,1,vehicle,Available,2025-11-27 17:46:00,1,0
+RAT-AMB-BAL-01,AMB,Balangoda Ambulance base 1,Ratnapura,Balangoda,Thumbagoda,6.65074,80.69562,Approximate DS centre,1,0,1,vehicle,Available,2025-11-30 16:45:00,1,0
+RAT-AMB-EHE-01,AMB,Eheliyagoda Ambulance base 1,Ratnapura,Eheliyagoda,Meennana,6.85303,80.31206,Approximate DS centre,1,0,1,vehicle,Available,2025-11-29 17:02:00,1,0
+RAT-AMB-EMB-01,AMB,Embilipitiya Ambulance base 1,Ratnapura,Embilipitiya,Embilipitiya Pallegama,6.33318,80.89169,Approximate DS centre,2,1,1,vehicle,Available,2025-11-27 16:48:00,1,0
+RAT-AMB-KUR-01,AMB,Kuruvita Ambulance base 1,Ratnapura,Kuruvita,Kuruvita,6.5997,80.49163,Approximate DS centre,1,0,1,vehicle,Available,2025-11-29 16:39:00,1,0
+RAT-AMB-RAT-01,AMB,Ratnapura Ambulance base 1,Ratnapura,Ratnapura,New Town,6.67753,80.39771,Approximate DS centre,2,0,2,vehicle,Available,2025-11-28 17:14:00,2,0
+BAD-BOAT-MAH-01,BOAT,Mahiyanganaya Rescue boat point 1,Badulla,Mahiyanganaya,Girandurukotte,7.32327,81.00272,Approximate DS centre,2,0,2,boat,Available,2025-11-28 17:49:00,0,2
+KAL-BOAT-HOR-01,BOAT,Horana Rescue boat point 1,Kalutara,Horana,Thalagala North,6.71738,80.07078,Approximate DS centre,2,0,2,boat,Available,2025-11-30 17:03:00,1,1
+KAL-BOAT-KAL-01,BOAT,Kalutara Rescue boat point 1,Kalutara,Kalutara,Thekkawatta,6.59229,79.96884,Approximate DS centre,1,0,1,boat,Available,2025-11-27 17:22:00,1,0
+KAL-BOAT-MAT-01,BOAT,Mathugama Rescue boat point 1,Kalutara,Mathugama,Welipenna West,6.4796,80.11004,Approximate DS centre,2,0,2,boat,Available,2025-11-30 16:34:00,0,2
+KEG-BOAT-MAW-01,BOAT,Mawanella Rescue boat point 1,Kegalle,Mawanella,Hinguloya,7.25633,80.45461,Approximate DS centre,1,0,1,boat,Available,2025-11-27 17:19:00,1,0
+KEG-BOAT-YAT-01,BOAT,Yatiyanthota Rescue boat point 1,Kegalle,Yatiyanthota,Mattamagoda,7.08919,80.51489,Approximate DS centre,2,1,1,boat,Available,2025-11-30 16:52:00,1,0
+NWE-BOAT-KOT-01,BOAT,Kothmale West Rescue boat point 1,Nuwara Eliya,Kothmale West,Ketabulawa,7.04229,80.551,Approximate DS centre,1,0,1,boat,Available,2025-11-30 16:33:00,0,1
+RAT-BOAT-EHE-01,BOAT,Eheliyagoda Rescue boat point 1,Ratnapura,Eheliyagoda,Meennana,6.83996,80.32124,Approximate DS centre,2,1,1,boat,Available,2025-11-30 17:18:00,0,1
+RAT-BOAT-KUR-01,BOAT,Kuruvita Rescue boat point 1,Ratnapura,Kuruvita,Kuruvita,6.58914,80.48975,Approximate DS centre,1,0,1,boat,Available,2025-11-28 16:35:00,0,1
+RAT-BOAT-RAT-01,BOAT,Ratnapura Rescue boat point 1,Ratnapura,Ratnapura,New Town,6.68489,80.39866,Approximate DS centre,2,0,2,boat,Available,2025-11-30 17:14:00,1,1
+BAD-RLF-BAD-01,RLF,Badulla Relief store 1,Badulla,Badulla,Badulupitiya,6.98332,81.04351,Approximate DS centre,900,0,803,kits,Partially issued,2025-11-30 15:51:00,97,706
+BAD-RLF-BAN-01,RLF,Bandarawela Relief store 1,Badulla,Bandarawela,Nayabedda Estate,6.8254,80.99242,Approximate DS centre,550,0,469,kits,Partially issued,2025-11-30 16:57:00,81,388
+BAD-RLF-HAP-01,RLF,Haputale Relief store 1,Badulla,Haputale,Dambethenna,6.75704,80.95401,Approximate DS centre,450,0,450,kits,Available,2025-11-27 15:36:00,0,450
+BAD-RLF-MAH-01,RLF,Mahiyanganaya Relief store 1,Badulla,Mahiyanganaya,Girandurukotte,7.33768,80.99014,Approximate DS centre,500,0,500,kits,Available,2025-11-28 14:33:00,0,500
+BAD-RLF-PAS-01,RLF,Passara Relief store 1,Badulla,Passara,Pelgahathenna,6.86823,81.10826,Approximate DS centre,700,0,681,kits,Partially issued,2025-11-28 14:35:00,19,662
+BAD-RLF-WEL-01,RLF,Welimada Relief store 1,Badulla,Welimada,Karagasthenna,6.90429,80.90976,Approximate DS centre,450,0,450,kits,Available,2025-11-30 15:29:00,0,450
+KAL-RLF-AGA-01,RLF,Agalawatta Relief store 1,Kalutara,Agalawatta,Yatiyana West,6.41111,80.16798,Approximate DS centre,850,0,850,kits,Available,2025-11-28 14:03:00,153,697
+KAL-RLF-BER-01,RLF,Beruwala Relief store 1,Kalutara,Beruwala,Maradana,6.4672,79.97786,Approximate DS centre,750,0,750,kits,Available,2025-11-28 16:06:00,0,750
+KAL-RLF-HOR-01,RLF,Horana Relief store 1,Kalutara,Horana,Thalagala North,6.70702,80.06064,Approximate DS centre,800,0,761,kits,Partially issued,2025-11-27 15:56:00,39,722
+KAL-RLF-KAL-01,RLF,Kalutara Relief store 1,Kalutara,Kalutara,Thekkawatta,6.59724,79.95831,Approximate DS centre,700,0,588,kits,Partially issued,2025-11-30 14:51:00,112,476
+KAL-RLF-MAT-01,RLF,Mathugama Relief store 1,Kalutara,Mathugama,Welipenna West,6.4887,80.11359,Approximate DS centre,450,0,263,kits,Partially issued,2025-11-28 16:34:00,187,76
+KAL-RLF-PAN-01,RLF,Panadura Relief store 1,Kalutara,Panadura,Keselwatta,6.71283,79.90698,Approximate DS centre,550,0,497,kits,Partially issued,2025-11-30 16:16:00,53,444
+KEG-RLF-GAL-01,RLF,Galigamuwa Relief store 1,Kegalle,Galigamuwa,Bisowela,7.32358,80.36484,Approximate DS centre,800,0,800,kits,Available,2025-11-27 16:17:00,0,800
+KEG-RLF-KEG-01,RLF,Kegalle Relief store 1,Kegalle,Kegalle,Golahela,7.24277,80.34833,Approximate DS centre,550,0,550,kits,Available,2025-11-30 16:53:00,44,506
+KEG-RLF-MAW-01,RLF,Mawanella Relief store 1,Kegalle,Mawanella,Hinguloya,7.23945,80.45308,Approximate DS centre,500,0,228,kits,Partially issued,2025-11-28 15:43:00,228,0
+KEG-RLF-RAM-01,RLF,Rambukkana Relief store 1,Kegalle,Rambukkana,Hurimaluwa,7.17385,80.3173,Approximate DS centre,650,0,621,kits,Partially issued,2025-11-29 15:08:00,29,592
+KEG-RLF-WAR-01,RLF,Warakapola Relief store 1,Kegalle,Warakapola,Ganithapura,7.18577,80.20016,Approximate DS centre,750,0,501,kits,Partially issued,2025-11-28 15:38:00,249,252
+KEG-RLF-YAT-01,RLF,Yatiyanthota Relief store 1,Kegalle,Yatiyanthota,Mattamagoda,7.07675,80.52556,Approximate DS centre,700,0,700,kits,Available,2025-11-27 14:43:00,64,636
+NWE-RLF-AMB-01,RLF,Ambagamuwa Koralaya Relief store 1,Nuwara Eliya,Ambagamuwa Koralaya,Watawala,6.98901,80.49196,Approximate DS centre,600,0,600,kits,Available,2025-11-30 14:08:00,0,600
+NWE-RLF-HAN-01,RLF,Hanguranketha Relief store 1,Nuwara Eliya,Hanguranketha,Hope,7.05772,80.70527,Approximate DS centre,750,0,691,kits,Partially issued,2025-11-28 14:35:00,325,366
+NWE-RLF-KOT-01,RLF,Kothmale West Relief store 1,Nuwara Eliya,Kothmale West,Ketabulawa,7.04198,80.54395,Approximate DS centre,400,0,400,kits,Available,2025-11-27 16:29:00,0,400
+NWE-RLF-NUW-01,RLF,Nuwara Eliya Relief store 1,Nuwara Eliya,Nuwara Eliya,Park,6.95312,80.78389,Approximate DS centre,550,0,550,kits,Available,2025-11-28 16:42:00,0,550
+NWE-RLF-THA-01,RLF,Thalawakelle Relief store 1,Nuwara Eliya,Thalawakelle,Waltrim,6.97657,80.63411,Approximate DS centre,900,0,900,kits,Available,2025-11-27 14:42:00,53,847
+NWE-RLF-WAL-01,RLF,Walapane Relief store 1,Nuwara Eliya,Walapane,Brookside,7.03289,80.7216,Approximate DS centre,600,0,167,kits,Partially issued,2025-11-27 16:06:00,167,0
+RAT-RLF-BAL-01,RLF,Balangoda Relief store 1,Ratnapura,Balangoda,Thumbagoda,6.66628,80.68693,Approximate DS centre,700,0,700,kits,Available,2025-11-27 15:24:00,0,700
+RAT-RLF-EHE-01,RLF,Eheliyagoda Relief store 1,Ratnapura,Eheliyagoda,Meennana,6.84222,80.30694,Approximate DS centre,700,0,537,kits,Partially issued,2025-11-28 14:46:00,163,374
+RAT-RLF-EMB-01,RLF,Embilipitiya Relief store 1,Ratnapura,Embilipitiya,Embilipitiya Pallegama,6.34832,80.87708,Approximate DS centre,700,0,700,kits,Available,2025-11-30 15:37:00,0,700
+RAT-RLF-KUR-01,RLF,Kuruvita Relief store 1,Ratnapura,Kuruvita,Kuruvita,6.59336,80.50822,Approximate DS centre,450,0,435,kits,Partially issued,2025-11-27 16:21:00,15,420
+RAT-RLF-PEL-01,RLF,Pelmadulla Relief store 1,Ratnapura,Pelmadulla,Panawenna,6.53234,80.46026,Approximate DS centre,750,0,750,kits,Available,2025-11-30 16:44:00,0,750
+RAT-RLF-RAT-01,RLF,Ratnapura Relief store 1,Ratnapura,Ratnapura,New Town,6.6925,80.40552,Approximate DS centre,650,0,641,kits,Partially issued,2025-11-29 15:41:00,9,632
+BAD-RT-BAD-01,RT,Badulla Rescue team base 1,Badulla,Badulla,Badulupitiya,6.98654,81.05326,Approximate DS centre,1,0,1,team,Available,2025-11-28 16:39:00,1,0
+KAL-RT-BER-01,RT,Beruwala Rescue team base 1,Kalutara,Beruwala,Maradana,6.46594,79.9729,Approximate DS centre,1,0,1,team,Available,2025-11-27 17:54:00,1,0
+KAL-RT-KAL-01,RT,Kalutara Rescue team base 1,Kalutara,Kalutara,Thekkawatta,6.58898,79.9719,Approximate DS centre,1,0,1,team,Available,2025-11-28 16:38:00,1,0
+KAL-RT-PAN-01,RT,Panadura Rescue team base 1,Kalutara,Panadura,Keselwatta,6.70907,79.89904,Approximate DS centre,2,0,2,team,Available,2025-11-28 16:56:00,2,0
+KEG-RT-GAL-01,RT,Galigamuwa Rescue team base 1,Kegalle,Galigamuwa,Bisowela,7.31375,80.36631,Approximate DS centre,2,0,2,team,Available,2025-11-30 16:31:00,2,0
+KEG-RT-WAR-01,RT,Warakapola Rescue team base 1,Kegalle,Warakapola,Ganithapura,7.17602,80.20052,Approximate DS centre,2,0,1,team,Partially deployed,2025-11-29 17:41:00,1,0
+BAD-SHL-BAD-01,SHL,Badulla Shelter facility 1,Badulla,Badulla,Badulupitiya,6.99128,81.06448,Approximate DS centre,240,0,144,persons,Partially occupied,2025-11-27 16:10:00,144,0
+BAD-SHL-BAN-01,SHL,Bandarawela Shelter facility 1,Badulla,Bandarawela,Nayabedda Estate,6.8264,80.9935,Approximate DS centre,200,0,158,persons,Partially occupied,2025-11-29 16:35:00,158,0
+BAD-SHL-BAN-02,SHL,Bandarawela Shelter facility 2,Badulla,Bandarawela,Nayabedda Estate,6.83469,80.98236,Approximate DS centre,300,0,11,persons,Partially occupied,2025-11-28 15:00:00,11,0
+BAD-SHL-HAP-01,SHL,Haputale Shelter facility 1,Badulla,Haputale,Dambethenna,6.77189,80.95999,Approximate DS centre,200,0,200,persons,Open,2025-11-27 16:20:00,162,38
+BAD-SHL-HAP-02,SHL,Haputale Shelter facility 2,Badulla,Haputale,Dambethenna,6.76806,80.95831,Approximate DS centre,160,0,160,persons,Open,2025-11-27 16:27:00,0,160
+BAD-SHL-MAH-01,SHL,Mahiyanganaya Shelter facility 1,Badulla,Mahiyanganaya,Girandurukotte,7.34308,80.99076,Approximate DS centre,340,0,340,persons,Open,2025-11-30 16:38:00,0,340
+BAD-SHL-MAH-02,SHL,Mahiyanganaya Shelter facility 2,Badulla,Mahiyanganaya,Girandurukotte,7.33393,80.98844,Approximate DS centre,360,0,360,persons,Open,2025-11-27 16:12:00,0,360
+BAD-SHL-PAS-01,SHL,Passara Shelter facility 1,Badulla,Passara,Pelgahathenna,6.86318,81.09694,Approximate DS centre,360,0,320,persons,Partially occupied,2025-11-30 15:01:00,282,38
+BAD-SHL-PAS-02,SHL,Passara Shelter facility 2,Badulla,Passara,Pelgahathenna,6.8614,81.10564,Approximate DS centre,190,0,190,persons,Open,2025-11-29 15:58:00,0,190
+BAD-SHL-WEL-01,SHL,Welimada Shelter facility 1,Badulla,Welimada,Karagasthenna,6.90861,80.90558,Approximate DS centre,290,0,290,persons,Open,2025-11-27 16:53:00,0,290
+BAD-SHL-WEL-02,SHL,Welimada Shelter facility 2,Badulla,Welimada,Karagasthenna,6.90467,80.89603,Approximate DS centre,230,0,230,persons,Open,2025-11-29 16:48:00,0,230
+KAL-SHL-AGA-01,SHL,Agalawatta Shelter facility 1,Kalutara,Agalawatta,Yatiyana West,6.41252,80.17207,Approximate DS centre,220,0,220,persons,Open,2025-11-27 16:01:00,8,212
+KAL-SHL-AGA-02,SHL,Agalawatta Shelter facility 2,Kalutara,Agalawatta,Yatiyana West,6.4117,80.15876,Approximate DS centre,190,0,91,persons,Partially occupied,2025-11-29 16:19:00,91,0
+KAL-SHL-BER-01,SHL,Beruwala Shelter facility 1,Kalutara,Beruwala,Maradana,6.46812,79.98884,Approximate DS centre,170,0,170,persons,Open,2025-11-29 15:28:00,0,170
+KAL-SHL-BER-02,SHL,Beruwala Shelter facility 2,Kalutara,Beruwala,Maradana,6.45759,79.98283,Approximate DS centre,260,0,260,persons,Open,2025-11-28 15:58:00,0,260
+KAL-SHL-HOR-01,SHL,Horana Shelter facility 1,Kalutara,Horana,Thalagala North,6.70969,80.06375,Approximate DS centre,120,0,4,persons,Partially occupied,2025-11-27 15:33:00,4,0
+KAL-SHL-HOR-02,SHL,Horana Shelter facility 2,Kalutara,Horana,Thalagala North,6.72607,80.05697,Approximate DS centre,320,0,320,persons,Open,2025-11-30 16:34:00,112,208
+KAL-SHL-KAL-01,SHL,Kalutara Shelter facility 1,Kalutara,Kalutara,Thekkawatta,6.59061,79.96571,Approximate DS centre,250,0,36,persons,Partially occupied,2025-11-28 16:44:00,36,0
+KAL-SHL-KAL-02,SHL,Kalutara Shelter facility 2,Kalutara,Kalutara,Thekkawatta,6.58067,79.96986,Approximate DS centre,350,0,350,persons,Open,2025-11-29 15:47:00,178,172
+KAL-SHL-MAT-01,SHL,Mathugama Shelter facility 1,Kalutara,Mathugama,Welipenna West,6.48763,80.11982,Approximate DS centre,290,0,135,persons,Partially occupied,2025-11-28 16:17:00,135,0
+KAL-SHL-MAT-02,SHL,Mathugama Shelter facility 2,Kalutara,Mathugama,Welipenna West,6.48948,80.10961,Approximate DS centre,130,0,130,persons,Open,2025-11-29 16:55:00,20,110
+KAL-SHL-PAN-01,SHL,Panadura Shelter facility 1,Kalutara,Panadura,Keselwatta,6.72218,79.90148,Approximate DS centre,310,0,310,persons,Open,2025-11-27 16:11:00,200,110
+KAL-SHL-PAN-02,SHL,Panadura Shelter facility 2,Kalutara,Panadura,Keselwatta,6.71058,79.9017,Approximate DS centre,300,0,50,persons,Partially occupied,2025-11-29 15:53:00,50,0
+KEG-SHL-GAL-01,SHL,Galigamuwa Shelter facility 1,Kegalle,Galigamuwa,Bisowela,7.3267,80.37588,Approximate DS centre,150,0,150,persons,Open,2025-11-27 16:08:00,0,150
+KEG-SHL-GAL-02,SHL,Galigamuwa Shelter facility 2,Kegalle,Galigamuwa,Bisowela,7.31205,80.3574,Approximate DS centre,180,0,180,persons,Open,2025-11-29 15:54:00,0,180
+KEG-SHL-KEG-01,SHL,Kegalle Shelter facility 1,Kegalle,Kegalle,Golahela,7.24917,80.34862,Approximate DS centre,230,0,230,persons,Open,2025-11-27 16:38:00,172,58
+KEG-SHL-KEG-02,SHL,Kegalle Shelter facility 2,Kegalle,Kegalle,Golahela,7.2421,80.34743,Approximate DS centre,330,0,330,persons,Open,2025-11-28 16:50:00,0,330
+KEG-SHL-MAW-01,SHL,Mawanella Shelter facility 1,Kegalle,Mawanella,Hinguloya,7.2553,80.43866,Approximate DS centre,290,0,234,persons,Partially occupied,2025-11-30 16:17:00,234,0
+KEG-SHL-RAM-01,SHL,Rambukkana Shelter facility 1,Kegalle,Rambukkana,Hurimaluwa,7.15521,80.32326,Approximate DS centre,140,0,140,persons,Open,2025-11-27 15:21:00,0,140
+KEG-SHL-RAM-02,SHL,Rambukkana Shelter facility 2,Kegalle,Rambukkana,Hurimaluwa,7.16319,80.31332,Approximate DS centre,270,0,232,persons,Partially occupied,2025-11-29 15:40:00,128,104
+KEG-SHL-WAR-01,SHL,Warakapola Shelter facility 1,Kegalle,Warakapola,Ganithapura,7.18515,80.19676,Approximate DS centre,260,0,180,persons,Partially occupied,2025-11-30 15:31:00,180,0
+KEG-SHL-WAR-02,SHL,Warakapola Shelter facility 2,Kegalle,Warakapola,Ganithapura,7.18626,80.19929,Approximate DS centre,270,0,40,persons,Partially occupied,2025-11-27 15:04:00,40,0
+KEG-SHL-YAT-01,SHL,Yatiyanthota Shelter facility 1,Kegalle,Yatiyanthota,Mattamagoda,7.08985,80.5191,Approximate DS centre,240,0,240,persons,Open,2025-11-28 15:50:00,81,159
+KEG-SHL-YAT-02,SHL,Yatiyanthota Shelter facility 2,Kegalle,Yatiyanthota,Mattamagoda,7.09128,80.51516,Approximate DS centre,200,0,200,persons,Open,2025-11-29 15:21:00,0,200
+NWE-SHL-AMB-01,SHL,Ambagamuwa Koralaya Shelter facility 1,Nuwara Eliya,Ambagamuwa Koralaya,Watawala,7.00812,80.50476,Approximate DS centre,160,0,160,persons,Open,2025-11-27 15:58:00,0,160
+NWE-SHL-AMB-02,SHL,Ambagamuwa Koralaya Shelter facility 2,Nuwara Eliya,Ambagamuwa Koralaya,Watawala,6.99212,80.49787,Approximate DS centre,300,0,300,persons,Open,2025-11-29 16:58:00,8,292
+NWE-SHL-HAN-01,SHL,Hanguranketha Shelter facility 1,Nuwara Eliya,Hanguranketha,Hope,7.0559,80.7183,Approximate DS centre,240,0,182,persons,Partially occupied,2025-11-28 16:01:00,182,0
+NWE-SHL-KOT-01,SHL,Kothmale West Shelter facility 1,Nuwara Eliya,Kothmale West,Ketabulawa,7.0486,80.55196,Approximate DS centre,260,0,179,persons,Partially occupied,2025-11-28 16:27:00,0,179
+NWE-SHL-KOT-02,SHL,Kothmale West Shelter facility 2,Nuwara Eliya,Kothmale West,Ketabulawa,7.05181,80.55726,Approximate DS centre,190,0,190,persons,Open,2025-11-29 15:25:00,0,190
+NWE-SHL-NUW-01,SHL,Nuwara Eliya Shelter facility 1,Nuwara Eliya,Nuwara Eliya,Park,6.95819,80.79306,Approximate DS centre,300,0,300,persons,Open,2025-11-27 16:48:00,0,300
+NWE-SHL-NUW-02,SHL,Nuwara Eliya Shelter facility 2,Nuwara Eliya,Nuwara Eliya,Park,6.95841,80.79021,Approximate DS centre,230,0,230,persons,Open,2025-11-27 16:09:00,160,70
+NWE-SHL-THA-01,SHL,Thalawakelle Shelter facility 1,Nuwara Eliya,Thalawakelle,Waltrim,6.99046,80.62702,Approximate DS centre,240,0,160,persons,Partially occupied,2025-11-27 16:58:00,80,80
+NWE-SHL-THA-02,SHL,Thalawakelle Shelter facility 2,Nuwara Eliya,Thalawakelle,Waltrim,6.9919,80.62301,Approximate DS centre,250,0,250,persons,Open,2025-11-28 15:21:00,0,250
+NWE-SHL-WAL-02,SHL,Walapane Shelter facility 2,Nuwara Eliya,Walapane,Brookside,7.02679,80.72692,Approximate DS centre,330,0,318,persons,Partially occupied,2025-11-27 16:01:00,318,0
+RAT-SHL-BAL-01,SHL,Balangoda Shelter facility 1,Ratnapura,Balangoda,Thumbagoda,6.66159,80.69973,Approximate DS centre,160,0,160,persons,Open,2025-11-28 16:09:00,0,160
+RAT-SHL-BAL-02,SHL,Balangoda Shelter facility 2,Ratnapura,Balangoda,Thumbagoda,6.66031,80.70837,Approximate DS centre,300,0,300,persons,Open,2025-11-27 16:56:00,0,300
+RAT-SHL-EHE-02,SHL,Eheliyagoda Shelter facility 2,Ratnapura,Eheliyagoda,Meennana,6.84106,80.32313,Approximate DS centre,230,0,89,persons,Partially occupied,2025-11-27 15:45:00,89,0
+RAT-SHL-EMB-01,SHL,Embilipitiya Shelter facility 1,Ratnapura,Embilipitiya,Embilipitiya Pallegama,6.33192,80.87995,Approximate DS centre,290,0,290,persons,Open,2025-11-29 16:52:00,0,290
+RAT-SHL-EMB-02,SHL,Embilipitiya Shelter facility 2,Ratnapura,Embilipitiya,Embilipitiya Pallegama,6.34211,80.88318,Approximate DS centre,240,0,240,persons,Open,2025-11-30 15:53:00,0,240
+RAT-SHL-KUR-01,SHL,Kuruvita Shelter facility 1,Ratnapura,Kuruvita,Kuruvita,6.61175,80.50935,Approximate DS centre,290,0,255,persons,Partially occupied,2025-11-27 15:37:00,35,220
+RAT-SHL-KUR-02,SHL,Kuruvita Shelter facility 2,Ratnapura,Kuruvita,Kuruvita,6.60453,80.50024,Approximate DS centre,260,0,260,persons,Open,2025-11-27 16:22:00,0,260
+RAT-SHL-PEL-01,SHL,Pelmadulla Shelter facility 1,Ratnapura,Pelmadulla,Panawenna,6.5238,80.45709,Approximate DS centre,320,0,320,persons,Open,2025-11-28 15:24:00,0,320
+RAT-SHL-PEL-02,SHL,Pelmadulla Shelter facility 2,Ratnapura,Pelmadulla,Panawenna,6.54272,80.46688,Approximate DS centre,300,0,300,persons,Open,2025-11-30 15:05:00,0,300
+RAT-SHL-RAT-01,SHL,Ratnapura Shelter facility 1,Ratnapura,Ratnapura,New Town,6.68032,80.40072,Approximate DS centre,280,0,280,persons,Open,2025-11-29 16:55:00,56,224
+RAT-SHL-RAT-02,SHL,Ratnapura Shelter facility 2,Ratnapura,Ratnapura,New Town,6.68782,80.39113,Approximate DS centre,170,0,139,persons,Partially occupied,2025-11-28 16:03:00,139,0

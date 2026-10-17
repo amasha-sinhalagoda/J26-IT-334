@@ -1,0 +1,9 @@
+Prototype alert-priority scoring methodology
+One score is computed per unique alert; resource-type request rows inherit that score.
+Severity mapping: Critical=1.00, High=0.75, Medium=0.50, Low=0.25.
+Exposure score = affected_population / maximum affected_population in this alert batch.
+Vulnerability score = (GN population aged 0-14 + aged 65+) / GN total population.
+Priority score = 0.50*severity_score + 0.30*exposure_score + 0.20*vulnerability_score.
+This is a transparent prototype heuristic, not a trained or empirically validated model.
+Alert and resource records come from the supplied project datasets; GN population is provisional census data.
+The exposure score is batch-relative and may change when alerts are added or removed.

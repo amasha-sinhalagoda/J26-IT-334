@@ -274,7 +274,7 @@ def main():
         - demand_vs_supply["requested_quantity"]
     ).clip(lower=0)
     demand_vs_supply["comparison_scope"] = (
-        "Same-district synthetic snapshot; excludes cross-district reassignment and travel"
+        "Same-district inventory snapshot; excludes cross-district reassignment and travel"
     )
     demand_vs_supply = demand_vs_supply.drop(columns=["resource_type"])
 
@@ -288,7 +288,7 @@ def main():
 
     report_lines = [
         "Resource-aware dispatch preprocessing report",
-        "Synthetic inputs: alert requests, resource inventory, and assignments.",
+        "Inputs: project alert requests, resource inventory, and dispatch assignments.",
         "Resource coordinates are approximate DS-centre locations as labeled in source data.",
         "",
     ]
