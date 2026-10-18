@@ -161,6 +161,35 @@ API. The report also shows which hazard polygons, incident records, closures,
 and evacuation origins are actually linked to each scenario; missing links
 are left missing rather than inferred.
 
+### Rescue dispatch routing (Task 1)
+
+With local PostGIS running and edge overlays built, route a specified DDMC
+station or hospital to a linked incident:
+
+```powershell
+py -3.13 scripts/route_rescue_dispatch.py `
+  --facility-id FAC-RTN-D01 `
+  --incident-record-id RTN220012-01
+```
+
+The incident's event determines the scenario. The router builds a directed
+road graph for that scenario, removes all `hard_blocked` edges, and minimizes
+the sum of remaining edge `travel_time` values. OSM one-way direction is
+preserved; parallel edges use the faster available directed edge. Soft risk
+signals do not affect rescue travel-time cost. It returns edge/node IDs,
+network distance and time, endpoint snap distances, and WGS84 GeoJSON. If no
+safe path exists, or if an endpoint is over 1 km from the road-node network,
+the result is explicitly `infeasible`. An incident within 50 m of a
+hard-blocked nearest road edge is also infeasible. The 1 km endpoint limit is
+a prototype guard, and the reported network travel time excludes travel from
+the facility/incident point to the snapped graph node.
+
+The route uses the full event-window scenario status (not live, as-of-time
+conditions). Facility `operational` and `limited` records can be selected;
+their status is returned for dispatchers. For example, save JSON output with
+`--output processed_data/dual_route/routes/rescue.json`. Evacuation routing
+and risk-adjusted shelter selection are a separate next task.
+
 ## Resource allocation input preparation
 
 Run `preprocess_dispatch.py`, then `build_alert_priorities.py`, then

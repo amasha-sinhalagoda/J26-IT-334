@@ -222,6 +222,7 @@ processed_data/dual_route/road_graph/*.graphml
 processed_data/dual_route/road_graph/*.gpkg
 processed_data/dual_route/postgis_load_report.json
 processed_data/dual_route/edge_hazard_status_report.json
+processed_data/dual_route/routes/
 
 # Streamlit
 .streamlit/secrets.toml
