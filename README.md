@@ -227,6 +227,25 @@ reported rather than given an unsafe route. The plan uses the full
 scenario-event-window status, not live as-of-time conditions. Save a result
 with `--output processed_data/dual_route/routes/evacuation.json`.
 
+### Ditwah scenario replay inputs (validation Task 1)
+
+Prepare a provenance-preserving replay bundle from the supplied event-linked
+records:
+
+```powershell
+py -3.13 scripts/prepare_ditwah_replay.py
+```
+
+The bundle is written to
+`processed_data/dual_route/scenarios/ditwah_replay.json`. Only records explicitly
+linked to `EV-NWE-DIT` or `SC-NWE-DIT` are included as event evidence. Nuwara
+Eliya incidents within the seven days before the event are listed separately
+as contextual history, not as confirmed Ditwah failures or road closures.
+The output also carries all linked HR origins and readiness blockers. It does
+not copy footprints from another event, generate synthetic closures, or infer
+affected-person counts. A ready result requires event-linked hazard footprints
+and known origin demand; route evaluation is a separate next task.
+
 ## Resource allocation input preparation
 
 Run `preprocess_dispatch.py`, then `build_alert_priorities.py`, then
