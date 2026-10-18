@@ -53,8 +53,26 @@ provisional. The graph manifest records the PBF SHA-256, library versions,
 CRS, buffer, and edge/node counts. The Geofabrik source extract is excluded
 from Git; its download URL and checksum are documented under
 `Dual route optimization/source_data/`. The large generated GraphML and
-GeoPackage files are also ignored by Git; the graph manifest remains available
-as a small record of the build.
+GeoPackage files are also ignored by Git.
+
+### Crosswalk OSM road references to RDA routes
+
+After building the road graph, run:
+
+```powershell
+py -3.13 scripts/build_rda_crosswalk.py
+```
+
+The script writes `rda_crosswalk.csv`, a review report, and annotated GraphML
+and GeoPackage copies in the road-graph output folder. Direct canonical matches
+preserve the RDA route code, class, subclass, and road name on each edge. Plain
+OSM references such as `A1` are left unmatched when they could refer to more
+than one RDA `AA`/`AB`/`AC` code; candidate codes are listed for manual review.
+References with no unambiguous code match are also retained and marked, never
+silently assigned to a nearby RDA route.
+
+RDA route class/subclass is road-priority metadata only. It must not be used
+as hazard evidence or override a hard-blocked edge.
 
 ## Resource allocation input preparation
 
