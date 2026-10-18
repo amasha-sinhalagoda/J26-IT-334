@@ -1,1 +1,20 @@
 
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS files
+.DS_Store
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Temporary files
+*.tmp
+git status --short
