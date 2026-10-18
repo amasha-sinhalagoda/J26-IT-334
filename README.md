@@ -116,6 +116,51 @@ This step only stores prepared inputs; it does not match hazards or closures
 to road edges, calculate edge status, or create routes. Those are subsequent
 implementation steps.
 
+### Match hazards and closures to road edges
+
+With local PostGIS running, build the edge overlays:
+
+```powershell
+py -3.13 scripts/build_edge_hazard_status.py
+```
+
+The builder writes auditable spatial-match tables and the
+`dual_route.edge_scenario_status` view:
+
+- `edge_hazard_matches`: exact edge intersections with flood and landslide
+  polygons, retaining event, scenario, validity, and provenance fields.
+- `edge_closure_matches`: exact edge intersections with road/bridge closure
+  geometries, retaining closed, restricted, and reopened observations.
+- `closure_nearest_edge`: nearest-edge diagnostics for every closure geometry.
+  Unmatched closures are not silently snapped or used to block a route; the
+  nearest edge and distance are provided for review.
+- `edge_lhmp_matches`: edge intersections with LHMP polygons. Only classes 3
+  and 4 are eligible for the high-hazard soft-penalty signal; source class 100
+  remains unchanged and is not treated as class 3 or 4.
+- `incident_edge_matches`: every incident snapped to its nearest directed
+  edge, with distance recorded and a 50 m eligibility flag. Only records whose
+  nearest-edge distance is at most 50 m contribute to the incident signal.
+- `edge_static_risk`: per-edge high-LHMP overlap and incident counts/density.
+- `edge_scenario_status`: an explicit row per directed edge and scenario.
+  Flood/landslide intersections and active `closed` closures are hard blocks;
+  high LHMP overlap and nearby incidents are soft signals. Active `restricted`
+  closures are exposed separately and also receive the soft tier. RDA fields
+  remain metadata and do not affect hazard classification.
+
+“Active” here means the observation window overlaps any part of the scenario
+event window. The view is therefore conservative for a scenario, not an
+as-of-time operational closure service. Closures are hard-block evidence only
+when their line geometry intersects a directed road edge; nearby unmatched
+closures are reported as candidates but require review. The supplied
+closure/hazard data also retain their declared provenance and are not
+represented as independently verified real-world closures. Use `--replace` to
+rebuild existing overlays. The build writes match counts and per-scenario tier counts to
+`processed_data/dual_route/edge_hazard_status_report.json`. This step does not
+implement route selection, risk weights, dispatch/evacuation routers, or an
+API. The report also shows which hazard polygons, incident records, closures,
+and evacuation origins are actually linked to each scenario; missing links
+are left missing rather than inferred.
+
 ## Resource allocation input preparation
 
 Run `preprocess_dispatch.py`, then `build_alert_priorities.py`, then
