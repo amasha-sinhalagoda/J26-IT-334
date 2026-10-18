@@ -187,8 +187,45 @@ the facility/incident point to the snapped graph node.
 The route uses the full event-window scenario status (not live, as-of-time
 conditions). Facility `operational` and `limited` records can be selected;
 their status is returned for dispatchers. For example, save JSON output with
-`--output processed_data/dual_route/routes/rescue.json`. Evacuation routing
-and risk-adjusted shelter selection are a separate next task.
+`--output processed_data/dual_route/routes/rescue.json`.
+
+### Capacity-aware evacuation routing (Task 2)
+
+With local PostGIS running and edge overlays built, plan all evacuation
+origins in a scenario:
+
+```powershell
+py -3.13 scripts/route_evacuation.py --scenario-id SC-RTN-F1
+```
+
+The planner removes hard-blocked roads, preserves one-way edge direction, and
+computes routes to open shelters with positive `available_capacity`. It
+minimizes total assigned person-cost while maximizing the number of known
+people served, using a capacity-constrained min-cost flow assignment; an
+origin may be split across shelters when that is needed to fit capacity. Each
+assignment includes edge/node IDs, route GeoJSON, unweighted travel time,
+distance, shelter, allocated people, and generalized route cost. Shelter
+capacity is read but never modified; this is a plan preview, not a reservation.
+SciPy sparse directed shortest paths are used to reuse each origin's route
+search across all candidate shelters.
+
+The per-edge risk score is an explicitly uncalibrated prototype value in
+`[0,1]`: the maximum of normalized LHMP risk (class 3 = 0.75, class 4 = 1),
+normalized historical incident density
+(`min(incidents within 50 m per km / 5, 1)`), and restricted-closure risk
+(0.5). Edge cost is `travel_time_seconds * (1 + risk_score)`. This maximum
+combination avoids summing correlated signals. Class 100 and other LHMP
+classes are not treated as class 3 or 4. Hard-block evidence is never
+overridden by soft risk.
+
+Origins whose `affected_people` is missing are left explicitly infeasible;
+the planner does not guess people counts from `at_risk_units` or the number
+of origin rows. This affects all 507 Nuwara Eliya Ditwah origins in the
+current input. Endpoint snaps over 1 km, origins next to a hard-blocked
+nearest edge, unreachable origins, and inadequate reachable capacity are
+reported rather than given an unsafe route. The plan uses the full
+scenario-event-window status, not live as-of-time conditions. Save a result
+with `--output processed_data/dual_route/routes/evacuation.json`.
 
 ## Resource allocation input preparation
 
