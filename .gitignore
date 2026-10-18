@@ -217,5 +217,9 @@ __marimo__/
 # Large, reproducible OpenStreetMap source extract
 Dual route optimization/source_data/*.osm.pbf
 
+# Reproducible, large road graph exports
+processed_data/dual_route/road_graph/*.graphml
+processed_data/dual_route/road_graph/*.gpkg
+
 # Streamlit
 .streamlit/secrets.toml

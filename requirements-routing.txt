@@ -1,0 +1,3 @@
+# Install with: py -3.13 -m pip install -r requirements-routing.txt
+osmnx==2.1.1
+pyrosm==0.22.0

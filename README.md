@@ -27,6 +27,35 @@ This is a tabular validation/export step, not geometric topology validation or
 PostGIS loading. Road-graph clipping, edge matching, and PostGIS ingestion
 remain subsequent routing implementation steps.
 
+### Build the five-district OSM road graph
+
+Use Python 3.10 or newer, install the routing dependencies, then build from the
+dated local Geofabrik extract:
+
+```powershell
+py -3.13 -m pip install -r requirements-routing.txt
+py -3.13 scripts/build_road_graph.py
+```
+
+The builder writes a directed OSMnx GraphML graph and a GeoPackage containing
+road edges, nodes, and the five district boundaries under
+`processed_data/dual_route/road_graph/`. The graph is projected to EPSG:5234
+and includes a 1 km buffer around target districts to retain nearby connector
+roads. Each directed edge has a deterministic ID derived from its OSM nodes,
+edge key, and OSM way ID(s). Graph direction encodes OSM one-way restrictions;
+the `oneway` field is normalized to Boolean for GraphML compatibility, while
+`oneway_osm` preserves the raw tag.
+
+OSM maxspeed tags are used when available. Edges without a usable tag use
+explicit prototype speeds by highway class in `scripts/build_road_graph.py`;
+these are not calibrated Sri Lankan travel speeds, so travel-time outputs are
+provisional. The graph manifest records the PBF SHA-256, library versions,
+CRS, buffer, and edge/node counts. The Geofabrik source extract is excluded
+from Git; its download URL and checksum are documented under
+`Dual route optimization/source_data/`. The large generated GraphML and
+GeoPackage files are also ignored by Git; the graph manifest remains available
+as a small record of the build.
+
 ## Resource allocation input preparation
 
 Run `preprocess_dispatch.py`, then `build_alert_priorities.py`, then
