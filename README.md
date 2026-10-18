@@ -23,9 +23,8 @@ Eliya NBRI LHMP shapefile bundle to
 geoBoundaries source details are recorded in
 `Dual route optimization/source_data/README.md`.
 
-This is a tabular validation/export step, not geometric topology validation or
-PostGIS loading. Road-graph clipping, edge matching, and PostGIS ingestion
-remain subsequent routing implementation steps.
+This is a tabular validation/export step, not geometric topology validation.
+PostGIS loading and spatial edge matching are subsequent routing steps.
 
 ### Build the five-district OSM road graph
 
@@ -73,6 +72,49 @@ silently assigned to a nearby RDA route.
 
 RDA route class/subclass is road-priority metadata only. It must not be used
 as hazard evidence or override a hard-blocked edge.
+
+### Load the graph and routing inputs into local PostGIS
+
+The local PostGIS scripts expect portable PostgreSQL 17 and PostGIS 3.6
+archives to be extracted under `%LOCALAPPDATA%\J26-IT-334\` as
+`postgresql17\pgsql` and `postgis-stage\postgis-bundle-pg17-3.6.2x64`.
+They initialize a user-owned cluster (no Windows service or administrator
+rights), listening only on loopback port `55432`. Its `trust` authentication
+is for local development only; do not expose this database to a network.
+
+Run these commands once in PowerShell to initialize and start the local
+database, then create the database:
+
+```powershell
+py -3.13 -m pip install -r requirements-routing.txt
+.\scripts\setup_local_postgis.ps1
+.\scripts\start_local_postgis.ps1
+$psql = Join-Path $env:LOCALAPPDATA 'J26-IT-334\postgresql17\pgsql\bin\psql.exe'
+& $psql -h 127.0.0.1 -p 55432 -U dual_route -d postgres -c 'CREATE DATABASE dual_route;'
+```
+
+Load the prepared inputs and stop the local server when finished:
+
+```powershell
+py -3.13 scripts/load_routing_data_postgis.py
+.\scripts\stop_local_postgis.ps1
+```
+
+The loader stages and validates a complete schema before publishing it as
+`dual_route`; repeat an existing load with
+`py -3.13 scripts/load_routing_data_postgis.py --replace`. It creates
+`postgis` and loads road edges/nodes, district boundaries, the RDA crosswalk,
+and all eight prepared routing tables. Point data are transformed from WGS84
+to EPSG:5234. The four-district workbook LHMP zones are combined with the
+Nuwara Eliya shapefile, preserving source/provenance fields and its original
+`Range` value (including class 100, which is not reinterpreted). Spatial
+tables receive GiST indexes and all tables receive primary keys. A row-count,
+PostGIS-version, and SRID report is written to
+`processed_data/dual_route/postgis_load_report.json`.
+
+This step only stores prepared inputs; it does not match hazards or closures
+to road edges, calculate edge status, or create routes. Those are subsequent
+implementation steps.
 
 ## Resource allocation input preparation
 

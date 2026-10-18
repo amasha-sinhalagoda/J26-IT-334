@@ -220,6 +220,7 @@ Dual route optimization/source_data/*.osm.pbf
 # Reproducible, large road graph exports
 processed_data/dual_route/road_graph/*.graphml
 processed_data/dual_route/road_graph/*.gpkg
+processed_data/dual_route/postgis_load_report.json
 
 # Streamlit
 .streamlit/secrets.toml
