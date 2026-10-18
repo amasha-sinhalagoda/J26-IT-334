@@ -1,131 +1,131 @@
-shelter_id,district,name,latitude,longitude,total_capacity,available_capacity,operational_status,source_type,is_synthetic
-SH-RTN-001,Ratnapura,Ratnapura Maha Vidyalaya,6.641996,80.379766,400,289,open,synthetic,True
-SH-RTN-002,Ratnapura,Kuruwita Public Library Hall,6.761907,80.330708,250,137,open,synthetic,True
-SH-RTN-003,Ratnapura,Eheliyagoda Public Library Hall,6.811402,80.304701,400,214,open,synthetic,True
-SH-RTN-004,Ratnapura,Pelmadulla Divisional Secretariat Hall,6.6155,80.522793,400,208,open,synthetic,True
-SH-RTN-005,Ratnapura,Balangoda Rajamaha Viharaya,6.566546,80.721519,200,0,full,synthetic,True
-SH-RTN-006,Ratnapura,Kahawatta Maha Vidyalaya,6.612527,80.342029,800,276,open,synthetic,True
-SH-RTN-007,Ratnapura,Godakawela Pradeshiya Sabha Hall,6.551449,80.656378,400,220,open,synthetic,True
-SH-RTN-008,Ratnapura,Embilipitiya Estate Welfare Centre,6.315326,80.81703,800,609,open,synthetic,True
-SH-RTN-009,Ratnapura,Ratnapura Maha Vidyalaya,6.642084,80.386159,800,656,open,synthetic,True
-SH-RTN-010,Ratnapura,Kuruwita Maha Vidyalaya,6.832514,80.378887,80,0,full,synthetic,True
-SH-RTN-011,Ratnapura,Eheliyagoda Estate Welfare Centre,6.816249,80.27837,500,0,closed,synthetic,True
-SH-RTN-012,Ratnapura,Pelmadulla Maha Vidyalaya,6.603513,80.507761,300,0,closed,synthetic,True
-SH-RTN-013,Ratnapura,Balangoda Central College,6.661881,80.696909,200,0,full,synthetic,True
-SH-RTN-014,Ratnapura,Kahawatta Divisional Secretariat Hall,6.645635,80.359079,250,0,closed,synthetic,True
-SH-RTN-015,Ratnapura,Godakawela Community Hall,6.549772,80.639641,250,238,open,synthetic,True
-SH-RTN-016,Ratnapura,Embilipitiya Estate Welfare Centre,6.342871,80.826349,650,0,closed,synthetic,True
-SH-RTN-017,Ratnapura,Ratnapura Pradeshiya Sabha Hall,6.667664,80.403088,400,241,open,synthetic,True
-SH-RTN-018,Ratnapura,Kuruwita Public Library Hall,6.790084,80.374491,300,155,open,synthetic,True
-SH-RTN-019,Ratnapura,Eheliyagoda Public Library Hall,6.838776,80.304229,250,206,open,synthetic,True
-SH-RTN-020,Ratnapura,Pelmadulla Kovil Hall,6.55816,80.552001,250,232,open,synthetic,True
-SH-RTN-021,Ratnapura,Balangoda Rajamaha Viharaya,6.692911,80.671935,200,0,closed,synthetic,True
-SH-RTN-022,Ratnapura,Kahawatta Rajamaha Viharaya,6.616694,80.415799,200,126,open,synthetic,True
-SH-RTN-023,Ratnapura,Godakawela Kovil Hall,6.488616,80.623364,200,105,open,synthetic,True
-SH-RTN-024,Ratnapura,Embilipitiya Central College,6.362837,80.836159,500,0,closed,synthetic,True
-SH-RTN-025,Ratnapura,Ratnapura Estate Welfare Centre,6.698573,80.465544,80,49,open,synthetic,True
-SH-RTN-026,Ratnapura,Kuruwita Central College,6.820212,80.389582,200,118,open,synthetic,True
-SH-KEG-001,Kegalle,Kegalle Rajamaha Viharaya,7.227278,80.428237,800,574,open,synthetic,True
-SH-KEG-002,Kegalle,Mawanella Community Hall,7.252293,80.441664,80,55,open,synthetic,True
-SH-KEG-003,Kegalle,Rambukkana Maha Vidyalaya,7.31224,80.410143,200,0,full,synthetic,True
-SH-KEG-004,Kegalle,Aranayake Maha Vidyalaya,7.211074,80.445348,200,195,open,synthetic,True
-SH-KEG-005,Kegalle,Bulathkohupitiya Central College,7.18846,80.196697,250,225,open,synthetic,True
-SH-KEG-006,Kegalle,Warakapola Estate Welfare Centre,7.194383,80.233104,300,225,open,synthetic,True
-SH-KEG-007,Kegalle,Galigamuwa Divisional Secretariat Hall,7.069956,80.272743,650,0,full,synthetic,True
-SH-KEG-008,Kegalle,Ruwanwella Rajamaha Viharaya,7.05178,80.317696,200,96,open,synthetic,True
-SH-KEG-009,Kegalle,Kegalle Estate Welfare Centre,7.292621,80.371937,650,209,open,synthetic,True
-SH-KEG-010,Kegalle,Mawanella Central College,7.233516,80.391373,400,0,full,synthetic,True
-SH-KEG-011,Kegalle,Rambukkana Community Hall,7.304555,80.381988,800,468,open,synthetic,True
-SH-KEG-012,Kegalle,Aranayake Pradeshiya Sabha Hall,7.184056,80.434184,500,377,open,synthetic,True
-SH-KEG-013,Kegalle,Bulathkohupitiya Kovil Hall,7.165986,80.245292,800,0,closed,synthetic,True
-SH-KEG-014,Kegalle,Warakapola Rajamaha Viharaya,7.145051,80.206685,400,350,open,synthetic,True
-SH-KEG-015,Kegalle,Galigamuwa Estate Welfare Centre,7.068453,80.238264,120,57,open,synthetic,True
-SH-KEG-016,Kegalle,Ruwanwella Estate Welfare Centre,7.025016,80.222126,400,151,open,synthetic,True
-SH-KEG-017,Kegalle,Kegalle Rajamaha Viharaya,7.289829,80.385381,400,219,open,synthetic,True
-SH-KEG-018,Kegalle,Mawanella Rajamaha Viharaya,7.251939,80.481283,80,67,open,synthetic,True
-SH-KEG-019,Kegalle,Rambukkana Central College,7.2706,80.373245,400,0,closed,synthetic,True
-SH-KEG-020,Kegalle,Aranayake Divisional Secretariat Hall,7.184076,80.512342,400,183,open,synthetic,True
-SH-KEG-021,Kegalle,Bulathkohupitiya Divisional Secretariat Hall,7.15549,80.264091,120,43,open,synthetic,True
-SH-KEG-022,Kegalle,Warakapola Maha Vidyalaya,7.247719,80.2006,800,740,open,synthetic,True
-SH-KEG-023,Kegalle,Galigamuwa Maha Vidyalaya,7.119696,80.277948,650,465,open,synthetic,True
-SH-KEG-024,Kegalle,Ruwanwella Rajamaha Viharaya,7.048714,80.285766,500,302,open,synthetic,True
-SH-KEG-025,Kegalle,Kegalle Maha Vidyalaya,7.244554,80.370478,80,27,open,synthetic,True
-SH-KEG-026,Kegalle,Mawanella Maha Vidyalaya,7.271201,80.440824,300,0,full,synthetic,True
-SH-KLT-001,Kalutara,Kalutara Kovil Hall,6.538904,79.922689,250,190,open,synthetic,True
-SH-KLT-002,Kalutara,Horana Divisional Secretariat Hall,6.792236,80.057959,800,798,open,synthetic,True
-SH-KLT-003,Kalutara,Ingiriya Rajamaha Viharaya,6.802912,80.065833,150,74,open,synthetic,True
-SH-KLT-004,Kalutara,Matugama Pradeshiya Sabha Hall,6.561064,80.114349,80,64,open,synthetic,True
-SH-KLT-005,Kalutara,Agalawatta Kovil Hall,6.518314,80.160686,200,176,open,synthetic,True
-SH-KLT-006,Kalutara,Bulathsinhala Divisional Secretariat Hall,6.67937,80.176744,400,0,closed,synthetic,True
-SH-KLT-007,Kalutara,Millaniya Rajamaha Viharaya,6.617414,80.026836,650,209,open,synthetic,True
-SH-KLT-008,Kalutara,Panadura Pradeshiya Sabha Hall,6.711831,79.899216,500,164,open,synthetic,True
-SH-KLT-009,Kalutara,Kalutara Community Hall,6.580377,80.011978,400,206,open,synthetic,True
-SH-KLT-010,Kalutara,Horana Central College,6.706977,80.05221,400,302,open,synthetic,True
-SH-KLT-011,Kalutara,Ingiriya Community Hall,6.726311,80.139279,800,0,full,synthetic,True
-SH-KLT-012,Kalutara,Matugama Public Library Hall,6.528773,80.123128,120,49,open,synthetic,True
-SH-KLT-013,Kalutara,Agalawatta Public Library Hall,6.562406,80.194558,300,104,open,synthetic,True
-SH-KLT-014,Kalutara,Bulathsinhala Estate Welfare Centre,6.652905,80.1788,800,489,open,synthetic,True
-SH-KLT-015,Kalutara,Millaniya Rajamaha Viharaya,6.638778,80.069006,400,344,open,synthetic,True
-SH-KLT-016,Kalutara,Panadura Rajamaha Viharaya,6.699722,79.963091,200,97,open,synthetic,True
-SH-KLT-017,Kalutara,Kalutara Maha Vidyalaya,6.615979,79.989631,500,0,full,synthetic,True
-SH-KLT-018,Kalutara,Horana Estate Welfare Centre,6.76518,80.083911,120,88,open,synthetic,True
-SH-KLT-019,Kalutara,Ingiriya Pradeshiya Sabha Hall,6.710746,80.17674,80,79,open,synthetic,True
-SH-KLT-020,Kalutara,Matugama Divisional Secretariat Hall,6.518057,80.094682,150,0,full,synthetic,True
-SH-KLT-021,Kalutara,Agalawatta Pradeshiya Sabha Hall,6.544236,80.161916,300,115,open,synthetic,True
-SH-KLT-022,Kalutara,Bulathsinhala Estate Welfare Centre,6.72389,80.135544,80,0,closed,synthetic,True
-SH-KLT-023,Kalutara,Millaniya Divisional Secretariat Hall,6.686136,80.093473,650,506,open,synthetic,True
-SH-KLT-024,Kalutara,Panadura Kovil Hall,6.721906,79.878931,250,118,open,synthetic,True
-SH-KLT-025,Kalutara,Kalutara Divisional Secretariat Hall,6.662545,79.94599,150,0,closed,synthetic,True
-SH-KLT-026,Kalutara,Horana Kovil Hall,6.719269,80.095042,120,75,open,synthetic,True
-SH-BDL-001,Badulla,Badulla Pradeshiya Sabha Hall,6.945319,81.049638,650,542,open,synthetic,True
-SH-BDL-002,Badulla,Bandarawela Divisional Secretariat Hall,6.794918,81.007375,650,0,full,synthetic,True
-SH-BDL-003,Badulla,Haputale Public Library Hall,6.741671,80.952709,650,255,open,synthetic,True
-SH-BDL-004,Badulla,Mahiyangana Central College,7.354656,80.949439,300,0,full,synthetic,True
-SH-BDL-005,Badulla,Passara Estate Welfare Centre,7.027774,81.155756,650,453,open,synthetic,True
-SH-BDL-006,Badulla,Welimada Kovil Hall,6.935944,80.866383,250,204,open,synthetic,True
-SH-BDL-007,Badulla,Ella Community Hall,6.871065,81.04072,500,238,open,synthetic,True
-SH-BDL-008,Badulla,Hali Ela Pradeshiya Sabha Hall,6.950602,80.998874,80,46,open,synthetic,True
-SH-BDL-009,Badulla,Badulla Kovil Hall,7.025359,80.964887,200,100,open,synthetic,True
-SH-BDL-010,Badulla,Bandarawela Estate Welfare Centre,6.823882,80.94756,650,472,open,synthetic,True
-SH-BDL-011,Badulla,Haputale Central College,6.766702,80.985573,650,631,open,synthetic,True
-SH-BDL-012,Badulla,Mahiyangana Rajamaha Viharaya,7.327527,80.918116,500,209,open,synthetic,True
-SH-BDL-013,Badulla,Passara Community Hall,6.856102,81.162328,200,127,open,synthetic,True
-SH-BDL-014,Badulla,Welimada Divisional Secretariat Hall,6.943576,80.915242,80,0,full,synthetic,True
-SH-BDL-015,Badulla,Ella Estate Welfare Centre,6.852074,81.078116,400,228,open,synthetic,True
-SH-BDL-016,Badulla,Hali Ela Rajamaha Viharaya,6.996586,81.051887,300,0,full,synthetic,True
-SH-BDL-017,Badulla,Badulla Pradeshiya Sabha Hall,7.051409,81.039507,800,689,open,synthetic,True
-SH-BDL-018,Badulla,Bandarawela Estate Welfare Centre,6.875465,81.030032,800,526,open,synthetic,True
-SH-BDL-019,Badulla,Haputale Divisional Secretariat Hall,6.748315,80.92294,200,102,open,synthetic,True
-SH-BDL-020,Badulla,Mahiyangana Rajamaha Viharaya,7.293764,80.998516,80,0,full,synthetic,True
-SH-BDL-021,Badulla,Passara Rajamaha Viharaya,6.88287,81.117192,120,0,full,synthetic,True
-SH-BDL-022,Badulla,Welimada Kovil Hall,6.853346,80.897091,200,133,open,synthetic,True
-SH-BDL-023,Badulla,Ella Pradeshiya Sabha Hall,6.822673,81.08476,300,0,closed,synthetic,True
-SH-BDL-024,Badulla,Hali Ela Divisional Secretariat Hall,6.984404,81.034398,80,0,full,synthetic,True
-SH-BDL-025,Badulla,Badulla Public Library Hall,6.936227,81.011618,500,318,open,synthetic,True
-SH-BDL-026,Badulla,Bandarawela Central College,6.843105,81.009585,650,391,open,synthetic,True
-SH-NWE-001,Nuwara Eliya,Nuwara Eliya Estate Welfare Centre,6.939939,80.748459,650,0,closed,synthetic,True
-SH-NWE-002,Nuwara Eliya,Hatton Pradeshiya Sabha Hall,6.945132,80.679409,800,528,open,synthetic,True
-SH-NWE-003,Nuwara Eliya,Kotmale Community Hall,7.020123,80.56479,650,419,open,synthetic,True
-SH-NWE-004,Nuwara Eliya,Walapane Estate Welfare Centre,7.014637,80.82636,500,0,closed,synthetic,True
-SH-NWE-005,Nuwara Eliya,Hanguranketha Estate Welfare Centre,7.106859,80.725561,500,267,open,synthetic,True
-SH-NWE-006,Nuwara Eliya,Ragala Pradeshiya Sabha Hall,6.987733,80.727446,120,0,closed,synthetic,True
-SH-NWE-007,Nuwara Eliya,Talawakele Divisional Secretariat Hall,6.968807,80.608288,200,196,open,synthetic,True
-SH-NWE-008,Nuwara Eliya,Maskeliya Kovil Hall,6.751114,80.573037,650,485,open,synthetic,True
-SH-NWE-009,Nuwara Eliya,Nuwara Eliya Public Library Hall,6.979302,80.729306,300,105,open,synthetic,True
-SH-NWE-010,Nuwara Eliya,Hatton Divisional Secretariat Hall,6.867041,80.531299,800,535,open,synthetic,True
-SH-NWE-011,Nuwara Eliya,Kotmale Public Library Hall,7.063372,80.677535,300,289,open,synthetic,True
-SH-NWE-012,Nuwara Eliya,Walapane Estate Welfare Centre,7.092847,80.799755,80,57,open,synthetic,True
-SH-NWE-013,Nuwara Eliya,Hanguranketha Pradeshiya Sabha Hall,7.20872,80.767916,200,153,open,synthetic,True
-SH-NWE-014,Nuwara Eliya,Ragala Divisional Secretariat Hall,7.028819,80.693777,400,364,open,synthetic,True
-SH-NWE-015,Nuwara Eliya,Talawakele Pradeshiya Sabha Hall,6.947542,80.706432,300,190,open,synthetic,True
-SH-NWE-016,Nuwara Eliya,Maskeliya Public Library Hall,6.91078,80.540309,800,741,open,synthetic,True
-SH-NWE-017,Nuwara Eliya,Nuwara Eliya Divisional Secretariat Hall,6.919751,80.793915,300,110,open,synthetic,True
-SH-NWE-018,Nuwara Eliya,Hatton Maha Vidyalaya,6.94721,80.603849,120,94,open,synthetic,True
-SH-NWE-019,Nuwara Eliya,Kotmale Maha Vidyalaya,7.008233,80.601261,80,0,closed,synthetic,True
-SH-NWE-020,Nuwara Eliya,Walapane Rajamaha Viharaya,7.059465,80.892702,120,107,open,synthetic,True
-SH-NWE-021,Nuwara Eliya,Hanguranketha Estate Welfare Centre,7.12741,80.809812,500,0,closed,synthetic,True
-SH-NWE-022,Nuwara Eliya,Ragala Community Hall,7.028856,80.691959,650,419,open,synthetic,True
-SH-NWE-023,Nuwara Eliya,Talawakele Pradeshiya Sabha Hall,7.001138,80.61301,500,271,open,synthetic,True
-SH-NWE-024,Nuwara Eliya,Maskeliya Rajamaha Viharaya,6.805978,80.513051,80,56,open,synthetic,True
-SH-NWE-025,Nuwara Eliya,Nuwara Eliya Estate Welfare Centre,6.960192,80.700967,800,502,open,synthetic,True
-SH-NWE-026,Nuwara Eliya,Hatton Pradeshiya Sabha Hall,6.884242,80.633922,80,27,open,synthetic,True
+shelter_id,district,name,latitude,longitude,total_capacity,available_capacity,operational_status,source_type,is_synthetic,accepted_for_prototype
+SH-RTN-001,Ratnapura,Ratnapura Maha Vidyalaya,6.641996,80.379766,400,289,open,synthetic,True,True
+SH-RTN-002,Ratnapura,Kuruwita Public Library Hall,6.761907,80.330708,250,137,open,synthetic,True,True
+SH-RTN-003,Ratnapura,Eheliyagoda Public Library Hall,6.811402,80.304701,400,214,open,synthetic,True,True
+SH-RTN-004,Ratnapura,Pelmadulla Divisional Secretariat Hall,6.6155,80.522793,400,208,open,synthetic,True,True
+SH-RTN-005,Ratnapura,Balangoda Rajamaha Viharaya,6.566546,80.721519,200,0,full,synthetic,True,True
+SH-RTN-006,Ratnapura,Kahawatta Maha Vidyalaya,6.612527,80.342029,800,276,open,synthetic,True,True
+SH-RTN-007,Ratnapura,Godakawela Pradeshiya Sabha Hall,6.551449,80.656378,400,220,open,synthetic,True,True
+SH-RTN-008,Ratnapura,Embilipitiya Estate Welfare Centre,6.315326,80.81703,800,609,open,synthetic,True,True
+SH-RTN-009,Ratnapura,Ratnapura Maha Vidyalaya,6.642084,80.386159,800,656,open,synthetic,True,True
+SH-RTN-010,Ratnapura,Kuruwita Maha Vidyalaya,6.832514,80.378887,80,0,full,synthetic,True,True
+SH-RTN-011,Ratnapura,Eheliyagoda Estate Welfare Centre,6.816249,80.27837,500,0,closed,synthetic,True,True
+SH-RTN-012,Ratnapura,Pelmadulla Maha Vidyalaya,6.603513,80.507761,300,0,closed,synthetic,True,True
+SH-RTN-013,Ratnapura,Balangoda Central College,6.661881,80.696909,200,0,full,synthetic,True,True
+SH-RTN-014,Ratnapura,Kahawatta Divisional Secretariat Hall,6.645635,80.359079,250,0,closed,synthetic,True,True
+SH-RTN-015,Ratnapura,Godakawela Community Hall,6.549772,80.639641,250,238,open,synthetic,True,True
+SH-RTN-016,Ratnapura,Embilipitiya Estate Welfare Centre,6.342871,80.826349,650,0,closed,synthetic,True,True
+SH-RTN-017,Ratnapura,Ratnapura Pradeshiya Sabha Hall,6.667664,80.403088,400,241,open,synthetic,True,True
+SH-RTN-018,Ratnapura,Kuruwita Public Library Hall,6.790084,80.374491,300,155,open,synthetic,True,True
+SH-RTN-019,Ratnapura,Eheliyagoda Public Library Hall,6.838776,80.304229,250,206,open,synthetic,True,True
+SH-RTN-020,Ratnapura,Pelmadulla Kovil Hall,6.55816,80.552001,250,232,open,synthetic,True,True
+SH-RTN-021,Ratnapura,Balangoda Rajamaha Viharaya,6.692911,80.671935,200,0,closed,synthetic,True,True
+SH-RTN-022,Ratnapura,Kahawatta Rajamaha Viharaya,6.616694,80.415799,200,126,open,synthetic,True,True
+SH-RTN-023,Ratnapura,Godakawela Kovil Hall,6.488616,80.623364,200,105,open,synthetic,True,True
+SH-RTN-024,Ratnapura,Embilipitiya Central College,6.362837,80.836159,500,0,closed,synthetic,True,True
+SH-RTN-025,Ratnapura,Ratnapura Estate Welfare Centre,6.698573,80.465544,80,49,open,synthetic,True,True
+SH-RTN-026,Ratnapura,Kuruwita Central College,6.820212,80.389582,200,118,open,synthetic,True,True
+SH-KEG-001,Kegalle,Kegalle Rajamaha Viharaya,7.227278,80.428237,800,574,open,synthetic,True,True
+SH-KEG-002,Kegalle,Mawanella Community Hall,7.252293,80.441664,80,55,open,synthetic,True,True
+SH-KEG-003,Kegalle,Rambukkana Maha Vidyalaya,7.31224,80.410143,200,0,full,synthetic,True,True
+SH-KEG-004,Kegalle,Aranayake Maha Vidyalaya,7.211074,80.445348,200,195,open,synthetic,True,True
+SH-KEG-005,Kegalle,Bulathkohupitiya Central College,7.18846,80.196697,250,225,open,synthetic,True,True
+SH-KEG-006,Kegalle,Warakapola Estate Welfare Centre,7.194383,80.233104,300,225,open,synthetic,True,True
+SH-KEG-007,Kegalle,Galigamuwa Divisional Secretariat Hall,7.069956,80.272743,650,0,full,synthetic,True,True
+SH-KEG-008,Kegalle,Ruwanwella Rajamaha Viharaya,7.05178,80.317696,200,96,open,synthetic,True,True
+SH-KEG-009,Kegalle,Kegalle Estate Welfare Centre,7.292621,80.371937,650,209,open,synthetic,True,True
+SH-KEG-010,Kegalle,Mawanella Central College,7.233516,80.391373,400,0,full,synthetic,True,True
+SH-KEG-011,Kegalle,Rambukkana Community Hall,7.304555,80.381988,800,468,open,synthetic,True,True
+SH-KEG-012,Kegalle,Aranayake Pradeshiya Sabha Hall,7.184056,80.434184,500,377,open,synthetic,True,True
+SH-KEG-013,Kegalle,Bulathkohupitiya Kovil Hall,7.165986,80.245292,800,0,closed,synthetic,True,True
+SH-KEG-014,Kegalle,Warakapola Rajamaha Viharaya,7.145051,80.206685,400,350,open,synthetic,True,True
+SH-KEG-015,Kegalle,Galigamuwa Estate Welfare Centre,7.068453,80.238264,120,57,open,synthetic,True,True
+SH-KEG-016,Kegalle,Ruwanwella Estate Welfare Centre,7.025016,80.222126,400,151,open,synthetic,True,True
+SH-KEG-017,Kegalle,Kegalle Rajamaha Viharaya,7.289829,80.385381,400,219,open,synthetic,True,True
+SH-KEG-018,Kegalle,Mawanella Rajamaha Viharaya,7.251939,80.481283,80,67,open,synthetic,True,True
+SH-KEG-019,Kegalle,Rambukkana Central College,7.2706,80.373245,400,0,closed,synthetic,True,True
+SH-KEG-020,Kegalle,Aranayake Divisional Secretariat Hall,7.184076,80.512342,400,183,open,synthetic,True,True
+SH-KEG-021,Kegalle,Bulathkohupitiya Divisional Secretariat Hall,7.15549,80.264091,120,43,open,synthetic,True,True
+SH-KEG-022,Kegalle,Warakapola Maha Vidyalaya,7.247719,80.2006,800,740,open,synthetic,True,True
+SH-KEG-023,Kegalle,Galigamuwa Maha Vidyalaya,7.119696,80.277948,650,465,open,synthetic,True,True
+SH-KEG-024,Kegalle,Ruwanwella Rajamaha Viharaya,7.048714,80.285766,500,302,open,synthetic,True,True
+SH-KEG-025,Kegalle,Kegalle Maha Vidyalaya,7.244554,80.370478,80,27,open,synthetic,True,True
+SH-KEG-026,Kegalle,Mawanella Maha Vidyalaya,7.271201,80.440824,300,0,full,synthetic,True,True
+SH-KLT-001,Kalutara,Kalutara Kovil Hall,6.538904,79.922689,250,190,open,synthetic,True,True
+SH-KLT-002,Kalutara,Horana Divisional Secretariat Hall,6.792236,80.057959,800,798,open,synthetic,True,True
+SH-KLT-003,Kalutara,Ingiriya Rajamaha Viharaya,6.802912,80.065833,150,74,open,synthetic,True,True
+SH-KLT-004,Kalutara,Matugama Pradeshiya Sabha Hall,6.561064,80.114349,80,64,open,synthetic,True,True
+SH-KLT-005,Kalutara,Agalawatta Kovil Hall,6.518314,80.160686,200,176,open,synthetic,True,True
+SH-KLT-006,Kalutara,Bulathsinhala Divisional Secretariat Hall,6.67937,80.176744,400,0,closed,synthetic,True,True
+SH-KLT-007,Kalutara,Millaniya Rajamaha Viharaya,6.617414,80.026836,650,209,open,synthetic,True,True
+SH-KLT-008,Kalutara,Panadura Pradeshiya Sabha Hall,6.711831,79.899216,500,164,open,synthetic,True,True
+SH-KLT-009,Kalutara,Kalutara Community Hall,6.580377,80.011978,400,206,open,synthetic,True,True
+SH-KLT-010,Kalutara,Horana Central College,6.706977,80.05221,400,302,open,synthetic,True,True
+SH-KLT-011,Kalutara,Ingiriya Community Hall,6.726311,80.139279,800,0,full,synthetic,True,True
+SH-KLT-012,Kalutara,Matugama Public Library Hall,6.528773,80.123128,120,49,open,synthetic,True,True
+SH-KLT-013,Kalutara,Agalawatta Public Library Hall,6.562406,80.194558,300,104,open,synthetic,True,True
+SH-KLT-014,Kalutara,Bulathsinhala Estate Welfare Centre,6.652905,80.1788,800,489,open,synthetic,True,True
+SH-KLT-015,Kalutara,Millaniya Rajamaha Viharaya,6.638778,80.069006,400,344,open,synthetic,True,True
+SH-KLT-016,Kalutara,Panadura Rajamaha Viharaya,6.699722,79.963091,200,97,open,synthetic,True,True
+SH-KLT-017,Kalutara,Kalutara Maha Vidyalaya,6.615979,79.989631,500,0,full,synthetic,True,True
+SH-KLT-018,Kalutara,Horana Estate Welfare Centre,6.76518,80.083911,120,88,open,synthetic,True,True
+SH-KLT-019,Kalutara,Ingiriya Pradeshiya Sabha Hall,6.710746,80.17674,80,79,open,synthetic,True,True
+SH-KLT-020,Kalutara,Matugama Divisional Secretariat Hall,6.518057,80.094682,150,0,full,synthetic,True,True
+SH-KLT-021,Kalutara,Agalawatta Pradeshiya Sabha Hall,6.544236,80.161916,300,115,open,synthetic,True,True
+SH-KLT-022,Kalutara,Bulathsinhala Estate Welfare Centre,6.72389,80.135544,80,0,closed,synthetic,True,True
+SH-KLT-023,Kalutara,Millaniya Divisional Secretariat Hall,6.686136,80.093473,650,506,open,synthetic,True,True
+SH-KLT-024,Kalutara,Panadura Kovil Hall,6.721906,79.878931,250,118,open,synthetic,True,True
+SH-KLT-025,Kalutara,Kalutara Divisional Secretariat Hall,6.662545,79.94599,150,0,closed,synthetic,True,True
+SH-KLT-026,Kalutara,Horana Kovil Hall,6.719269,80.095042,120,75,open,synthetic,True,True
+SH-BDL-001,Badulla,Badulla Pradeshiya Sabha Hall,6.945319,81.049638,650,542,open,synthetic,True,True
+SH-BDL-002,Badulla,Bandarawela Divisional Secretariat Hall,6.794918,81.007375,650,0,full,synthetic,True,True
+SH-BDL-003,Badulla,Haputale Public Library Hall,6.741671,80.952709,650,255,open,synthetic,True,True
+SH-BDL-004,Badulla,Mahiyangana Central College,7.354656,80.949439,300,0,full,synthetic,True,True
+SH-BDL-005,Badulla,Passara Estate Welfare Centre,7.027774,81.155756,650,453,open,synthetic,True,True
+SH-BDL-006,Badulla,Welimada Kovil Hall,6.935944,80.866383,250,204,open,synthetic,True,True
+SH-BDL-007,Badulla,Ella Community Hall,6.871065,81.04072,500,238,open,synthetic,True,True
+SH-BDL-008,Badulla,Hali Ela Pradeshiya Sabha Hall,6.950602,80.998874,80,46,open,synthetic,True,True
+SH-BDL-009,Badulla,Badulla Kovil Hall,7.025359,80.964887,200,100,open,synthetic,True,True
+SH-BDL-010,Badulla,Bandarawela Estate Welfare Centre,6.823882,80.94756,650,472,open,synthetic,True,True
+SH-BDL-011,Badulla,Haputale Central College,6.766702,80.985573,650,631,open,synthetic,True,True
+SH-BDL-012,Badulla,Mahiyangana Rajamaha Viharaya,7.327527,80.918116,500,209,open,synthetic,True,True
+SH-BDL-013,Badulla,Passara Community Hall,6.856102,81.162328,200,127,open,synthetic,True,True
+SH-BDL-014,Badulla,Welimada Divisional Secretariat Hall,6.943576,80.915242,80,0,full,synthetic,True,True
+SH-BDL-015,Badulla,Ella Estate Welfare Centre,6.852074,81.078116,400,228,open,synthetic,True,True
+SH-BDL-016,Badulla,Hali Ela Rajamaha Viharaya,6.996586,81.051887,300,0,full,synthetic,True,True
+SH-BDL-017,Badulla,Badulla Pradeshiya Sabha Hall,7.051409,81.039507,800,689,open,synthetic,True,True
+SH-BDL-018,Badulla,Bandarawela Estate Welfare Centre,6.875465,81.030032,800,526,open,synthetic,True,True
+SH-BDL-019,Badulla,Haputale Divisional Secretariat Hall,6.748315,80.92294,200,102,open,synthetic,True,True
+SH-BDL-020,Badulla,Mahiyangana Rajamaha Viharaya,7.293764,80.998516,80,0,full,synthetic,True,True
+SH-BDL-021,Badulla,Passara Rajamaha Viharaya,6.88287,81.117192,120,0,full,synthetic,True,True
+SH-BDL-022,Badulla,Welimada Kovil Hall,6.853346,80.897091,200,133,open,synthetic,True,True
+SH-BDL-023,Badulla,Ella Pradeshiya Sabha Hall,6.822673,81.08476,300,0,closed,synthetic,True,True
+SH-BDL-024,Badulla,Hali Ela Divisional Secretariat Hall,6.984404,81.034398,80,0,full,synthetic,True,True
+SH-BDL-025,Badulla,Badulla Public Library Hall,6.936227,81.011618,500,318,open,synthetic,True,True
+SH-BDL-026,Badulla,Bandarawela Central College,6.843105,81.009585,650,391,open,synthetic,True,True
+SH-NWE-001,Nuwara Eliya,Nuwara Eliya Estate Welfare Centre,6.939939,80.748459,650,0,closed,synthetic,True,True
+SH-NWE-002,Nuwara Eliya,Hatton Pradeshiya Sabha Hall,6.945132,80.679409,800,528,open,synthetic,True,True
+SH-NWE-003,Nuwara Eliya,Kotmale Community Hall,7.020123,80.56479,650,419,open,synthetic,True,True
+SH-NWE-004,Nuwara Eliya,Walapane Estate Welfare Centre,7.014637,80.82636,500,0,closed,synthetic,True,True
+SH-NWE-005,Nuwara Eliya,Hanguranketha Estate Welfare Centre,7.106859,80.725561,500,267,open,synthetic,True,True
+SH-NWE-006,Nuwara Eliya,Ragala Pradeshiya Sabha Hall,6.987733,80.727446,120,0,closed,synthetic,True,True
+SH-NWE-007,Nuwara Eliya,Talawakele Divisional Secretariat Hall,6.968807,80.608288,200,196,open,synthetic,True,True
+SH-NWE-008,Nuwara Eliya,Maskeliya Kovil Hall,6.751114,80.573037,650,485,open,synthetic,True,True
+SH-NWE-009,Nuwara Eliya,Nuwara Eliya Public Library Hall,6.979302,80.729306,300,105,open,synthetic,True,True
+SH-NWE-010,Nuwara Eliya,Hatton Divisional Secretariat Hall,6.867041,80.531299,800,535,open,synthetic,True,True
+SH-NWE-011,Nuwara Eliya,Kotmale Public Library Hall,7.063372,80.677535,300,289,open,synthetic,True,True
+SH-NWE-012,Nuwara Eliya,Walapane Estate Welfare Centre,7.092847,80.799755,80,57,open,synthetic,True,True
+SH-NWE-013,Nuwara Eliya,Hanguranketha Pradeshiya Sabha Hall,7.20872,80.767916,200,153,open,synthetic,True,True
+SH-NWE-014,Nuwara Eliya,Ragala Divisional Secretariat Hall,7.028819,80.693777,400,364,open,synthetic,True,True
+SH-NWE-015,Nuwara Eliya,Talawakele Pradeshiya Sabha Hall,6.947542,80.706432,300,190,open,synthetic,True,True
+SH-NWE-016,Nuwara Eliya,Maskeliya Public Library Hall,6.91078,80.540309,800,741,open,synthetic,True,True
+SH-NWE-017,Nuwara Eliya,Nuwara Eliya Divisional Secretariat Hall,6.919751,80.793915,300,110,open,synthetic,True,True
+SH-NWE-018,Nuwara Eliya,Hatton Maha Vidyalaya,6.94721,80.603849,120,94,open,synthetic,True,True
+SH-NWE-019,Nuwara Eliya,Kotmale Maha Vidyalaya,7.008233,80.601261,80,0,closed,synthetic,True,True
+SH-NWE-020,Nuwara Eliya,Walapane Rajamaha Viharaya,7.059465,80.892702,120,107,open,synthetic,True,True
+SH-NWE-021,Nuwara Eliya,Hanguranketha Estate Welfare Centre,7.12741,80.809812,500,0,closed,synthetic,True,True
+SH-NWE-022,Nuwara Eliya,Ragala Community Hall,7.028856,80.691959,650,419,open,synthetic,True,True
+SH-NWE-023,Nuwara Eliya,Talawakele Pradeshiya Sabha Hall,7.001138,80.61301,500,271,open,synthetic,True,True
+SH-NWE-024,Nuwara Eliya,Maskeliya Rajamaha Viharaya,6.805978,80.513051,80,56,open,synthetic,True,True
+SH-NWE-025,Nuwara Eliya,Nuwara Eliya Estate Welfare Centre,6.960192,80.700967,800,502,open,synthetic,True,True
+SH-NWE-026,Nuwara Eliya,Hatton Pradeshiya Sabha Hall,6.884242,80.633922,80,27,open,synthetic,True,True

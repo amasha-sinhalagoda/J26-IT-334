@@ -214,5 +214,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# Large, reproducible OpenStreetMap source extract
+Dual route optimization/source_data/*.osm.pbf
+
 # Streamlit
 .streamlit/secrets.toml

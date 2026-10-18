@@ -1,4 +1,6 @@
 from pathlib import Path
+import json
+import shutil
 import sys
 
 import pandas as pd
@@ -6,7 +8,24 @@ import pandas as pd
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 INPUT_DIR = PROJECT_DIR / "Dual route optimization"
+SOURCE_DATA_DIR = INPUT_DIR / "source_data"
 OUTPUT_DIR = PROJECT_DIR / "processed_data" / "dual_route"
+BOUNDARY_SOURCE = SOURCE_DATA_DIR / "geoBoundaries-LKA-ADM2.geojson"
+NWE_LHMP_SOURCE = (
+    PROJECT_DIR
+    / "NuwaraEliya(SLIIT)-(Bagya)"
+    / "LHZM"
+    / "Nuwara_Eliya"
+    / "Nuwara_Eliya_LHMP_50000"
+)
+
+TARGET_BOUNDARIES = {
+    "Ratnapura District": "Ratnapura",
+    "Kegalle District": "Kegalle",
+    "Kalutara District": "Kalutara",
+    "Badulla District": "Badulla",
+    "Nuwara Eliya District": "Nuwara Eliya",
+}
 
 DISTRICTS = {
     "ratnapura": "Ratnapura",
@@ -195,6 +214,7 @@ def _add_provenance(frame, dataset):
         {True: "official", False: "synthetic"}
     )
     frame["is_synthetic"] = ~official
+    frame["accepted_for_prototype"] = True
 
 
 def _add_incident_record_ids(frame):
@@ -386,6 +406,33 @@ def write_preprocessed_data(tables, output_dir=OUTPUT_DIR):
     for dataset, frame in tables.items():
         frame.to_csv(output_dir / "{}.csv".format(dataset), index=False)
 
+    source_collection, boundary_features = _select_district_boundaries(BOUNDARY_SOURCE)
+    boundary_collection = {
+        key: value for key, value in source_collection.items()
+        if key != "features"
+    }
+    boundary_collection["type"] = "FeatureCollection"
+    boundary_collection["features"] = []
+    for feature, district in boundary_features:
+        feature = dict(feature)
+        feature["properties"] = dict(feature.get("properties", {}))
+        feature["properties"]["district"] = district
+        boundary_collection["features"].append(feature)
+    (output_dir / "district_boundaries.geojson").write_text(
+        json.dumps(boundary_collection, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    lhmp_output_dir = output_dir / "nuwara_eliya_lhmp"
+    lhmp_output_dir.mkdir(parents=True, exist_ok=True)
+    for extension in (".shp", ".shx", ".dbf", ".prj", ".cpg"):
+        source = NWE_LHMP_SOURCE.with_suffix(extension)
+        if not source.is_file():
+            raise FileNotFoundError(
+                "Nuwara Eliya NBRI LHMP component not found: {}".format(source)
+            )
+        shutil.copy2(source, lhmp_output_dir / source.name)
+
     report_lines = [
         "Dual-route input preprocessing report",
         "======================================",
@@ -413,9 +460,11 @@ def write_preprocessed_data(tables, output_dir=OUTPUT_DIR):
     report_lines.extend([
         "",
         "Interpretation and limitations:",
-        "- Synthetic test scenarios, hazard polygons, and closures are not observed events or operational closure evidence.",
+        "- All supplied rows were retained and accepted as prototype inputs; source_type and is_synthetic describe documented provenance, not inclusion/exclusion.",
+        "- Accepted scenario, hazard, and closure rows remain scenario inputs; they must not be represented as independently verified operational closure evidence.",
         "- road_closures has no OSM way IDs; spatial matching to the road graph is still required.",
-        "- lhmp_zones covers Ratnapura, Kegalle, Kalutara, and Badulla only; use the separate Nuwara Eliya NBRI shapefile for that district.",
+        "- lhmp_zones.xlsx covers Ratnapura, Kegalle, Kalutara, and Badulla; the Nuwara Eliya NBRI shapefile is copied alongside the prepared tables.",
+        "- district_boundaries.geojson contains the five requested ADM2 boundaries in the source GeoJSON CRS (WGS84); verify the source and boundary alignment before clipping the graph.",
         "- CSV preserves WKT and CRS metadata but does not validate polygon topology or load data into PostGIS.",
         "- Official-labelled Nuwara Eliya incidents and Dithawa HR points retain missing source attributes as missing; no synthetic severity or population values are imputed.",
     ])
@@ -423,6 +472,45 @@ def write_preprocessed_data(tables, output_dir=OUTPUT_DIR):
         "\n".join(report_lines) + "\n", encoding="utf-8"
     )
     return output_dir
+
+
+def _select_district_boundaries(source_path=BOUNDARY_SOURCE):
+    if not Path(source_path).is_file():
+        raise FileNotFoundError(
+            "Sri Lanka ADM2 boundary GeoJSON not found: {}".format(source_path)
+        )
+
+    with Path(source_path).open(encoding="utf-8") as source:
+        collection = json.load(source)
+
+    features_by_name = {}
+    for feature in collection.get("features", []):
+        name = feature.get("properties", {}).get("shapeName")
+        if name in TARGET_BOUNDARIES:
+            features_by_name[name] = feature
+
+    missing = sorted(set(TARGET_BOUNDARIES) - set(features_by_name))
+    if missing:
+        raise ValueError(
+            "ADM2 boundary source is missing target districts: {}".format(missing)
+        )
+
+    selected = [
+        (features_by_name[name], TARGET_BOUNDARIES[name])
+        for name in TARGET_BOUNDARIES
+    ]
+    source_crs = collection.get("crs", {}).get("properties", {}).get("name")
+    if source_crs not in {
+        "urn:ogc:def:crs:OGC:1.3:CRS84",
+        "urn:ogc:def:crs:EPSG::4326",
+    }:
+        raise ValueError(
+            "ADM2 boundary source CRS is not recognized as WGS84: {!r}".format(
+                source_crs
+            )
+        )
+
+    return collection, selected
 
 
 def main():

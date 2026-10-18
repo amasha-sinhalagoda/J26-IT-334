@@ -1,3 +1,4 @@
+import json
 import sys
 import tempfile
 import unittest
@@ -38,6 +39,9 @@ class DualRoutePreprocessingTests(unittest.TestCase):
             tables["incident_points"]["incident_record_id"].is_unique
         )
         self.assertTrue(tables["road_closures"]["is_synthetic"].all())
+        self.assertTrue(
+            tables["road_closures"]["accepted_for_prototype"].all()
+        )
         self.assertEqual(
             set(tables["lhmp_zones"]["district"]),
             {"Ratnapura", "Kegalle", "Kalutara", "Badulla"},
@@ -53,12 +57,34 @@ class DualRoutePreprocessingTests(unittest.TestCase):
                 self.assertEqual(len(output), len(tables[dataset]))
                 self.assertIn("source_type", output.columns)
                 self.assertIn("is_synthetic", output.columns)
+                self.assertTrue(output["accepted_for_prototype"].all())
 
             report = (output_dir / "preprocessing_report.txt").read_text(
                 encoding="utf-8"
             )
-            self.assertIn("not observed events or operational closure evidence", report)
+            self.assertIn("All supplied rows were retained", report)
             self.assertIn("Nuwara Eliya NBRI shapefile", report)
+            with (output_dir / "district_boundaries.geojson").open(
+                encoding="utf-8"
+            ) as boundary_file:
+                boundary = json.load(boundary_file)
+            self.assertEqual(
+                {
+                    feature["properties"]["district"]
+                    for feature in boundary["features"]
+                },
+                {"Ratnapura", "Kegalle", "Kalutara", "Badulla", "Nuwara Eliya"},
+            )
+            self.assertEqual(len(boundary["features"]), 5)
+            self.assertEqual(
+                boundary["crs"]["properties"]["name"],
+                "urn:ogc:def:crs:OGC:1.3:CRS84",
+            )
+            lhmp_output = output_dir / "nuwara_eliya_lhmp"
+            for extension in (".shp", ".shx", ".dbf", ".prj", ".cpg"):
+                self.assertTrue(
+                    (lhmp_output / "Nuwara_Eliya_LHMP_50000{}".format(extension)).is_file()
+                )
 
     def test_coordinate_validation_rejects_points_outside_sri_lanka(self):
         frame = pd.DataFrame({"lat": [6.0, 30.0], "lon": [80.0, 80.0]})

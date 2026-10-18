@@ -11,16 +11,21 @@ written to `processed_data/dual_route/`; source workbooks are not modified.
 The preprocessing checks required columns, district names, identifiers,
 coordinates, dates, severity/class/status values, scenario references, and
 declared geometry types/CRSs. It preserves WKT geometries in EPSG:5234 and
-point coordinates in WGS84. It labels synthetic records based on the source
-workbooks' provenance notes, including synthetic test closures and the
-Nuwara Eliya NBRI-derived records.
+point coordinates in WGS84. All supplied records are retained as prototype
+inputs; `accepted_for_prototype` records that choice. The separate
+`source_type`/`is_synthetic` columns preserve the provenance stated in the
+workbook notes and do not filter records.
+
+It also writes five requested district boundaries to
+`processed_data/dual_route/district_boundaries.geojson` and copies the Nuwara
+Eliya NBRI LHMP shapefile bundle to
+`processed_data/dual_route/nuwara_eliya_lhmp/`. The Geofabrik extract and
+geoBoundaries source details are recorded in
+`Dual route optimization/source_data/README.md`.
 
 This is a tabular validation/export step, not geometric topology validation or
-PostGIS loading. The supplied LHMP workbook covers four districts; use the
-separate Nuwara Eliya NBRI shapefile for its real LHMP layer. Synthetic
-closures and polygons are test inputs, not verified operational hazards or
-Ditwah closure ground truth. Road-graph matching and PostGIS ingestion remain
-subsequent routing implementation steps.
+PostGIS loading. Road-graph clipping, edge matching, and PostGIS ingestion
+remain subsequent routing implementation steps.
 
 ## Resource allocation input preparation
 

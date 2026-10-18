@@ -17,8 +17,10 @@ Dataset row counts and provenance:
 - shelters: 130 rows (official=0, synthetic=130)
 
 Interpretation and limitations:
-- Synthetic test scenarios, hazard polygons, and closures are not observed events or operational closure evidence.
+- All supplied rows were retained and accepted as prototype inputs; source_type and is_synthetic describe documented provenance, not inclusion/exclusion.
+- Accepted scenario, hazard, and closure rows remain scenario inputs; they must not be represented as independently verified operational closure evidence.
 - road_closures has no OSM way IDs; spatial matching to the road graph is still required.
-- lhmp_zones covers Ratnapura, Kegalle, Kalutara, and Badulla only; use the separate Nuwara Eliya NBRI shapefile for that district.
+- lhmp_zones.xlsx covers Ratnapura, Kegalle, Kalutara, and Badulla; the Nuwara Eliya NBRI shapefile is copied alongside the prepared tables.
+- district_boundaries.geojson contains the five requested ADM2 boundaries in the source GeoJSON CRS (WGS84); verify the source and boundary alignment before clipping the graph.
 - CSV preserves WKT and CRS metadata but does not validate polygon topology or load data into PostGIS.
 - Official-labelled Nuwara Eliya incidents and Dithawa HR points retain missing source attributes as missing; no synthetic severity or population values are imputed.
