@@ -246,6 +246,63 @@ not copy footprints from another event, generate synthetic closures, or infer
 affected-person counts. A ready result requires event-linked hazard footprints
 and known origin demand; route evaluation is a separate next task.
 
+### Evaluate the Ditwah replay (validation Task 2)
+
+Run the planner and produce a metric-readiness report:
+
+```powershell
+py -3.13 scripts/evaluate_ditwah_replay.py
+```
+
+The command writes `ditwah_evacuation.json` and `ditwah_evaluation.json` under
+`processed_data/dual_route/`. It records planner latency, origin outcomes, and
+which metrics can be evaluated. A short-circuited request with no known demand
+is not counted as a full routing-latency result. Route-safety, baseline-detour,
+and sensitivity metrics remain explicitly `not_evaluable` unless event-linked
+hard-hazard evidence, usable origin demand, and route results are available.
+An empty route set is never reported as 100% safe.
+
+### Routing API (integration Task 1)
+
+Install routing/API dependencies and start the local API bound to loopback:
+
+```powershell
+py -3.13 -m pip install -r requirements-routing.txt
+py -3.13 -m uvicorn scripts.routing_api:app --host 127.0.0.1 --port 8000
+```
+
+`POST /route` accepts either a rescue-dispatch request with
+`mode`, `facility_id`, and `incident_record_id`, or an evacuation request with
+`mode` and `scenario_id`. Both accept an optional `alert_id` for traceability.
+For example:
+
+```json
+{
+  "mode": "rescue_dispatch",
+  "alert_id": "MOCK-ALERT-001",
+  "facility_id": "FAC-RTN-D01",
+  "incident_record_id": "RTN220012-01"
+}
+```
+
+The endpoint calls the existing PostGIS-backed routers and returns their route
+result, including GeoJSON geometry where a route exists. Input/domain errors
+return HTTP 422 and database failures return HTTP 503; no unsafe fallback
+route is generated. Bind to loopback for local prototype use; authentication,
+external alert ingestion, are not implemented.
+
+The MapLibre client is available at `http://127.0.0.1:8000/map`. It renders
+feasible route GeoJSON and origin/destination markers returned by the API;
+evacuation assignments appear as separate route lines. OpenStreetMap tiles
+and the MapLibre browser library are loaded from public services, so mapping
+requires browser network access. Attribution is displayed in the map.
+
+Run the mock alert contract tests with:
+
+```powershell
+py -3.13 -m unittest tests.test_routing_api
+```
+
 ## Resource allocation input preparation
 
 Run `preprocess_dispatch.py`, then `build_alert_priorities.py`, then

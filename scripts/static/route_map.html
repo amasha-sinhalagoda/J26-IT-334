@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hazard-aware dual routing</title>
+  <link
+    href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css"
+    rel="stylesheet"
+  >
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #182432;
+      background: #edf2f5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      min-height: 100vh;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: minmax(300px, 370px) minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    aside {
+      z-index: 1;
+      padding: 25px 22px;
+      background: #fff;
+      box-shadow: 4px 0 18px rgb(28 45 63 / 10%);
+      overflow-y: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.3rem;
+      letter-spacing: -0.025em;
+    }
+
+    .subtitle {
+      margin: 8px 0 23px;
+      color: #596878;
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    fieldset {
+      display: grid;
+      gap: 13px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    legend {
+      margin-bottom: 14px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #526171;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      color: #344354;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    input, select {
+      width: 100%;
+      min-height: 41px;
+      padding: 9px 10px;
+      border: 1px solid #cbd5df;
+      border-radius: 6px;
+      background: #fff;
+      color: #17212b;
+      font: inherit;
+      font-weight: 400;
+    }
+
+    input:focus, select:focus, button:focus-visible {
+      outline: 3px solid rgb(16 116 139 / 25%);
+      border-color: #10748b;
+    }
+
+    button {
+      min-height: 43px;
+      margin-top: 4px;
+      border: 0;
+      border-radius: 6px;
+      background: #0c667d;
+      color: #fff;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover { background: #084f63; }
+    button:disabled { opacity: 0.65; cursor: wait; }
+
+    .hint {
+      margin: 14px 0 0;
+      color: #637282;
+      font-size: 0.79rem;
+      line-height: 1.5;
+    }
+
+    .result {
+      margin-top: 21px;
+      padding: 13px;
+      border: 1px solid #d9e1e8;
+      border-radius: 7px;
+      background: #f8fafb;
+    }
+
+    .result[hidden] { display: none; }
+
+    .result h2 {
+      margin: 0 0 8px;
+      font-size: 0.95rem;
+    }
+
+    .result p {
+      margin: 5px 0;
+      color: #344354;
+      font-size: 0.83rem;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+
+    .result[data-status="infeasible"],
+    .result[data-status="error"] {
+      border-color: #e5b8b8;
+      background: #fff7f7;
+    }
+
+    .result[data-status="feasible"] {
+      border-color: #add8c2;
+      background: #f5fbf7;
+    }
+
+    .map-wrap {
+      position: relative;
+      min-height: 100vh;
+    }
+
+    #map {
+      position: absolute;
+      inset: 0;
+    }
+
+    .map-note {
+      position: absolute;
+      z-index: 2;
+      bottom: 26px;
+      left: 12px;
+      max-width: calc(100% - 24px);
+      padding: 8px 11px;
+      border-radius: 5px;
+      background: rgb(255 255 255 / 94%);
+      box-shadow: 0 1px 6px rgb(0 0 0 / 16%);
+      color: #415161;
+      font-size: 0.76rem;
+      line-height: 1.45;
+    }
+
+    .map-status {
+      position: absolute;
+      z-index: 2;
+      top: 12px;
+      left: 12px;
+      padding: 9px 12px;
+      border-radius: 5px;
+      background: rgb(255 255 255 / 95%);
+      box-shadow: 0 1px 6px rgb(0 0 0 / 16%);
+      font-size: 0.82rem;
+    }
+
+    .map-status[hidden] { display: none; }
+
+    .maplibregl-popup-content {
+      color: #182432;
+      font: 13px/1.4 "Segoe UI", Arial, sans-serif;
+    }
+
+    @media (max-width: 760px) {
+      .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(420px, 62vh);
+      }
+
+      aside { padding: 19px 17px; }
+      .map-wrap { min-height: 420px; }
+      #map { min-height: 420px; }
+    }
+  </style>
+  <script
+    src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"
+    defer
+  ></script>
+  <script src="/static/route_map.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <aside>
+      <h1>Hazard-aware dual routing</h1>
+      <p class="subtitle">
+        Request a safe dispatch or capacity-aware evacuation route for one of
+        the supported scenarios.
+      </p>
+
+      <form id="route-form">
+        <fieldset>
+          <legend>Route request</legend>
+          <label for="mode">Routing mode
+            <select id="mode" name="mode">
+              <option value="rescue_dispatch">Rescue dispatch</option>
+              <option value="evacuation">Evacuation</option>
+            </select>
+          </label>
+          <label for="alert-id">Alert ID (optional)
+            <input id="alert-id" name="alert_id" maxlength="128"
+              autocomplete="off" placeholder="MOCK-ALERT-001">
+          </label>
+          <div id="rescue-fields">
+            <label for="facility-id">Facility ID
+              <input id="facility-id" name="facility_id" maxlength="128"
+                autocomplete="off" placeholder="FAC-RTN-D01">
+            </label>
+            <label for="incident-id">Incident record ID
+              <input id="incident-id" name="incident_record_id" maxlength="128"
+                autocomplete="off" placeholder="RTN220012-01">
+            </label>
+          </div>
+          <div id="evacuation-fields" hidden>
+            <label for="scenario-id">Scenario ID
+              <input id="scenario-id" name="scenario_id" maxlength="128"
+                autocomplete="off" placeholder="SC-RTN-F1">
+            </label>
+          </div>
+          <button id="submit" type="submit">Find route</button>
+        </fieldset>
+      </form>
+
+      <p class="hint">
+        Requests use the local routing API. Evacuation plans require known
+        affected-person counts; unknown demand is not inferred.
+      </p>
+      <section id="result" class="result" aria-live="polite" hidden>
+        <h2 id="result-title">Route result</h2>
+        <div id="result-details"></div>
+      </section>
+    </aside>
+
+    <section class="map-wrap" aria-label="Route map">
+      <div id="map" role="img" aria-label="Map of Sri Lanka and route results"></div>
+      <div id="map-status" class="map-status" role="status">
+        Initializing map…
+      </div>
+      <div class="map-note">
+        Route paths are returned by the prototype router; basemap ©
+        <a href="https://www.openstreetmap.org/copyright"
+           target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>.
+        Scenario status reflects the full event window, not live road conditions.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
