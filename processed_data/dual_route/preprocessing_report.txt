@@ -1,0 +1,24 @@
+Dual-route input preprocessing report
+======================================
+Source: C:\Users\palih\Desktop\J26-IT-334\Dual route optimization
+Outputs: C:\Users\palih\Desktop\J26-IT-334\processed_data\dual_route
+Coordinate validation bounds: latitude (5.8, 10.0), longitude (79.4, 82.1)
+WKT layers retain EPSG:5234 and original geometry_wkt values.
+Point coordinates retain WGS84 latitude/longitude values.
+
+Dataset row counts and provenance:
+- events: 26 rows (official=2, synthetic=24)
+- hazard_polygons: 110 rows (official=0, synthetic=110)
+- incident_points: 2156 rows (official=1205, synthetic=951)
+- lhmp_zones: 204 rows (official=0, synthetic=204)
+- road_closures: 90 rows (official=0, synthetic=90)
+- evacuation_origins: 927 rows (official=507, synthetic=420)
+- dispatch_facilities: 45 rows (official=0, synthetic=45)
+- shelters: 130 rows (official=0, synthetic=130)
+
+Interpretation and limitations:
+- Synthetic test scenarios, hazard polygons, and closures are not observed events or operational closure evidence.
+- road_closures has no OSM way IDs; spatial matching to the road graph is still required.
+- lhmp_zones covers Ratnapura, Kegalle, Kalutara, and Badulla only; use the separate Nuwara Eliya NBRI shapefile for that district.
+- CSV preserves WKT and CRS metadata but does not validate polygon topology or load data into PostGIS.
+- Official-labelled Nuwara Eliya incidents and Dithawa HR points retain missing source attributes as missing; no synthetic severity or population values are imputed.

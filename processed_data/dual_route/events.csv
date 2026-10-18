@@ -1,0 +1,27 @@
+event_id,scenario_id,hazard_type,district,started_at,ended_at,severity,notes,source_type,is_synthetic
+EV-RTN-F1,SC-RTN-F1,flood,Ratnapura,2026-05-14T06:00:00,2026-05-16T18:00:00,2.0,"Riverine flood test scenario, moderate extent",synthetic,True
+EV-RTN-F2,SC-RTN-F2,flood,Ratnapura,2026-06-02T03:00:00,2026-06-06T03:00:00,4.0,"Riverine flood test scenario, extreme extent",synthetic,True
+EV-RTN-L1,SC-RTN-L1,landslide,Ratnapura,2026-09-06T14:00:00,2026-09-07T20:00:00,2.0,"Rainfall-triggered landslide test scenario, moderate footprint count",synthetic,True
+EV-RTN-L2,SC-RTN-L2,landslide,Ratnapura,2026-10-03T18:00:00,2026-10-05T18:00:00,4.0,"Rainfall-triggered landslide test scenario, extreme footprint count",synthetic,True
+EV-RTN-HIST,SC-RTN-HIST,landslide,Ratnapura,2015-01-01T00:00:00,2025-11-25T23:59:00,,Historical incident inventory used for incident-density penalty testing,synthetic,True
+EV-KEG-F1,SC-KEG-F1,flood,Kegalle,2026-05-16T06:00:00,2026-05-18T18:00:00,2.0,"Riverine flood test scenario, moderate extent",synthetic,True
+EV-KEG-F2,SC-KEG-F2,flood,Kegalle,2026-06-04T03:00:00,2026-06-08T03:00:00,4.0,"Riverine flood test scenario, extreme extent",synthetic,True
+EV-KEG-L1,SC-KEG-L1,landslide,Kegalle,2026-09-08T14:00:00,2026-09-09T20:00:00,2.0,"Rainfall-triggered landslide test scenario, moderate footprint count",synthetic,True
+EV-KEG-L2,SC-KEG-L2,landslide,Kegalle,2026-10-05T18:00:00,2026-10-07T18:00:00,4.0,"Rainfall-triggered landslide test scenario, extreme footprint count",synthetic,True
+EV-KEG-HIST,SC-KEG-HIST,landslide,Kegalle,2015-01-01T00:00:00,2025-11-25T23:59:00,,Historical incident inventory used for incident-density penalty testing,synthetic,True
+EV-KLT-F1,SC-KLT-F1,flood,Kalutara,2026-05-18T06:00:00,2026-05-20T18:00:00,2.0,"Riverine flood test scenario, moderate extent",synthetic,True
+EV-KLT-F2,SC-KLT-F2,flood,Kalutara,2026-06-06T03:00:00,2026-06-10T03:00:00,4.0,"Riverine flood test scenario, extreme extent",synthetic,True
+EV-KLT-L1,SC-KLT-L1,landslide,Kalutara,2026-09-10T14:00:00,2026-09-11T20:00:00,2.0,"Rainfall-triggered landslide test scenario, moderate footprint count",synthetic,True
+EV-KLT-L2,SC-KLT-L2,landslide,Kalutara,2026-10-07T18:00:00,2026-10-09T18:00:00,4.0,"Rainfall-triggered landslide test scenario, extreme footprint count",synthetic,True
+EV-KLT-HIST,SC-KLT-HIST,landslide,Kalutara,2015-01-01T00:00:00,2025-11-25T23:59:00,,Historical incident inventory used for incident-density penalty testing,synthetic,True
+EV-BDL-F1,SC-BDL-F1,flood,Badulla,2026-05-20T06:00:00,2026-05-22T18:00:00,2.0,"Riverine flood test scenario, moderate extent",synthetic,True
+EV-BDL-F2,SC-BDL-F2,flood,Badulla,2026-06-08T03:00:00,2026-06-12T03:00:00,4.0,"Riverine flood test scenario, extreme extent",synthetic,True
+EV-BDL-L1,SC-BDL-L1,landslide,Badulla,2026-09-12T14:00:00,2026-09-13T20:00:00,2.0,"Rainfall-triggered landslide test scenario, moderate footprint count",synthetic,True
+EV-BDL-L2,SC-BDL-L2,landslide,Badulla,2026-10-09T18:00:00,2026-10-11T18:00:00,4.0,"Rainfall-triggered landslide test scenario, extreme footprint count",synthetic,True
+EV-BDL-HIST,SC-BDL-HIST,landslide,Badulla,2015-01-01T00:00:00,2025-11-25T23:59:00,,Historical incident inventory used for incident-density penalty testing,synthetic,True
+EV-NWE-F1,SC-NWE-F1,flood,Nuwara Eliya,2026-05-22T06:00:00,2026-05-24T18:00:00,2.0,"Riverine flood test scenario, moderate extent",synthetic,True
+EV-NWE-F2,SC-NWE-F2,flood,Nuwara Eliya,2026-06-10T03:00:00,2026-06-14T03:00:00,4.0,"Riverine flood test scenario, extreme extent",synthetic,True
+EV-NWE-L1,SC-NWE-L1,landslide,Nuwara Eliya,2026-09-14T14:00:00,2026-09-15T20:00:00,2.0,"Rainfall-triggered landslide test scenario, moderate footprint count",synthetic,True
+EV-NWE-L2,SC-NWE-L2,landslide,Nuwara Eliya,2026-10-11T18:00:00,2026-10-13T18:00:00,4.0,"Rainfall-triggered landslide test scenario, extreme footprint count",synthetic,True
+EV-NWE-HIST,SC-NWE-HIST,landslide,Nuwara Eliya,2015-01-01T00:00:00,2025-11-25T23:59:00,,NBRI ground-investigated incident inventory 2015-2025 (Nuwara Eliya package),official,False
+EV-NWE-DIT,SC-NWE-DIT,landslide,Nuwara Eliya,2025-11-27T00:00:00,2025-11-28T23:59:00,,"Dithawa cyclone high-risk inspection points (NBRI), Nuwara Eliya package",official,False

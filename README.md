@@ -1,6 +1,27 @@
 # J26-IT-334
 Research project repository for J26-IT-334, containing research documentation, datasets, source code, system development resources, and project-related materials.
 
+## Dual-route dataset preprocessing
+
+The routing prototype inputs are stored in `Dual route optimization/`. Run
+`python scripts/preprocess_dual_route_data.py` to validate and standardize the
+eight workbook tables. Cleaned CSVs and a provenance/limitations report are
+written to `processed_data/dual_route/`; source workbooks are not modified.
+
+The preprocessing checks required columns, district names, identifiers,
+coordinates, dates, severity/class/status values, scenario references, and
+declared geometry types/CRSs. It preserves WKT geometries in EPSG:5234 and
+point coordinates in WGS84. It labels synthetic records based on the source
+workbooks' provenance notes, including synthetic test closures and the
+Nuwara Eliya NBRI-derived records.
+
+This is a tabular validation/export step, not geometric topology validation or
+PostGIS loading. The supplied LHMP workbook covers four districts; use the
+separate Nuwara Eliya NBRI shapefile for its real LHMP layer. Synthetic
+closures and polygons are test inputs, not verified operational hazards or
+Ditwah closure ground truth. Road-graph matching and PostGIS ingestion remain
+subsequent routing implementation steps.
+
 ## Resource allocation input preparation
 
 Run `preprocess_dispatch.py`, then `build_alert_priorities.py`, then

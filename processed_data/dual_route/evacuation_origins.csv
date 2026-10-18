@@ -1,0 +1,928 @@
+origin_id,scenario_id,district,origin_type,gn_code,affected_people,at_risk_units,latitude,longitude,source_type,is_synthetic
+HR-NWE-0001,SC-NWE-DIT,Nuwara Eliya,HR,,,13.0,7.081365,80.863913,official,False
+HR-NWE-0002,SC-NWE-DIT,Nuwara Eliya,HR,320/කේ,,2.0,6.809881,80.61276,official,False
+HR-NWE-0003,SC-NWE-DIT,Nuwara Eliya,HR,501G,,23.0,7.127314,80.71235,official,False
+HR-NWE-0004,SC-NWE-DIT,Nuwara Eliya,HR,,,28.0,7.06431,80.624561,official,False
+HR-NWE-0005,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.097578,80.856035,official,False
+HR-NWE-0006,SC-NWE-DIT,Nuwara Eliya,HR,500/ඩී,,8.0,7.155314,80.748873,official,False
+HR-NWE-0007,SC-NWE-DIT,Nuwara Eliya,HR,,,48.0,7.066715,80.694468,official,False
+HR-NWE-0008,SC-NWE-DIT,Nuwara Eliya,HR,494/සී,,6.0,7.146769,80.776983,official,False
+HR-NWE-0009,SC-NWE-DIT,Nuwara Eliya,HR,460එච්,,2.0,7.038561,80.593306,official,False
+HR-NWE-0010,SC-NWE-DIT,Nuwara Eliya,HR,479ජේ,,37.0,7.087255,80.670548,official,False
+HR-NWE-0011,SC-NWE-DIT,Nuwara Eliya,HR,531,,3.0,7.019946,80.902085,official,False
+HR-NWE-0012,SC-NWE-DIT,Nuwara Eliya,HR,,,37.0,7.101138,80.8063,official,False
+HR-NWE-0013,SC-NWE-DIT,Nuwara Eliya,HR,,,18.0,7.005897,80.689286,official,False
+HR-NWE-0014,SC-NWE-DIT,Nuwara Eliya,HR,474සී,,4.0,7.04909,80.707023,official,False
+HR-NWE-0015,SC-NWE-DIT,Nuwara Eliya,HR,474,,8.0,7.071,80.68263,official,False
+HR-NWE-0016,SC-NWE-DIT,Nuwara Eliya,HR,,,20.0,7.076513,80.669145,official,False
+HR-NWE-0017,SC-NWE-DIT,Nuwara Eliya,HR,469සී,,57.0,7.034552,80.666355,official,False
+HR-NWE-0018,SC-NWE-DIT,Nuwara Eliya,HR,474/ඒ,,21.0,7.092329,80.695983,official,False
+HR-NWE-0019,SC-NWE-DIT,Nuwara Eliya,HR,474/ඒ,,6.0,7.074155,80.678825,official,False
+HR-NWE-0020,SC-NWE-DIT,Nuwara Eliya,HR,,,25.0,7.034955,80.706632,official,False
+HR-NWE-0021,SC-NWE-DIT,Nuwara Eliya,HR,471ඒ,,4.0,7.062111,80.679273,official,False
+HR-NWE-0022,SC-NWE-DIT,Nuwara Eliya,HR,459/B,,31.0,7.075382,80.612438,official,False
+HR-NWE-0023,SC-NWE-DIT,Nuwara Eliya,HR,504සී,,18.0,7.075229,80.805968,official,False
+HR-NWE-0024,SC-NWE-DIT,Nuwara Eliya,HR,468-ඊ,,11.0,7.015362,80.682082,official,False
+HR-NWE-0025,SC-NWE-DIT,Nuwara Eliya,HR,,,8.0,7.04201,80.62928,official,False
+HR-NWE-0026,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.985931,80.439913,official,False
+HR-NWE-0027,SC-NWE-DIT,Nuwara Eliya,HR,460සී,,1.0,7.052456,80.570912,official,False
+HR-NWE-0028,SC-NWE-DIT,Nuwara Eliya,HR,460සි,,1.0,7.057912,80.561161,official,False
+HR-NWE-0029,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.141525,80.759173,official,False
+HR-NWE-0030,SC-NWE-DIT,Nuwara Eliya,HR,316/ඩිි,,5.0,7.002022,80.452825,official,False
+HR-NWE-0031,SC-NWE-DIT,Nuwara Eliya,HR,316/ජී,,1.0,6.953582,80.475436,official,False
+HR-NWE-0032,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.183606,80.830361,official,False
+HR-NWE-0033,SC-NWE-DIT,Nuwara Eliya,HR,,,12.0,7.110902,80.779809,official,False
+HR-NWE-0034,SC-NWE-DIT,Nuwara Eliya,HR,459,,2.0,7.055598,80.770766,official,False
+HR-NWE-0035,SC-NWE-DIT,Nuwara Eliya,HR,469/සී,,12.0,7.026146,80.66385,official,False
+HR-NWE-0036,SC-NWE-DIT,Nuwara Eliya,HR,492/ඒ,,1.0,7.149365,80.78088,official,False
+HR-NWE-0037,SC-NWE-DIT,Nuwara Eliya,HR,491A,,19.0,7.149378,80.816808,official,False
+HR-NWE-0038,SC-NWE-DIT,Nuwara Eliya,HR,508B,,4.0,7.05649,80.81132,official,False
+HR-NWE-0039,SC-NWE-DIT,Nuwara Eliya,HR,509A,,3.0,7.066025,80.813047,official,False
+HR-NWE-0040,SC-NWE-DIT,Nuwara Eliya,HR,,,19.0,7.059849,80.805202,official,False
+HR-NWE-0041,SC-NWE-DIT,Nuwara Eliya,HR,,,14.0,7.066622,80.798074,official,False
+HR-NWE-0042,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.0658,80.675632,official,False
+HR-NWE-0043,SC-NWE-DIT,Nuwara Eliya,HR,,,62.0,7.069284,80.623773,official,False
+HR-NWE-0044,SC-NWE-DIT,Nuwara Eliya,HR,468ජේ,,20.0,7.01056,80.666982,official,False
+HR-NWE-0045,SC-NWE-DIT,Nuwara Eliya,HR,511එෆ්,,3.0,7.063782,80.775375,official,False
+HR-NWE-0046,SC-NWE-DIT,Nuwara Eliya,HR,510ඒ,,3.0,7.093232,80.737025,official,False
+HR-NWE-0047,SC-NWE-DIT,Nuwara Eliya,HR,,,26.0,7.03216,80.783081,official,False
+HR-NWE-0048,SC-NWE-DIT,Nuwara Eliya,HR,474ඊ,,1.0,7.0806,80.665075,official,False
+HR-NWE-0049,SC-NWE-DIT,Nuwara Eliya,HR,,,35.0,7.119135,80.895049,official,False
+HR-NWE-0050,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.042798,80.643112,official,False
+HR-NWE-0051,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.072318,80.638844,official,False
+HR-NWE-0052,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.071599,80.638359,official,False
+HR-NWE-0053,SC-NWE-DIT,Nuwara Eliya,HR,518A,,13.0,7.09374,80.920646,official,False
+HR-NWE-0054,SC-NWE-DIT,Nuwara Eliya,HR,474ඊ,,7.0,7.081775,80.667711,official,False
+HR-NWE-0055,SC-NWE-DIT,Nuwara Eliya,HR,"474/ඒ,",,4.0,7.07415,80.67882,official,False
+HR-NWE-0056,SC-NWE-DIT,Nuwara Eliya,HR,,,7.0,7.097263,80.918302,official,False
+HR-NWE-0057,SC-NWE-DIT,Nuwara Eliya,HR,535ජී,,92.0,6.977459,80.780268,official,False
+HR-NWE-0058,SC-NWE-DIT,Nuwara Eliya,HR,528ඊ,,6.0,7.040158,80.91492,official,False
+HR-NWE-0059,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.017644,80.827604,official,False
+HR-NWE-0060,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.09812,80.923959,official,False
+HR-NWE-0061,SC-NWE-DIT,Nuwara Eliya,HR,512/ජි,,4.0,7.046588,80.78341,official,False
+HR-NWE-0062,SC-NWE-DIT,Nuwara Eliya,HR,,,15.0,7.07151,80.781624,official,False
+HR-NWE-0063,SC-NWE-DIT,Nuwara Eliya,HR,,,19.0,7.027079,80.656565,official,False
+HR-NWE-0064,SC-NWE-DIT,Nuwara Eliya,HR,484බිි,,4.0,7.138658,80.797226,official,False
+HR-NWE-0065,SC-NWE-DIT,Nuwara Eliya,HR,456ඊ,,3.0,7.08174,80.649667,official,False
+HR-NWE-0066,SC-NWE-DIT,Nuwara Eliya,HR,512/ඩී,,5.0,7.04371,80.77431,official,False
+HR-NWE-0067,SC-NWE-DIT,Nuwara Eliya,HR,456ඊ,,1.0,7.086789,80.651577,official,False
+HR-NWE-0068,SC-NWE-DIT,Nuwara Eliya,HR,474/,,1.0,7.069565,80.684153,official,False
+HR-NWE-0069,SC-NWE-DIT,Nuwara Eliya,HR,474,,1.0,7.068245,80.689265,official,False
+HR-NWE-0070,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.018778,80.730874,official,False
+HR-NWE-0071,SC-NWE-DIT,Nuwara Eliya,HR,,,54.0,7.002866,80.892142,official,False
+HR-NWE-0072,SC-NWE-DIT,Nuwara Eliya,HR,506ඒ,,1.0,7.111168,80.832481,official,False
+HR-NWE-0073,SC-NWE-DIT,Nuwara Eliya,HR,468ජේ,,7.0,7.01087,80.6694,official,False
+HR-NWE-0074,SC-NWE-DIT,Nuwara Eliya,HR,527,,16.0,7.055285,80.918315,official,False
+HR-NWE-0075,SC-NWE-DIT,Nuwara Eliya,HR,469,,18.0,7.032945,80.655915,official,False
+HR-NWE-0076,SC-NWE-DIT,Nuwara Eliya,HR,33/0,,3.0,7.014828,80.829182,official,False
+HR-NWE-0077,SC-NWE-DIT,Nuwara Eliya,HR,33/0,,4.0,7.007774,80.833672,official,False
+HR-NWE-0078,SC-NWE-DIT,Nuwara Eliya,HR,456/ඒ,,6.0,7.102111,80.642162,official,False
+HR-NWE-0079,SC-NWE-DIT,Nuwara Eliya,HR,515/බී,,1.0,7.095149,80.865156,official,False
+HR-NWE-0080,SC-NWE-DIT,Nuwara Eliya,HR,,,9.0,6.936142,80.66674,official,False
+HR-NWE-0081,SC-NWE-DIT,Nuwara Eliya,HR,504ඊ,,2.0,7.088832,80.829835,official,False
+HR-NWE-0082,SC-NWE-DIT,Nuwara Eliya,HR,531,,14.0,7.011572,80.903925,official,False
+HR-NWE-0083,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.056912,80.779665,official,False
+HR-NWE-0084,SC-NWE-DIT,Nuwara Eliya,HR,525-බී,,34.0,7.058373,80.90289,official,False
+HR-NWE-0085,SC-NWE-DIT,Nuwara Eliya,HR,515සී,,37.0,7.087636,80.863534,official,False
+HR-NWE-0086,SC-NWE-DIT,Nuwara Eliya,HR,515සී/වලපනේ515බී,,24.0,7.08932,80.86041,official,False
+HR-NWE-0087,SC-NWE-DIT,Nuwara Eliya,HR,534/H,,14.0,6.973258,80.788671,official,False
+HR-NWE-0088,SC-NWE-DIT,Nuwara Eliya,HR,534එච්,,36.0,6.976183,80.797763,official,False
+HR-NWE-0089,SC-NWE-DIT,Nuwara Eliya,HR,504ඩී,,9.0,7.056214,80.82831,official,False
+HR-NWE-0090,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.100326,80.804693,official,False
+HR-NWE-0091,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,7.02343,80.838948,official,False
+HR-NWE-0092,SC-NWE-DIT,Nuwara Eliya,HR,516ඩී,,22.0,7.059967,80.874677,official,False
+HR-NWE-0093,SC-NWE-DIT,Nuwara Eliya,HR,535-එච්,,3.0,6.976042,80.784391,official,False
+HR-NWE-0094,SC-NWE-DIT,Nuwara Eliya,HR,534G,,4.0,6.996583,80.795085,official,False
+HR-NWE-0095,SC-NWE-DIT,Nuwara Eliya,HR,526,,4.0,7.049694,80.873028,official,False
+HR-NWE-0096,SC-NWE-DIT,Nuwara Eliya,HR,534ජී,,6.0,7.004244,80.811862,official,False
+HR-NWE-0097,SC-NWE-DIT,Nuwara Eliya,HR,516ඩී,,6.0,7.060018,80.872723,official,False
+HR-NWE-0098,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.075025,80.819993,official,False
+HR-NWE-0099,SC-NWE-DIT,Nuwara Eliya,HR,ජයලංකා534Bසහමධ්‍යමකදපොල534C,,3.0,6.998178,80.792801,official,False
+HR-NWE-0100,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.102845,80.805372,official,False
+HR-NWE-0101,SC-NWE-DIT,Nuwara Eliya,HR,526,,17.0,7.05412,80.875021,official,False
+HR-NWE-0102,SC-NWE-DIT,Nuwara Eliya,HR,,,15.0,6.963119,80.640509,official,False
+HR-NWE-0103,SC-NWE-DIT,Nuwara Eliya,HR,534C,,4.0,6.997069,80.797443,official,False
+HR-NWE-0104,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,6.937903,80.689125,official,False
+HR-NWE-0105,SC-NWE-DIT,Nuwara Eliya,HR,,,13.0,7.106421,80.89179,official,False
+HR-NWE-0106,SC-NWE-DIT,Nuwara Eliya,HR,504බී,,20.0,7.059857,80.847689,official,False
+HR-NWE-0107,SC-NWE-DIT,Nuwara Eliya,HR,534G,,7.0,6.996682,80.796057,official,False
+HR-NWE-0108,SC-NWE-DIT,Nuwara Eliya,HR,534F,,4.0,6.98718,80.83545,official,False
+HR-NWE-0109,SC-NWE-DIT,Nuwara Eliya,HR,,,11.0,7.175739,80.780632,official,False
+HR-NWE-0110,SC-NWE-DIT,Nuwara Eliya,HR,511/B,,2.0,7.087363,80.784085,official,False
+HR-NWE-0111,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.935252,80.68504,official,False
+HR-NWE-0112,SC-NWE-DIT,Nuwara Eliya,HR,506-ඒ,,67.0,7.119166,80.818231,official,False
+HR-NWE-0113,SC-NWE-DIT,Nuwara Eliya,HR,534/එෆ්,,80.0,7.096241,80.893012,official,False
+HR-NWE-0114,SC-NWE-DIT,Nuwara Eliya,HR,501G,,5.0,7.126164,80.726674,official,False
+HR-NWE-0115,SC-NWE-DIT,Nuwara Eliya,HR,524/,,17.0,7.068918,80.892541,official,False
+HR-NWE-0116,SC-NWE-DIT,Nuwara Eliya,HR,535එම්,,4.0,6.975501,80.742138,official,False
+HR-NWE-0117,SC-NWE-DIT,Nuwara Eliya,HR,74,,1.0,7.035111,80.708128,official,False
+HR-NWE-0118,SC-NWE-DIT,Nuwara Eliya,HR,456සී,,1.0,7.07439,80.651607,official,False
+HR-NWE-0119,SC-NWE-DIT,Nuwara Eliya,HR,535එන්,,7.0,6.980078,80.753957,official,False
+HR-NWE-0120,SC-NWE-DIT,Nuwara Eliya,HR,,,17.0,7.095273,80.802895,official,False
+HR-NWE-0121,SC-NWE-DIT,Nuwara Eliya,HR,504බී,,5.0,7.057058,80.848957,official,False
+HR-NWE-0122,SC-NWE-DIT,Nuwara Eliya,HR,474,,1.0,7.05458,80.700106,official,False
+HR-NWE-0123,SC-NWE-DIT,Nuwara Eliya,HR,,,9.0,7.130905,80.724265,official,False
+HR-NWE-0124,SC-NWE-DIT,Nuwara Eliya,HR,505ඊ,,5.0,7.103234,80.805311,official,False
+HR-NWE-0125,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,6.936198,80.783728,official,False
+HR-NWE-0126,SC-NWE-DIT,Nuwara Eliya,HR,498බී,,10.0,7.14788,80.741942,official,False
+HR-NWE-0127,SC-NWE-DIT,Nuwara Eliya,HR,517බිි,,60.0,7.084239,80.882676,official,False
+HR-NWE-0128,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,7.125769,80.825746,official,False
+HR-NWE-0129,SC-NWE-DIT,Nuwara Eliya,HR,,,89.0,7.016198,80.825626,official,False
+HR-NWE-0130,SC-NWE-DIT,Nuwara Eliya,HR,,,67.0,7.194218,80.811582,official,False
+HR-NWE-0131,SC-NWE-DIT,Nuwara Eliya,HR,519,,9.0,7.103519,80.911397,official,False
+HR-NWE-0132,SC-NWE-DIT,Nuwara Eliya,HR,524බී,,19.0,7.073254,80.889418,official,False
+HR-NWE-0133,SC-NWE-DIT,Nuwara Eliya,HR,476/ඒ,,2.0,6.915715,80.739791,official,False
+HR-NWE-0134,SC-NWE-DIT,Nuwara Eliya,HR,527සී,,1.0,7.055771,80.936098,official,False
+HR-NWE-0135,SC-NWE-DIT,Nuwara Eliya,HR,527සී,,2.0,7.065013,80.934471,official,False
+HR-NWE-0136,SC-NWE-DIT,Nuwara Eliya,HR,531,,1.0,7.014642,80.904101,official,False
+HR-NWE-0137,SC-NWE-DIT,Nuwara Eliya,HR,501එෆ්,,17.0,7.110922,80.784752,official,False
+HR-NWE-0138,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.123701,80.914458,official,False
+HR-NWE-0139,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.127445,80.918182,official,False
+HR-NWE-0140,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.179,80.80946,official,False
+HR-NWE-0141,SC-NWE-DIT,Nuwara Eliya,HR,"518/ඊ,518/ඩිි",,18.0,7.068362,80.926003,official,False
+HR-NWE-0142,SC-NWE-DIT,Nuwara Eliya,HR,518/එෆ්,,2.0,7.068185,80.913913,official,False
+HR-NWE-0143,SC-NWE-DIT,Nuwara Eliya,HR,469ඒ්,,6.0,7.175607,80.766114,official,False
+HR-NWE-0144,SC-NWE-DIT,Nuwara Eliya,HR,492ඒ,,32.0,7.147436,80.78375,official,False
+HR-NWE-0145,SC-NWE-DIT,Nuwara Eliya,HR,531,,4.0,7.020985,80.904971,official,False
+HR-NWE-0146,SC-NWE-DIT,Nuwara Eliya,HR,492සී,,11.0,7.152334,80.781199,official,False
+HR-NWE-0147,SC-NWE-DIT,Nuwara Eliya,HR,498සී,,5.0,7.13975,80.76104,official,False
+HR-NWE-0148,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.150269,80.768594,official,False
+HR-NWE-0149,SC-NWE-DIT,Nuwara Eliya,HR,475/ඩබ්,,6.0,6.94054,80.712146,official,False
+HR-NWE-0150,SC-NWE-DIT,Nuwara Eliya,HR,513,,2.0,7.125822,80.826619,official,False
+HR-NWE-0151,SC-NWE-DIT,Nuwara Eliya,HR,474/අයි,,8.0,7.029975,80.715075,official,False
+HR-NWE-0152,SC-NWE-DIT,Nuwara Eliya,HR,,,7.0,7.159847,80.777759,official,False
+HR-NWE-0153,SC-NWE-DIT,Nuwara Eliya,HR,494,,1.0,7.174659,80.774878,official,False
+HR-NWE-0154,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.153525,80.789001,official,False
+HR-NWE-0155,SC-NWE-DIT,Nuwara Eliya,HR,,,16.0,7.185117,80.773274,official,False
+HR-NWE-0156,SC-NWE-DIT,Nuwara Eliya,HR,501ඩී,,8.0,7.122487,80.753619,official,False
+HR-NWE-0157,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.139739,80.761844,official,False
+HR-NWE-0158,SC-NWE-DIT,Nuwara Eliya,HR,,,19.0,7.076957,80.862993,official,False
+HR-NWE-0159,SC-NWE-DIT,Nuwara Eliya,HR,427/සී,,1.0,7.062492,80.945148,official,False
+HR-NWE-0160,SC-NWE-DIT,Nuwara Eliya,HR,486සී,,6.0,7.212561,80.778666,official,False
+HR-NWE-0161,SC-NWE-DIT,Nuwara Eliya,HR,520/3,,8.0,7.080013,80.914904,official,False
+HR-NWE-0162,SC-NWE-DIT,Nuwara Eliya,HR,533/එෆ්,,11.0,7.012501,80.898795,official,False
+HR-NWE-0163,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,7.127276,80.911899,official,False
+HR-NWE-0164,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.125579,80.915886,official,False
+HR-NWE-0165,SC-NWE-DIT,Nuwara Eliya,HR,,,32.0,6.988265,80.904618,official,False
+HR-NWE-0166,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.053802,80.893417,official,False
+HR-NWE-0167,SC-NWE-DIT,Nuwara Eliya,HR,528ඩී,,7.0,7.037773,80.919553,official,False
+HR-NWE-0168,SC-NWE-DIT,Nuwara Eliya,HR,518ඩී,,2.0,7.075069,80.932841,official,False
+HR-NWE-0169,SC-NWE-DIT,Nuwara Eliya,HR,531ඒ,,3.0,7.025399,80.907987,official,False
+HR-NWE-0170,SC-NWE-DIT,Nuwara Eliya,HR,524/ඊ,,2.0,7.087965,80.894259,official,False
+HR-NWE-0171,SC-NWE-DIT,Nuwara Eliya,HR,519/ඒ,,1.0,7.097677,80.906295,official,False
+HR-NWE-0172,SC-NWE-DIT,Nuwara Eliya,HR,468/ඊ,,8.0,7.009557,80.683373,official,False
+HR-NWE-0173,SC-NWE-DIT,Nuwara Eliya,HR,468/ඊ,,9.0,7.019644,80.668496,official,False
+HR-NWE-0174,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.117642,80.895565,official,False
+HR-NWE-0175,SC-NWE-DIT,Nuwara Eliya,HR,521/ඒ,,4.0,7.130217,80.922939,official,False
+HR-NWE-0176,SC-NWE-DIT,Nuwara Eliya,HR,521/සී,,3.0,7.110235,80.917462,official,False
+HR-NWE-0177,SC-NWE-DIT,Nuwara Eliya,HR,518/ඒ,,3.0,7.082688,80.919238,official,False
+HR-NWE-0178,SC-NWE-DIT,Nuwara Eliya,HR,460ජේ,,3.0,7.06433,80.559541,official,False
+HR-NWE-0179,SC-NWE-DIT,Nuwara Eliya,HR,460I,,14.0,7.031581,80.592806,official,False
+HR-NWE-0180,SC-NWE-DIT,Nuwara Eliya,HR,469,,34.0,7.071181,80.604457,official,False
+HR-NWE-0181,SC-NWE-DIT,Nuwara Eliya,HR,475/එච්,,4.0,6.901406,80.685633,official,False
+HR-NWE-0182,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.070584,80.558355,official,False
+HR-NWE-0183,SC-NWE-DIT,Nuwara Eliya,HR,,,22.0,7.071685,80.565012,official,False
+HR-NWE-0184,SC-NWE-DIT,Nuwara Eliya,HR,,,8.0,7.07693,80.627593,official,False
+HR-NWE-0185,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,7.04219,80.651601,official,False
+HR-NWE-0186,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.048818,80.634506,official,False
+HR-NWE-0187,SC-NWE-DIT,Nuwara Eliya,HR,,,22.0,6.965774,80.50398,official,False
+HR-NWE-0188,SC-NWE-DIT,Nuwara Eliya,HR,460,,27.0,7.071658,80.550723,official,False
+HR-NWE-0189,SC-NWE-DIT,Nuwara Eliya,HR,465/ඩී,,3.0,7.035905,80.637297,official,False
+HR-NWE-0190,SC-NWE-DIT,Nuwara Eliya,HR,510,,3.0,7.081398,80.791859,official,False
+HR-NWE-0191,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.05075,80.627865,official,False
+HR-NWE-0192,SC-NWE-DIT,Nuwara Eliya,HR,533O,,17.0,7.019222,80.827176,official,False
+HR-NWE-0193,SC-NWE-DIT,Nuwara Eliya,HR,515/සී,,9.0,7.0936,80.8654,official,False
+HR-NWE-0194,SC-NWE-DIT,Nuwara Eliya,HR,508/B,,44.0,7.061727,80.8081,official,False
+HR-NWE-0195,SC-NWE-DIT,Nuwara Eliya,HR,506/A,,46.0,7.107552,80.823423,official,False
+HR-NWE-0196,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.056772,80.873094,official,False
+HR-NWE-0197,SC-NWE-DIT,Nuwara Eliya,HR,483ඒ,,2.0,7.126839,80.780843,official,False
+HR-NWE-0198,SC-NWE-DIT,Nuwara Eliya,HR,504ඊ,,4.0,7.079423,80.82688,official,False
+HR-NWE-0199,SC-NWE-DIT,Nuwara Eliya,HR,515/සී,,18.0,7.0841,80.8589,official,False
+HR-NWE-0200,SC-NWE-DIT,Nuwara Eliya,HR,511/E,,8.0,7.057853,80.769713,official,False
+HR-NWE-0201,SC-NWE-DIT,Nuwara Eliya,HR,505ඩී,,35.0,7.111228,80.804811,official,False
+HR-NWE-0202,SC-NWE-DIT,Nuwara Eliya,HR,510/ඒ,,4.0,7.09058,80.797601,official,False
+HR-NWE-0203,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.045456,80.768405,official,False
+HR-NWE-0204,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.036261,80.771846,official,False
+HR-NWE-0205,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.08108,80.877692,official,False
+HR-NWE-0206,SC-NWE-DIT,Nuwara Eliya,HR,,,17.0,7.047379,80.771507,official,False
+HR-NWE-0207,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.096209,80.874903,official,False
+HR-NWE-0208,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.08166,80.866714,official,False
+HR-NWE-0209,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.078676,80.776533,official,False
+HR-NWE-0210,SC-NWE-DIT,Nuwara Eliya,HR,482සී,,17.0,7.141516,80.779392,official,False
+HR-NWE-0211,SC-NWE-DIT,Nuwara Eliya,HR,511එෆ්,,12.0,7.067045,80.765536,official,False
+HR-NWE-0212,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.078867,80.877109,official,False
+HR-NWE-0213,SC-NWE-DIT,Nuwara Eliya,HR,511ඩී,,7.0,7.073056,80.775833,official,False
+HR-NWE-0214,SC-NWE-DIT,Nuwara Eliya,HR,,,11.0,7.045382,80.57052,official,False
+HR-NWE-0215,SC-NWE-DIT,Nuwara Eliya,HR,526ඒ,,8.0,7.040006,80.857214,official,False
+HR-NWE-0216,SC-NWE-DIT,Nuwara Eliya,HR,33/0,,1.0,7.029412,80.846739,official,False
+HR-NWE-0217,SC-NWE-DIT,Nuwara Eliya,HR,,,9.0,7.184191,80.848385,official,False
+HR-NWE-0218,SC-NWE-DIT,Nuwara Eliya,HR,526ඒ,,9.0,7.038435,80.863046,official,False
+HR-NWE-0219,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.162817,80.844593,official,False
+HR-NWE-0220,SC-NWE-DIT,Nuwara Eliya,HR,,,9.0,7.103286,80.804261,official,False
+HR-NWE-0221,SC-NWE-DIT,Nuwara Eliya,HR,517/ඒ,,3.0,7.081213,80.814601,official,False
+HR-NWE-0222,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.12219,80.819586,official,False
+HR-NWE-0223,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.119112,80.790406,official,False
+HR-NWE-0224,SC-NWE-DIT,Nuwara Eliya,HR,483,,1.0,7.124402,80.785103,official,False
+HR-NWE-0225,SC-NWE-DIT,Nuwara Eliya,HR,526/ඒ,,3.0,7.041236,80.864936,official,False
+HR-NWE-0226,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,7.054669,80.874534,official,False
+HR-NWE-0227,SC-NWE-DIT,Nuwara Eliya,HR,,,25.0,7.067763,80.668279,official,False
+HR-NWE-0228,SC-NWE-DIT,Nuwara Eliya,HR,509/ඒ,,6.0,7.065914,80.812929,official,False
+HR-NWE-0229,SC-NWE-DIT,Nuwara Eliya,HR,475L,,8.0,6.857822,80.744137,official,False
+HR-NWE-0230,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.844155,80.748291,official,False
+HR-NWE-0231,SC-NWE-DIT,Nuwara Eliya,HR,534-H,,4.0,6.978164,80.799754,official,False
+HR-NWE-0232,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,6.905841,80.669558,official,False
+HR-NWE-0233,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,6.847804,80.749638,official,False
+HR-NWE-0234,SC-NWE-DIT,Nuwara Eliya,HR,475එච්,,2.0,6.900228,80.687798,official,False
+HR-NWE-0235,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.942871,80.695375,official,False
+HR-NWE-0236,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,6.936357,80.683517,official,False
+HR-NWE-0237,SC-NWE-DIT,Nuwara Eliya,HR,494ඩී,,9.0,7.165474,80.760873,official,False
+HR-NWE-0238,SC-NWE-DIT,Nuwara Eliya,HR,534F,,2.0,6.98895,80.83411,official,False
+HR-NWE-0239,SC-NWE-DIT,Nuwara Eliya,HR,498I,,23.0,7.145088,80.77705,official,False
+HR-NWE-0240,SC-NWE-DIT,Nuwara Eliya,HR,475ජී,,7.0,6.931885,80.685674,official,False
+HR-NWE-0241,SC-NWE-DIT,Nuwara Eliya,HR,489ඒ,,92.0,7.179488,80.79552,official,False
+HR-NWE-0242,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.93734,80.79996,official,False
+HR-NWE-0243,SC-NWE-DIT,Nuwara Eliya,HR,495ඒ,,40.0,7.186458,80.771902,official,False
+HR-NWE-0244,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.132522,80.728467,official,False
+HR-NWE-0245,SC-NWE-DIT,Nuwara Eliya,HR,476/සිි,,3.0,6.947925,80.762981,official,False
+HR-NWE-0246,SC-NWE-DIT,Nuwara Eliya,HR,501ජී,,5.0,7.117409,80.709166,official,False
+HR-NWE-0247,SC-NWE-DIT,Nuwara Eliya,HR,481,,4.0,7.118736,80.791287,official,False
+HR-NWE-0248,SC-NWE-DIT,Nuwara Eliya,HR,535එම්,,15.0,6.982387,80.747008,official,False
+HR-NWE-0249,SC-NWE-DIT,Nuwara Eliya,HR,494ඩී,,10.0,7.167357,80.772681,official,False
+HR-NWE-0250,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.16544,80.754337,official,False
+HR-NWE-0251,SC-NWE-DIT,Nuwara Eliya,HR,494/එෆ්,,9.0,7.176516,80.785028,official,False
+HR-NWE-0252,SC-NWE-DIT,Nuwara Eliya,HR,489/E,,5.0,7.162197,80.821171,official,False
+HR-NWE-0253,SC-NWE-DIT,Nuwara Eliya,HR,,,14.0,6.917015,80.751668,official,False
+HR-NWE-0254,SC-NWE-DIT,Nuwara Eliya,HR,475/ජිි,,13.0,6.934603,80.682167,official,False
+HR-NWE-0255,SC-NWE-DIT,Nuwara Eliya,HR,535ජේ,,1.0,6.993756,80.747054,official,False
+HR-NWE-0256,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,6.96452,80.76041,official,False
+HR-NWE-0257,SC-NWE-DIT,Nuwara Eliya,HR,494ඒ,,5.0,7.153185,80.778629,official,False
+HR-NWE-0258,SC-NWE-DIT,Nuwara Eliya,HR,476/බී,,10.0,6.917902,80.749447,official,False
+HR-NWE-0259,SC-NWE-DIT,Nuwara Eliya,HR,494ඒ,,11.0,7.157197,80.774353,official,False
+HR-NWE-0260,SC-NWE-DIT,Nuwara Eliya,HR,320බී,,4.0,6.825426,80.518568,official,False
+HR-NWE-0261,SC-NWE-DIT,Nuwara Eliya,HR,320ඊ,,25.0,6.91418,80.56001,official,False
+HR-NWE-0262,SC-NWE-DIT,Nuwara Eliya,HR,495/ඒ,,2.0,7.19018,80.76554,official,False
+HR-NWE-0263,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.148768,80.755985,official,False
+HR-NWE-0264,SC-NWE-DIT,Nuwara Eliya,HR,500බී,,7.0,7.157112,80.728561,official,False
+HR-NWE-0265,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.130498,80.752393,official,False
+HR-NWE-0266,SC-NWE-DIT,Nuwara Eliya,HR,319ඒ,,7.0,6.87276,80.60925,official,False
+HR-NWE-0267,SC-NWE-DIT,Nuwara Eliya,HR,320,,9.0,6.839264,80.609352,official,False
+HR-NWE-0268,SC-NWE-DIT,Nuwara Eliya,HR,484ඩී,,9.0,7.145305,80.808799,official,False
+HR-NWE-0269,SC-NWE-DIT,Nuwara Eliya,HR,503/ඒ,,11.0,7.142761,80.726654,official,False
+HR-NWE-0270,SC-NWE-DIT,Nuwara Eliya,HR,494බී,,4.0,7.188429,80.775049,official,False
+HR-NWE-0271,SC-NWE-DIT,Nuwara Eliya,HR,498/ඊ,,3.0,7.14452,80.751657,official,False
+HR-NWE-0272,SC-NWE-DIT,Nuwara Eliya,HR,468E,,6.0,7.021211,80.673811,official,False
+HR-NWE-0273,SC-NWE-DIT,Nuwara Eliya,HR,474,,8.0,7.04671,80.696108,official,False
+HR-NWE-0274,SC-NWE-DIT,Nuwara Eliya,HR,474ඊ,,25.0,7.08009,80.672055,official,False
+HR-NWE-0275,SC-NWE-DIT,Nuwara Eliya,HR,474-එල්,,35.0,7.047205,80.706805,official,False
+HR-NWE-0276,SC-NWE-DIT,Nuwara Eliya,HR,474ඒ,,2.0,7.075766,80.674108,official,False
+HR-NWE-0277,SC-NWE-DIT,Nuwara Eliya,HR,468,,28.0,7.018127,80.669205,official,False
+HR-NWE-0278,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.066831,80.676784,official,False
+HR-NWE-0279,SC-NWE-DIT,Nuwara Eliya,HR,499/සී,,16.0,7.122612,80.740528,official,False
+HR-NWE-0280,SC-NWE-DIT,Nuwara Eliya,HR,492/ඒ,,6.0,7.141956,80.777107,official,False
+HR-NWE-0281,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.063928,80.63409,official,False
+HR-NWE-0282,SC-NWE-DIT,Nuwara Eliya,HR,474ඊ,,21.0,7.081681,80.669244,official,False
+HR-NWE-0283,SC-NWE-DIT,Nuwara Eliya,HR,456,,5.0,7.071731,80.644118,official,False
+HR-NWE-0284,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.06647,80.674209,official,False
+HR-NWE-0285,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,7.01807,80.914153,official,False
+HR-NWE-0286,SC-NWE-DIT,Nuwara Eliya,HR,473,,3.0,7.071185,80.672634,official,False
+HR-NWE-0287,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.105461,80.923034,official,False
+HR-NWE-0288,SC-NWE-DIT,Nuwara Eliya,HR,,,7.0,7.076688,80.637771,official,False
+HR-NWE-0289,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.075659,80.637564,official,False
+HR-NWE-0290,SC-NWE-DIT,Nuwara Eliya,HR,533එච්,,29.0,7.016737,80.896676,official,False
+HR-NWE-0291,SC-NWE-DIT,Nuwara Eliya,HR,527/A,,24.0,7.04687,80.916963,official,False
+HR-NWE-0292,SC-NWE-DIT,Nuwara Eliya,HR,474/ඒ,,7.0,7.092897,80.695847,official,False
+HR-NWE-0293,SC-NWE-DIT,Nuwara Eliya,HR,523,,10.0,7.080501,80.908902,official,False
+HR-NWE-0294,SC-NWE-DIT,Nuwara Eliya,HR,533එල්,,8.0,6.984242,80.86104,official,False
+HR-NWE-0295,SC-NWE-DIT,Nuwara Eliya,HR,524ඩී,,32.0,7.079395,80.899067,official,False
+HR-NWE-0296,SC-NWE-DIT,Nuwara Eliya,HR,533ඩී,,16.0,7.007259,80.904409,official,False
+HR-NWE-0297,SC-NWE-DIT,Nuwara Eliya,HR,469/සී,,8.0,7.031478,80.662045,official,False
+HR-NWE-0298,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.017761,80.672813,official,False
+HR-NWE-0299,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,7.107091,80.894113,official,False
+HR-NWE-0300,SC-NWE-DIT,Nuwara Eliya,HR,468/ඩී,,9.0,7.020201,80.6476,official,False
+HR-NWE-0301,SC-NWE-DIT,Nuwara Eliya,HR,,,11.0,6.894948,80.746968,official,False
+HR-NWE-0302,SC-NWE-DIT,Nuwara Eliya,HR,,,8.0,6.960145,80.641481,official,False
+HR-NWE-0303,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,6.938664,80.536881,official,False
+HR-NWE-0304,SC-NWE-DIT,Nuwara Eliya,HR,316එෆ්,,2.0,6.975721,80.662346,official,False
+HR-NWE-0305,SC-NWE-DIT,Nuwara Eliya,HR,315/ඩී,,3.0,6.922192,80.51605,official,False
+HR-NWE-0306,SC-NWE-DIT,Nuwara Eliya,HR,,,17.0,7.081377,80.779915,official,False
+HR-NWE-0307,SC-NWE-DIT,Nuwara Eliya,HR,320/එෆ්,,16.0,6.945386,80.543395,official,False
+HR-NWE-0308,SC-NWE-DIT,Nuwara Eliya,HR,511B,,8.0,7.082881,80.7854,official,False
+HR-NWE-0309,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.081034,80.794223,official,False
+HR-NWE-0310,SC-NWE-DIT,Nuwara Eliya,HR,,,15.0,7.060298,80.786575,official,False
+HR-NWE-0311,SC-NWE-DIT,Nuwara Eliya,HR,,,11.0,7.056346,80.780325,official,False
+HR-NWE-0312,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.055483,80.787835,official,False
+HR-NWE-0313,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.057446,80.762382,official,False
+HR-NWE-0314,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,7.063734,80.766578,official,False
+HR-NWE-0315,SC-NWE-DIT,Nuwara Eliya,HR,,,9.0,7.094397,80.79708,official,False
+HR-NWE-0316,SC-NWE-DIT,Nuwara Eliya,HR,511එෆ්,,7.0,7.062858,80.770739,official,False
+HR-NWE-0317,SC-NWE-DIT,Nuwara Eliya,HR,,,12.0,7.093806,80.79708,official,False
+HR-NWE-0318,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.076185,80.783404,official,False
+HR-NWE-0319,SC-NWE-DIT,Nuwara Eliya,HR,512/ඩී,,2.0,7.03478,80.77967,official,False
+HR-NWE-0320,SC-NWE-DIT,Nuwara Eliya,HR,512/ඩී,,4.0,7.04258,80.78062,official,False
+HR-NWE-0321,SC-NWE-DIT,Nuwara Eliya,HR,534එෆ්,,3.0,7.000355,80.81843,official,False
+HR-NWE-0322,SC-NWE-DIT,Nuwara Eliya,HR,,,12.0,7.139745,80.8103,official,False
+HR-NWE-0323,SC-NWE-DIT,Nuwara Eliya,HR,482ඒ,,1.0,7.131072,80.777196,official,False
+HR-NWE-0324,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.140993,80.825511,official,False
+HR-NWE-0325,SC-NWE-DIT,Nuwara Eliya,HR,,,11.0,7.127255,80.795473,official,False
+HR-NWE-0326,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.05322,80.79046,official,False
+HR-NWE-0327,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.119208,80.791394,official,False
+HR-NWE-0328,SC-NWE-DIT,Nuwara Eliya,HR,512,,7.0,7.081536,80.794,official,False
+HR-NWE-0329,SC-NWE-DIT,Nuwara Eliya,HR,482/ඒ,,1.0,7.131013,80.784547,official,False
+HR-NWE-0330,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.141152,80.785306,official,False
+HR-NWE-0331,SC-NWE-DIT,Nuwara Eliya,HR,,,13.0,7.082684,80.781387,official,False
+HR-NWE-0332,SC-NWE-DIT,Nuwara Eliya,HR,,,16.0,7.075625,80.778592,official,False
+HR-NWE-0333,SC-NWE-DIT,Nuwara Eliya,HR,,,8.0,7.081666,80.779317,official,False
+HR-NWE-0334,SC-NWE-DIT,Nuwara Eliya,HR,511/බී,,13.0,7.08566,80.786436,official,False
+HR-NWE-0335,SC-NWE-DIT,Nuwara Eliya,HR,511/බී,,23.0,7.081099,80.78723,official,False
+HR-NWE-0336,SC-NWE-DIT,Nuwara Eliya,HR,481/ඒ,,2.0,7.111274,80.797057,official,False
+HR-NWE-0337,SC-NWE-DIT,Nuwara Eliya,HR,508/ඩී,,8.0,7.070759,80.797336,official,False
+HR-NWE-0338,SC-NWE-DIT,Nuwara Eliya,HR,476සී,,5.0,6.954954,80.722316,official,False
+HR-NWE-0339,SC-NWE-DIT,Nuwara Eliya,HR,508/ඩී,,17.0,7.067772,80.796565,official,False
+HR-NWE-0340,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.938489,80.686823,official,False
+HR-NWE-0341,SC-NWE-DIT,Nuwara Eliya,HR,,,8.0,6.929895,80.691314,official,False
+HR-NWE-0342,SC-NWE-DIT,Nuwara Eliya,HR,483/ඒ,,8.0,7.12674,80.786135,official,False
+HR-NWE-0343,SC-NWE-DIT,Nuwara Eliya,HR,484/ඊ,,6.0,7.138818,80.823338,official,False
+HR-NWE-0344,SC-NWE-DIT,Nuwara Eliya,HR,494ඩී,,6.0,7.164128,80.772551,official,False
+HR-NWE-0345,SC-NWE-DIT,Nuwara Eliya,HR,478/ඒ,,15.0,6.943508,80.795957,official,False
+HR-NWE-0346,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.151733,80.774107,official,False
+HR-NWE-0347,SC-NWE-DIT,Nuwara Eliya,HR,501G,,2.0,7.131462,80.717697,official,False
+HR-NWE-0348,SC-NWE-DIT,Nuwara Eliya,HR,535එච්,,14.0,6.974984,80.783969,official,False
+HR-NWE-0349,SC-NWE-DIT,Nuwara Eliya,HR,535ඩී,,19.0,6.967445,80.783106,official,False
+HR-NWE-0350,SC-NWE-DIT,Nuwara Eliya,HR,534/ඒ,,5.0,6.976263,80.809717,official,False
+HR-NWE-0351,SC-NWE-DIT,Nuwara Eliya,HR,476/සිි,,2.0,6.951439,80.716936,official,False
+HR-NWE-0352,SC-NWE-DIT,Nuwara Eliya,HR,535කේ,,9.0,6.984906,80.751693,official,False
+HR-NWE-0353,SC-NWE-DIT,Nuwara Eliya,HR,535කේ,,2.0,6.982732,80.760104,official,False
+HR-NWE-0354,SC-NWE-DIT,Nuwara Eliya,HR,534/එච්,,14.0,6.974158,80.795416,official,False
+HR-NWE-0355,SC-NWE-DIT,Nuwara Eliya,HR,,,13.0,7.164751,80.761983,official,False
+HR-NWE-0356,SC-NWE-DIT,Nuwara Eliya,HR,534/එච්,,7.0,6.975371,80.800953,official,False
+HR-NWE-0357,SC-NWE-DIT,Nuwara Eliya,HR,534/එච්,,12.0,6.974152,80.800544,official,False
+HR-NWE-0358,SC-NWE-DIT,Nuwara Eliya,HR,534එච්,,22.0,6.973913,80.797267,official,False
+HR-NWE-0359,SC-NWE-DIT,Nuwara Eliya,HR,492B,,2.0,7.157147,80.790788,official,False
+HR-NWE-0360,SC-NWE-DIT,Nuwara Eliya,HR,,,17.0,6.93484,80.68644,official,False
+HR-NWE-0361,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.168418,80.881661,official,False
+HR-NWE-0362,SC-NWE-DIT,Nuwara Eliya,HR,,,13.0,7.189936,80.780293,official,False
+HR-NWE-0363,SC-NWE-DIT,Nuwara Eliya,HR,,,42.0,6.963448,80.759985,official,False
+HR-NWE-0364,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.12393,80.736795,official,False
+HR-NWE-0365,SC-NWE-DIT,Nuwara Eliya,HR,320බී,,3.0,6.831323,80.543634,official,False
+HR-NWE-0366,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.137964,80.750781,official,False
+HR-NWE-0367,SC-NWE-DIT,Nuwara Eliya,HR,499ඒ,,8.0,7.12934,80.729014,official,False
+HR-NWE-0368,SC-NWE-DIT,Nuwara Eliya,HR,494ඩී,,20.0,7.173387,80.778706,official,False
+HR-NWE-0369,SC-NWE-DIT,Nuwara Eliya,HR,486/බී,,2.0,7.237053,80.772805,official,False
+HR-NWE-0370,SC-NWE-DIT,Nuwara Eliya,HR,495බී,,3.0,7.188508,80.763362,official,False
+HR-NWE-0371,SC-NWE-DIT,Nuwara Eliya,HR,319,,2.0,6.869752,80.615725,official,False
+HR-NWE-0372,SC-NWE-DIT,Nuwara Eliya,HR,319/අයි,,5.0,6.874586,80.625756,official,False
+HR-NWE-0373,SC-NWE-DIT,Nuwara Eliya,HR,493/ඒ,,3.0,7.169503,80.783403,official,False
+HR-NWE-0374,SC-NWE-DIT,Nuwara Eliya,HR,320/අයි,,4.0,6.879123,80.528951,official,False
+HR-NWE-0375,SC-NWE-DIT,Nuwara Eliya,HR,498/ඊ,,6.0,7.142552,80.753561,official,False
+HR-NWE-0376,SC-NWE-DIT,Nuwara Eliya,HR,,,7.0,7.00594,80.68932,official,False
+HR-NWE-0377,SC-NWE-DIT,Nuwara Eliya,HR,499/ඩී,,5.0,7.133089,80.738484,official,False
+HR-NWE-0378,SC-NWE-DIT,Nuwara Eliya,HR,489/සී,,4.0,7.160667,80.809156,official,False
+HR-NWE-0379,SC-NWE-DIT,Nuwara Eliya,HR,494/සී,,14.0,7.174094,80.774725,official,False
+HR-NWE-0380,SC-NWE-DIT,Nuwara Eliya,HR,472/ඒ,,10.0,7.051329,80.691796,official,False
+HR-NWE-0381,SC-NWE-DIT,Nuwara Eliya,HR,474,,4.0,7.07022,80.68408,official,False
+HR-NWE-0382,SC-NWE-DIT,Nuwara Eliya,HR,499/ඩී,,3.0,7.129986,80.742058,official,False
+HR-NWE-0383,SC-NWE-DIT,Nuwara Eliya,HR,501/ජී,,22.0,7.127233,80.727134,official,False
+HR-NWE-0384,SC-NWE-DIT,Nuwara Eliya,HR,474,,40.0,7.066844,80.693377,official,False
+HR-NWE-0385,SC-NWE-DIT,Nuwara Eliya,HR,496,,7.0,7.159836,80.764631,official,False
+HR-NWE-0386,SC-NWE-DIT,Nuwara Eliya,HR,470,,6.0,7.047767,80.664583,official,False
+HR-NWE-0387,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.136852,80.75798,official,False
+HR-NWE-0388,SC-NWE-DIT,Nuwara Eliya,HR,494,,2.0,7.17229,80.774917,official,False
+HR-NWE-0389,SC-NWE-DIT,Nuwara Eliya,HR,499/එෆ්,,1.0,7.13222,80.735145,official,False
+HR-NWE-0390,SC-NWE-DIT,Nuwara Eliya,HR,468B,,8.0,6.971878,80.632325,official,False
+HR-NWE-0391,SC-NWE-DIT,Nuwara Eliya,HR,474එම්,,5.0,7.074488,80.709507,official,False
+HR-NWE-0392,SC-NWE-DIT,Nuwara Eliya,HR,499/ඒ,,4.0,7.128356,80.729973,official,False
+HR-NWE-0393,SC-NWE-DIT,Nuwara Eliya,HR,474එම්,,4.0,7.068231,80.714152,official,False
+HR-NWE-0394,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.091977,80.684577,official,False
+HR-NWE-0395,SC-NWE-DIT,Nuwara Eliya,HR,499/ඊ,,3.0,7.139164,80.744045,official,False
+HR-NWE-0396,SC-NWE-DIT,Nuwara Eliya,HR,493,,5.0,7.160612,80.779422,official,False
+HR-NWE-0397,SC-NWE-DIT,Nuwara Eliya,HR,518එෆ්,,10.0,7.057198,80.90699,official,False
+HR-NWE-0398,SC-NWE-DIT,Nuwara Eliya,HR,518එෆ්,,16.0,7.058556,80.914662,official,False
+HR-NWE-0399,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.997559,80.67321,official,False
+HR-NWE-0400,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.006743,80.68126,official,False
+HR-NWE-0401,SC-NWE-DIT,Nuwara Eliya,HR,,,14.0,7.088966,80.916482,official,False
+HR-NWE-0402,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.998234,80.683053,official,False
+HR-NWE-0403,SC-NWE-DIT,Nuwara Eliya,HR,,,11.0,7.013316,80.922254,official,False
+HR-NWE-0404,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.006844,80.680632,official,False
+HR-NWE-0405,SC-NWE-DIT,Nuwara Eliya,HR,,,3.0,7.070045,80.643981,official,False
+HR-NWE-0406,SC-NWE-DIT,Nuwara Eliya,HR,456ඩී,,5.0,7.079098,80.641136,official,False
+HR-NWE-0407,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.017858,80.913899,official,False
+HR-NWE-0408,SC-NWE-DIT,Nuwara Eliya,HR,474,,1.0,7.067333,80.689656,official,False
+HR-NWE-0409,SC-NWE-DIT,Nuwara Eliya,HR,474ඩී,,1.0,7.073414,80.654126,official,False
+HR-NWE-0410,SC-NWE-DIT,Nuwara Eliya,HR,,,11.0,7.073173,80.668358,official,False
+HR-NWE-0411,SC-NWE-DIT,Nuwara Eliya,HR,,,16.0,7.027443,80.664202,official,False
+HR-NWE-0412,SC-NWE-DIT,Nuwara Eliya,HR,528-එෆ්,,17.0,7.033598,80.901734,official,False
+HR-NWE-0413,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.06847,80.690125,official,False
+HR-NWE-0414,SC-NWE-DIT,Nuwara Eliya,HR,470,,8.0,7.037886,80.661456,official,False
+HR-NWE-0415,SC-NWE-DIT,Nuwara Eliya,HR,531,,10.0,7.018458,80.900569,official,False
+HR-NWE-0416,SC-NWE-DIT,Nuwara Eliya,HR,518එෆ්,,17.0,7.068938,80.918604,official,False
+HR-NWE-0417,SC-NWE-DIT,Nuwara Eliya,HR,474,,21.0,7.068614,80.689815,official,False
+HR-NWE-0418,SC-NWE-DIT,Nuwara Eliya,HR,531ඒ,,17.0,7.024066,80.907605,official,False
+HR-NWE-0419,SC-NWE-DIT,Nuwara Eliya,HR,474සී,,8.0,7.03643,80.706645,official,False
+HR-NWE-0420,SC-NWE-DIT,Nuwara Eliya,HR,533ඊ,,37.0,6.976429,80.873384,official,False
+HR-NWE-0421,SC-NWE-DIT,Nuwara Eliya,HR,470/ඒ,,2.0,7.05343,80.677276,official,False
+HR-NWE-0422,SC-NWE-DIT,Nuwara Eliya,HR,,,26.0,7.053894,80.673706,official,False
+HR-NWE-0423,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.074747,80.652747,official,False
+HR-NWE-0424,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.078598,80.645048,official,False
+HR-NWE-0425,SC-NWE-DIT,Nuwara Eliya,HR,456/ඩී,,14.0,7.073033,80.635797,official,False
+HR-NWE-0426,SC-NWE-DIT,Nuwara Eliya,HR,468/ඩී,,12.0,7.017684,80.650857,official,False
+HR-NWE-0427,SC-NWE-DIT,Nuwara Eliya,HR,473,,18.0,7.065668,80.666907,official,False
+HR-NWE-0428,SC-NWE-DIT,Nuwara Eliya,HR,469/බී,,5.0,7.030028,80.652768,official,False
+HR-NWE-0429,SC-NWE-DIT,Nuwara Eliya,HR,526/බී,,26.0,7.044971,80.875646,official,False
+HR-NWE-0430,SC-NWE-DIT,Nuwara Eliya,HR,,,9.0,7.076308,80.878752,official,False
+HR-NWE-0431,SC-NWE-DIT,Nuwara Eliya,HR,,,7.0,7.085699,80.868552,official,False
+HR-NWE-0432,SC-NWE-DIT,Nuwara Eliya,HR,505/සී,,14.0,7.088818,80.815989,official,False
+HR-NWE-0433,SC-NWE-DIT,Nuwara Eliya,HR,507ඒ,,2.0,7.076389,80.813889,official,False
+HR-NWE-0434,SC-NWE-DIT,Nuwara Eliya,HR,516/A,,4.0,7.100988,80.881336,official,False
+HR-NWE-0435,SC-NWE-DIT,Nuwara Eliya,HR,504/E,,6.0,7.088789,80.835472,official,False
+HR-NWE-0436,SC-NWE-DIT,Nuwara Eliya,HR,505/සී,,3.0,7.095219,80.81926,official,False
+HR-NWE-0437,SC-NWE-DIT,Nuwara Eliya,HR,505/සී,,16.0,7.0867,80.824558,official,False
+HR-NWE-0438,SC-NWE-DIT,Nuwara Eliya,HR,516බී,,3.0,7.087345,80.869482,official,False
+HR-NWE-0439,SC-NWE-DIT,Nuwara Eliya,HR,526සී,,15.0,7.055437,80.836267,official,False
+HR-NWE-0440,SC-NWE-DIT,Nuwara Eliya,HR,506/ඒ,,2.0,7.121194,80.812656,official,False
+HR-NWE-0441,SC-NWE-DIT,Nuwara Eliya,HR,475Z,,6.0,6.952263,80.690438,official,False
+HR-NWE-0442,SC-NWE-DIT,Nuwara Eliya,HR,516/ඩී,,4.0,7.057253,80.872166,official,False
+HR-NWE-0443,SC-NWE-DIT,Nuwara Eliya,HR,514/ඩී,,2.0,7.100123,80.860011,official,False
+HR-NWE-0444,SC-NWE-DIT,Nuwara Eliya,HR,533බී,,9.0,7.006144,80.869393,official,False
+HR-NWE-0445,SC-NWE-DIT,Nuwara Eliya,HR,515/ඊ,,7.0,7.063588,80.872382,official,False
+HR-NWE-0446,SC-NWE-DIT,Nuwara Eliya,HR,513ඩී,,23.0,7.130874,80.844106,official,False
+HR-NWE-0447,SC-NWE-DIT,Nuwara Eliya,HR,506ඒ,,13.0,7.117753,80.816513,official,False
+HR-NWE-0448,SC-NWE-DIT,Nuwara Eliya,HR,,,12.0,7.051344,80.634896,official,False
+HR-NWE-0449,SC-NWE-DIT,Nuwara Eliya,HR,459/බී,,18.0,7.07347,80.608652,official,False
+HR-NWE-0450,SC-NWE-DIT,Nuwara Eliya,HR,460සී,,3.0,7.05544,80.562558,official,False
+HR-NWE-0451,SC-NWE-DIT,Nuwara Eliya,HR,465/ඊ,,13.0,7.055531,80.656901,official,False
+HR-NWE-0452,SC-NWE-DIT,Nuwara Eliya,HR,461/බී,,8.0,7.049372,80.600158,official,False
+HR-NWE-0453,SC-NWE-DIT,Nuwara Eliya,HR,460/කේ,,1.0,7.071545,80.556613,official,False
+HR-NWE-0454,SC-NWE-DIT,Nuwara Eliya,HR,,,7.0,7.07013,80.59534,official,False
+HR-NWE-0455,SC-NWE-DIT,Nuwara Eliya,HR,465/ඊ,,4.0,7.060168,80.653468,official,False
+HR-NWE-0456,SC-NWE-DIT,Nuwara Eliya,HR,466/ඒ,,11.0,7.029593,80.644073,official,False
+HR-NWE-0457,SC-NWE-DIT,Nuwara Eliya,HR,467/ඩී,,4.0,7.001765,80.616995,official,False
+HR-NWE-0458,SC-NWE-DIT,Nuwara Eliya,HR,459,,14.0,7.065536,80.599549,official,False
+HR-NWE-0459,SC-NWE-DIT,Nuwara Eliya,HR,459,,15.0,7.070445,80.601835,official,False
+HR-NWE-0460,SC-NWE-DIT,Nuwara Eliya,HR,459,,6.0,7.068022,80.899459,official,False
+HR-NWE-0461,SC-NWE-DIT,Nuwara Eliya,HR,460/ජේ,,12.0,7.067479,80.560692,official,False
+HR-NWE-0462,SC-NWE-DIT,Nuwara Eliya,HR,,,2.0,7.04399,80.650961,official,False
+HR-NWE-0463,SC-NWE-DIT,Nuwara Eliya,HR,467ඊ,,14.0,7.017391,80.626393,official,False
+HR-NWE-0464,SC-NWE-DIT,Nuwara Eliya,HR,33/0,,3.0,7.009989,80.831251,official,False
+HR-NWE-0465,SC-NWE-DIT,Nuwara Eliya,HR,467ඩී,,2.0,6.998057,80.620727,official,False
+HR-NWE-0466,SC-NWE-DIT,Nuwara Eliya,HR,466/බී,,2.0,7.03425,80.6413,official,False
+HR-NWE-0467,SC-NWE-DIT,Nuwara Eliya,HR,460සි,,1.0,7.052975,80.57031,official,False
+HR-NWE-0468,SC-NWE-DIT,Nuwara Eliya,HR,529ඒ,,18.0,7.034833,80.884878,official,False
+HR-NWE-0469,SC-NWE-DIT,Nuwara Eliya,HR,529ඒ,,2.0,7.032779,80.886245,official,False
+HR-NWE-0470,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.02635,80.880612,official,False
+HR-NWE-0471,SC-NWE-DIT,Nuwara Eliya,HR,529,,3.0,7.03104,80.883994,official,False
+HR-NWE-0472,SC-NWE-DIT,Nuwara Eliya,HR,475Z,,3.0,6.952238,80.674994,official,False
+HR-NWE-0473,SC-NWE-DIT,Nuwara Eliya,HR,,,29.0,7.04645,80.645162,official,False
+HR-NWE-0474,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.015817,80.901103,official,False
+HR-NWE-0475,SC-NWE-DIT,Nuwara Eliya,HR,,,11.0,7.048942,80.605185,official,False
+HR-NWE-0476,SC-NWE-DIT,Nuwara Eliya,HR,461/ඒ,,3.0,7.045416,80.599277,official,False
+HR-NWE-0477,SC-NWE-DIT,Nuwara Eliya,HR,,,10.0,7.05208,80.626611,official,False
+HR-NWE-0478,SC-NWE-DIT,Nuwara Eliya,HR,465/එච්,,6.0,7.032652,80.630748,official,False
+HR-NWE-0479,SC-NWE-DIT,Nuwara Eliya,HR,,,6.0,6.997335,80.620688,official,False
+HR-NWE-0480,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,6.983345,80.875009,official,False
+HR-NWE-0481,SC-NWE-DIT,Nuwara Eliya,HR,473,,14.0,7.070117,80.676286,official,False
+HR-NWE-0482,SC-NWE-DIT,Nuwara Eliya,HR,524/ඩී,,3.0,7.075718,80.89555,official,False
+HR-NWE-0483,SC-NWE-DIT,Nuwara Eliya,HR,523,,3.0,7.079226,80.915358,official,False
+HR-NWE-0484,SC-NWE-DIT,Nuwara Eliya,HR,521/බී,,1.0,7.127491,80.918195,official,False
+HR-NWE-0485,SC-NWE-DIT,Nuwara Eliya,HR,,,4.0,7.07267,80.688317,official,False
+HR-NWE-0486,SC-NWE-DIT,Nuwara Eliya,HR,474/අයි,,9.0,7.02946,80.716974,official,False
+HR-NWE-0487,SC-NWE-DIT,Nuwara Eliya,HR,533එල්,,4.0,6.984908,80.862571,official,False
+HR-NWE-0488,SC-NWE-DIT,Nuwara Eliya,HR,527/සී,,7.0,7.060441,80.947658,official,False
+HR-NWE-0489,SC-NWE-DIT,Nuwara Eliya,HR,526සීි,,26.0,7.046113,80.886365,official,False
+HR-NWE-0490,SC-NWE-DIT,Nuwara Eliya,HR,518/එෆ්,,4.0,7.071052,80.917346,official,False
+HR-NWE-0491,SC-NWE-DIT,Nuwara Eliya,HR,527/සී,,2.0,7.054183,80.932632,official,False
+HR-NWE-0492,SC-NWE-DIT,Nuwara Eliya,HR,,,5.0,7.058413,80.851257,official,False
+HR-NWE-0493,SC-NWE-DIT,Nuwara Eliya,HR,474/ජී,,12.0,7.086558,80.659289,official,False
+HR-NWE-0494,SC-NWE-DIT,Nuwara Eliya,HR,474/අයි,,18.0,7.022638,80.722237,official,False
+HR-NWE-0495,SC-NWE-DIT,Nuwara Eliya,HR,526සී,,23.0,7.061992,80.887101,official,False
+HR-NWE-0496,SC-NWE-DIT,Nuwara Eliya,HR,474/සී,,35.0,7.037783,80.708233,official,False
+HR-NWE-0497,SC-NWE-DIT,Nuwara Eliya,HR,473/සී,,10.0,7.072908,80.657004,official,False
+HR-NWE-0498,SC-NWE-DIT,Nuwara Eliya,HR,,,23.0,7.014396,80.903239,official,False
+HR-NWE-0499,SC-NWE-DIT,Nuwara Eliya,HR,524,,12.0,7.055187,80.918221,official,False
+HR-NWE-0500,SC-NWE-DIT,Nuwara Eliya,HR,521,,5.0,7.113376,80.930145,official,False
+HR-NWE-0501,SC-NWE-DIT,Nuwara Eliya,HR,471/ඒ,,12.0,7.065826,80.682824,official,False
+HR-NWE-0502,SC-NWE-DIT,Nuwara Eliya,HR,,,1.0,7.13645,80.85477,official,False
+HR-NWE-0503,SC-NWE-DIT,Nuwara Eliya,HR,524ඊ,,2.0,7.084999,80.899699,official,False
+HR-NWE-0504,SC-NWE-DIT,Nuwara Eliya,HR,474/අයි,,30.0,7.020948,80.723615,official,False
+HR-NWE-0505,SC-NWE-DIT,Nuwara Eliya,HR,472/ඒ,,23.0,7.05121,80.68543,official,False
+HR-NWE-0506,SC-NWE-DIT,Nuwara Eliya,HR,,,26.0,7.127883,80.905645,official,False
+HR-NWE-0507,SC-NWE-DIT,Nuwara Eliya,HR,456/ඩී,,40.0,7.091448,80.637969,official,False
+GN-RTN-F1-001,SC-RTN-F1,Ratnapura,GN,222H,396.0,,6.834626,80.288204,synthetic,True
+GN-RTN-F1-002,SC-RTN-F1,Ratnapura,GN,159L,113.0,,6.777184,80.387305,synthetic,True
+GN-RTN-F1-003,SC-RTN-F1,Ratnapura,GN,374D,494.0,,6.709677,80.368922,synthetic,True
+GN-RTN-F1-004,SC-RTN-F1,Ratnapura,GN,551C,227.0,,6.84547,80.291577,synthetic,True
+GN-RTN-F1-005,SC-RTN-F1,Ratnapura,GN,450G,250.0,,6.846037,80.268652,synthetic,True
+GN-RTN-F1-006,SC-RTN-F1,Ratnapura,GN,120E,259.0,,6.686862,80.365685,synthetic,True
+GN-RTN-F1-007,SC-RTN-F1,Ratnapura,GN,352J,177.0,,6.700494,80.375651,synthetic,True
+GN-RTN-F1-008,SC-RTN-F1,Ratnapura,GN,181F,378.0,,6.855784,80.289936,synthetic,True
+GN-RTN-F1-009,SC-RTN-F1,Ratnapura,GN,237F,153.0,,6.851107,80.291116,synthetic,True
+GN-RTN-F1-010,SC-RTN-F1,Ratnapura,GN,257C,172.0,,6.859057,80.279473,synthetic,True
+GN-RTN-F1-011,SC-RTN-F1,Ratnapura,GN,190E,272.0,,6.788527,80.384188,synthetic,True
+GN-RTN-F1-012,SC-RTN-F1,Ratnapura,GN,207L,94.0,,6.691346,80.379106,synthetic,True
+GN-RTN-F1-013,SC-RTN-F1,Ratnapura,GN,260G,62.0,,6.696402,80.374884,synthetic,True
+GN-RTN-F1-014,SC-RTN-F1,Ratnapura,GN,195M,216.0,,6.778069,80.385088,synthetic,True
+GN-RTN-F2-001,SC-RTN-F2,Ratnapura,GN,405A,186.0,,6.768265,80.373218,synthetic,True
+GN-RTN-F2-002,SC-RTN-F2,Ratnapura,GN,161F,205.0,,6.702091,80.434252,synthetic,True
+GN-RTN-F2-003,SC-RTN-F2,Ratnapura,GN,130K,160.0,,6.701844,80.423071,synthetic,True
+GN-RTN-F2-004,SC-RTN-F2,Ratnapura,GN,336F,155.0,,6.588318,80.53308,synthetic,True
+GN-RTN-F2-005,SC-RTN-F2,Ratnapura,GN,279L,253.0,,6.814819,80.284112,synthetic,True
+GN-RTN-F2-006,SC-RTN-F2,Ratnapura,GN,478J,196.0,,6.653297,80.391484,synthetic,True
+GN-RTN-F2-007,SC-RTN-F2,Ratnapura,GN,192C,351.0,,6.583102,80.528229,synthetic,True
+GN-RTN-F2-008,SC-RTN-F2,Ratnapura,GN,557C,221.0,,6.585977,80.541202,synthetic,True
+GN-RTN-F2-009,SC-RTN-F2,Ratnapura,GN,500M,269.0,,6.837106,80.300746,synthetic,True
+GN-RTN-F2-010,SC-RTN-F2,Ratnapura,GN,181D,189.0,,6.696266,80.426008,synthetic,True
+GN-RTN-F2-011,SC-RTN-F2,Ratnapura,GN,268M,352.0,,6.763667,80.362313,synthetic,True
+GN-RTN-F2-012,SC-RTN-F2,Ratnapura,GN,291J,101.0,,6.766137,80.376104,synthetic,True
+GN-RTN-F2-013,SC-RTN-F2,Ratnapura,GN,141B,254.0,,6.653108,80.388149,synthetic,True
+GN-RTN-F2-014,SC-RTN-F2,Ratnapura,GN,405C,63.0,,6.82289,80.279327,synthetic,True
+GN-RTN-F2-015,SC-RTN-F2,Ratnapura,GN,142K,127.0,,6.593068,80.535221,synthetic,True
+GN-RTN-F2-016,SC-RTN-F2,Ratnapura,GN,531A,344.0,,6.831827,80.274916,synthetic,True
+GN-RTN-F2-017,SC-RTN-F2,Ratnapura,GN,318C,113.0,,6.600087,80.547679,synthetic,True
+GN-RTN-F2-018,SC-RTN-F2,Ratnapura,GN,497M,196.0,,6.664512,80.404343,synthetic,True
+GN-RTN-F2-019,SC-RTN-F2,Ratnapura,GN,330F,261.0,,6.756851,80.363913,synthetic,True
+GN-RTN-F2-020,SC-RTN-F2,Ratnapura,GN,214C,87.0,,6.65545,80.410539,synthetic,True
+GN-RTN-F2-021,SC-RTN-F2,Ratnapura,GN,287B,168.0,,6.584125,80.536845,synthetic,True
+GN-RTN-F2-022,SC-RTN-F2,Ratnapura,GN,321F,121.0,,6.669979,80.387109,synthetic,True
+GN-RTN-F2-023,SC-RTN-F2,Ratnapura,GN,416M,112.0,,6.693701,80.421045,synthetic,True
+GN-RTN-F2-024,SC-RTN-F2,Ratnapura,GN,532A,431.0,,6.709368,80.419175,synthetic,True
+GN-RTN-F2-025,SC-RTN-F2,Ratnapura,GN,378L,81.0,,6.604226,80.551019,synthetic,True
+GN-RTN-F2-026,SC-RTN-F2,Ratnapura,GN,220J,650.0,,6.669332,80.397905,synthetic,True
+GN-RTN-F2-027,SC-RTN-F2,Ratnapura,GN,349M,104.0,,6.843235,80.291167,synthetic,True
+GN-RTN-F2-028,SC-RTN-F2,Ratnapura,GN,543C,353.0,,6.774293,80.354474,synthetic,True
+GN-RTN-L1-001,SC-RTN-L1,Ratnapura,GN,216F,182.0,,6.614674,80.532882,synthetic,True
+GN-RTN-L1-002,SC-RTN-L1,Ratnapura,GN,160J,743.0,,6.748693,80.480558,synthetic,True
+GN-RTN-L1-003,SC-RTN-L1,Ratnapura,GN,354C,592.0,,6.603253,80.535143,synthetic,True
+GN-RTN-L1-004,SC-RTN-L1,Ratnapura,GN,499K,73.0,,6.603863,80.531273,synthetic,True
+GN-RTN-L1-005,SC-RTN-L1,Ratnapura,GN,485J,68.0,,6.610319,80.534199,synthetic,True
+GN-RTN-L1-006,SC-RTN-L1,Ratnapura,GN,209F,97.0,,6.749669,80.47649,synthetic,True
+GN-RTN-L1-007,SC-RTN-L1,Ratnapura,GN,318C,69.0,,6.681949,80.686864,synthetic,True
+GN-RTN-L1-008,SC-RTN-L1,Ratnapura,GN,163B,139.0,,6.681423,80.696507,synthetic,True
+GN-RTN-L1-009,SC-RTN-L1,Ratnapura,GN,342C,95.0,,6.598316,80.532426,synthetic,True
+GN-RTN-L1-010,SC-RTN-L1,Ratnapura,GN,199G,160.0,,6.68699,80.69097,synthetic,True
+GN-RTN-L1-011,SC-RTN-L1,Ratnapura,GN,481H,125.0,,6.617616,80.528926,synthetic,True
+GN-RTN-L1-012,SC-RTN-L1,Ratnapura,GN,421F,113.0,,6.619662,80.538304,synthetic,True
+GN-RTN-L1-013,SC-RTN-L1,Ratnapura,GN,147F,145.0,,6.600689,80.526742,synthetic,True
+GN-RTN-L1-014,SC-RTN-L1,Ratnapura,GN,476D,233.0,,6.618171,80.526138,synthetic,True
+GN-RTN-L2-001,SC-RTN-L2,Ratnapura,GN,354A,491.0,,6.638109,80.701967,synthetic,True
+GN-RTN-L2-002,SC-RTN-L2,Ratnapura,GN,237E,155.0,,6.636639,80.698569,synthetic,True
+GN-RTN-L2-003,SC-RTN-L2,Ratnapura,GN,362D,156.0,,6.700808,80.492671,synthetic,True
+GN-RTN-L2-004,SC-RTN-L2,Ratnapura,GN,519K,156.0,,6.637804,80.51381,synthetic,True
+GN-RTN-L2-005,SC-RTN-L2,Ratnapura,GN,371G,281.0,,6.606767,80.556436,synthetic,True
+GN-RTN-L2-006,SC-RTN-L2,Ratnapura,GN,200J,527.0,,6.7602,80.462589,synthetic,True
+GN-RTN-L2-007,SC-RTN-L2,Ratnapura,GN,332H,410.0,,6.702435,80.493465,synthetic,True
+GN-RTN-L2-008,SC-RTN-L2,Ratnapura,GN,195A,117.0,,6.621179,80.515284,synthetic,True
+GN-RTN-L2-009,SC-RTN-L2,Ratnapura,GN,181L,96.0,,6.598621,80.365827,synthetic,True
+GN-RTN-L2-010,SC-RTN-L2,Ratnapura,GN,496F,415.0,,6.757941,80.453951,synthetic,True
+GN-RTN-L2-011,SC-RTN-L2,Ratnapura,GN,141B,245.0,,6.618701,80.383112,synthetic,True
+GN-RTN-L2-012,SC-RTN-L2,Ratnapura,GN,487B,413.0,,6.758274,80.452881,synthetic,True
+GN-RTN-L2-013,SC-RTN-L2,Ratnapura,GN,121J,120.0,,6.637173,80.503975,synthetic,True
+GN-RTN-L2-014,SC-RTN-L2,Ratnapura,GN,549E,863.0,,6.629017,80.524749,synthetic,True
+GN-RTN-L2-015,SC-RTN-L2,Ratnapura,GN,187D,273.0,,6.679136,80.691734,synthetic,True
+GN-RTN-L2-016,SC-RTN-L2,Ratnapura,GN,279H,158.0,,6.680111,80.692471,synthetic,True
+GN-RTN-L2-017,SC-RTN-L2,Ratnapura,GN,101B,73.0,,6.625172,80.380475,synthetic,True
+GN-RTN-L2-018,SC-RTN-L2,Ratnapura,GN,276M,206.0,,6.604489,80.555551,synthetic,True
+GN-RTN-L2-019,SC-RTN-L2,Ratnapura,GN,291F,80.0,,6.601546,80.565632,synthetic,True
+GN-RTN-L2-020,SC-RTN-L2,Ratnapura,GN,218J,126.0,,6.601962,80.56524,synthetic,True
+GN-RTN-L2-021,SC-RTN-L2,Ratnapura,GN,200A,375.0,,6.62946,80.381323,synthetic,True
+GN-RTN-L2-022,SC-RTN-L2,Ratnapura,GN,377A,121.0,,6.692719,80.491909,synthetic,True
+GN-RTN-L2-023,SC-RTN-L2,Ratnapura,GN,426E,142.0,,6.685156,80.687426,synthetic,True
+GN-RTN-L2-024,SC-RTN-L2,Ratnapura,GN,449B,118.0,,6.637599,80.501506,synthetic,True
+GN-RTN-L2-025,SC-RTN-L2,Ratnapura,GN,185A,100.0,,6.76308,80.451261,synthetic,True
+GN-RTN-L2-026,SC-RTN-L2,Ratnapura,GN,464H,171.0,,6.604753,80.566906,synthetic,True
+GN-RTN-L2-027,SC-RTN-L2,Ratnapura,GN,161G,208.0,,6.61113,80.558064,synthetic,True
+GN-RTN-L2-028,SC-RTN-L2,Ratnapura,GN,416J,387.0,,6.695384,80.490301,synthetic,True
+GN-KEG-F1-001,SC-KEG-F1,Kegalle,GN,279A,132.0,,7.325762,80.387012,synthetic,True
+GN-KEG-F1-002,SC-KEG-F1,Kegalle,GN,176A,210.0,,7.309279,80.382553,synthetic,True
+GN-KEG-F1-003,SC-KEG-F1,Kegalle,GN,280M,266.0,,7.328374,80.370938,synthetic,True
+GN-KEG-F1-004,SC-KEG-F1,Kegalle,GN,199F,214.0,,7.326339,80.371223,synthetic,True
+GN-KEG-F1-005,SC-KEG-F1,Kegalle,GN,176H,189.0,,7.320724,80.393865,synthetic,True
+GN-KEG-F1-006,SC-KEG-F1,Kegalle,GN,464G,137.0,,7.242614,80.421259,synthetic,True
+GN-KEG-F1-007,SC-KEG-F1,Kegalle,GN,482M,255.0,,7.253643,80.449063,synthetic,True
+GN-KEG-F1-008,SC-KEG-F1,Kegalle,GN,543D,324.0,,7.246834,80.360138,synthetic,True
+GN-KEG-F1-009,SC-KEG-F1,Kegalle,GN,364F,550.0,,7.31582,80.379939,synthetic,True
+GN-KEG-F1-010,SC-KEG-F1,Kegalle,GN,526G,110.0,,7.239055,80.439424,synthetic,True
+GN-KEG-F1-011,SC-KEG-F1,Kegalle,GN,429C,158.0,,7.244805,80.357619,synthetic,True
+GN-KEG-F1-012,SC-KEG-F1,Kegalle,GN,415E,324.0,,7.3323,80.379478,synthetic,True
+GN-KEG-F1-013,SC-KEG-F1,Kegalle,GN,513F,118.0,,7.25468,80.434759,synthetic,True
+GN-KEG-F1-014,SC-KEG-F1,Kegalle,GN,521D,327.0,,7.325199,80.380522,synthetic,True
+GN-KEG-F2-001,SC-KEG-F2,Kegalle,GN,300M,107.0,,7.230497,80.476452,synthetic,True
+GN-KEG-F2-002,SC-KEG-F2,Kegalle,GN,389E,119.0,,7.253136,80.440215,synthetic,True
+GN-KEG-F2-003,SC-KEG-F2,Kegalle,GN,128E,80.0,,7.204126,80.21712,synthetic,True
+GN-KEG-F2-004,SC-KEG-F2,Kegalle,GN,250G,444.0,,7.25542,80.480693,synthetic,True
+GN-KEG-F2-005,SC-KEG-F2,Kegalle,GN,350C,242.0,,7.272599,80.448496,synthetic,True
+GN-KEG-F2-006,SC-KEG-F2,Kegalle,GN,447F,216.0,,7.301842,80.408896,synthetic,True
+GN-KEG-F2-007,SC-KEG-F2,Kegalle,GN,195E,58.0,,7.241196,80.479343,synthetic,True
+GN-KEG-F2-008,SC-KEG-F2,Kegalle,GN,507G,205.0,,7.259206,80.467492,synthetic,True
+GN-KEG-F2-009,SC-KEG-F2,Kegalle,GN,324K,114.0,,7.22625,80.361712,synthetic,True
+GN-KEG-F2-010,SC-KEG-F2,Kegalle,GN,458L,365.0,,7.250304,80.497737,synthetic,True
+GN-KEG-F2-011,SC-KEG-F2,Kegalle,GN,403E,247.0,,7.302464,80.411574,synthetic,True
+GN-KEG-F2-012,SC-KEG-F2,Kegalle,GN,404J,401.0,,7.31769,80.411951,synthetic,True
+GN-KEG-F2-013,SC-KEG-F2,Kegalle,GN,525H,164.0,,7.264296,80.478321,synthetic,True
+GN-KEG-F2-014,SC-KEG-F2,Kegalle,GN,429L,76.0,,7.251199,80.46755,synthetic,True
+GN-KEG-F2-015,SC-KEG-F2,Kegalle,GN,420H,265.0,,7.302886,80.407134,synthetic,True
+GN-KEG-F2-016,SC-KEG-F2,Kegalle,GN,379D,232.0,,7.311379,80.414991,synthetic,True
+GN-KEG-F2-017,SC-KEG-F2,Kegalle,GN,240J,123.0,,7.223108,80.35917,synthetic,True
+GN-KEG-F2-018,SC-KEG-F2,Kegalle,GN,493K,226.0,,7.238635,80.487774,synthetic,True
+GN-KEG-F2-019,SC-KEG-F2,Kegalle,GN,479H,82.0,,7.272521,80.443554,synthetic,True
+GN-KEG-F2-020,SC-KEG-F2,Kegalle,GN,556A,971.0,,7.218294,80.344916,synthetic,True
+GN-KEG-F2-021,SC-KEG-F2,Kegalle,GN,318J,194.0,,7.313808,80.426004,synthetic,True
+GN-KEG-F2-022,SC-KEG-F2,Kegalle,GN,461H,345.0,,7.214061,80.224374,synthetic,True
+GN-KEG-F2-023,SC-KEG-F2,Kegalle,GN,238M,614.0,,7.246938,80.483234,synthetic,True
+GN-KEG-F2-024,SC-KEG-F2,Kegalle,GN,476K,181.0,,7.213349,80.343366,synthetic,True
+GN-KEG-F2-025,SC-KEG-F2,Kegalle,GN,490F,234.0,,7.250988,80.469116,synthetic,True
+GN-KEG-F2-026,SC-KEG-F2,Kegalle,GN,505B,626.0,,7.242174,80.479379,synthetic,True
+GN-KEG-F2-027,SC-KEG-F2,Kegalle,GN,516C,267.0,,7.222663,80.360971,synthetic,True
+GN-KEG-F2-028,SC-KEG-F2,Kegalle,GN,398K,301.0,,7.312638,80.41114,synthetic,True
+GN-KEG-L1-001,SC-KEG-L1,Kegalle,GN,204E,87.0,,7.184613,80.378556,synthetic,True
+GN-KEG-L1-002,SC-KEG-L1,Kegalle,GN,403C,157.0,,7.190395,80.478318,synthetic,True
+GN-KEG-L1-003,SC-KEG-L1,Kegalle,GN,103L,214.0,,7.197072,80.471353,synthetic,True
+GN-KEG-L1-004,SC-KEG-L1,Kegalle,GN,495G,254.0,,7.186148,80.473926,synthetic,True
+GN-KEG-L1-005,SC-KEG-L1,Kegalle,GN,262G,260.0,,7.19222,80.473752,synthetic,True
+GN-KEG-L1-006,SC-KEG-L1,Kegalle,GN,442D,559.0,,7.281316,80.27607,synthetic,True
+GN-KEG-L1-007,SC-KEG-L1,Kegalle,GN,377G,394.0,,7.165677,80.25118,synthetic,True
+GN-KEG-L1-008,SC-KEG-L1,Kegalle,GN,131F,98.0,,7.184039,80.372013,synthetic,True
+GN-KEG-L1-009,SC-KEG-L1,Kegalle,GN,318G,110.0,,7.187568,80.471442,synthetic,True
+GN-KEG-L1-010,SC-KEG-L1,Kegalle,GN,498G,153.0,,7.182874,80.47094,synthetic,True
+GN-KEG-L1-011,SC-KEG-L1,Kegalle,GN,298D,38.0,,7.161811,80.257923,synthetic,True
+GN-KEG-L1-012,SC-KEG-L1,Kegalle,GN,222J,481.0,,7.164557,80.251959,synthetic,True
+GN-KEG-L1-013,SC-KEG-L1,Kegalle,GN,455G,85.0,,7.163648,80.251703,synthetic,True
+GN-KEG-L1-014,SC-KEG-L1,Kegalle,GN,131E,302.0,,7.184293,80.479565,synthetic,True
+GN-KEG-L2-001,SC-KEG-L2,Kegalle,GN,532M,404.0,,7.13809,80.327135,synthetic,True
+GN-KEG-L2-002,SC-KEG-L2,Kegalle,GN,416H,197.0,,7.184125,80.494681,synthetic,True
+GN-KEG-L2-003,SC-KEG-L2,Kegalle,GN,188G,128.0,,7.180888,80.433154,synthetic,True
+GN-KEG-L2-004,SC-KEG-L2,Kegalle,GN,159L,361.0,,7.17762,80.472684,synthetic,True
+GN-KEG-L2-005,SC-KEG-L2,Kegalle,GN,513F,625.0,,7.191013,80.387103,synthetic,True
+GN-KEG-L2-006,SC-KEG-L2,Kegalle,GN,429J,64.0,,7.149151,80.458593,synthetic,True
+GN-KEG-L2-007,SC-KEG-L2,Kegalle,GN,444C,674.0,,7.326966,80.313058,synthetic,True
+GN-KEG-L2-008,SC-KEG-L2,Kegalle,GN,110M,58.0,,7.151822,80.45572,synthetic,True
+GN-KEG-L2-009,SC-KEG-L2,Kegalle,GN,354B,604.0,,7.188358,80.493625,synthetic,True
+GN-KEG-L2-010,SC-KEG-L2,Kegalle,GN,547L,94.0,,7.143427,80.466171,synthetic,True
+GN-KEG-L2-011,SC-KEG-L2,Kegalle,GN,494L,113.0,,7.142591,80.455793,synthetic,True
+GN-KEG-L2-012,SC-KEG-L2,Kegalle,GN,368L,85.0,,7.155382,80.24382,synthetic,True
+GN-KEG-L2-013,SC-KEG-L2,Kegalle,GN,401D,265.0,,7.166629,80.246875,synthetic,True
+GN-KEG-L2-014,SC-KEG-L2,Kegalle,GN,258B,103.0,,7.147184,80.460851,synthetic,True
+GN-KEG-L2-015,SC-KEG-L2,Kegalle,GN,450B,82.0,,7.178552,80.473426,synthetic,True
+GN-KEG-L2-016,SC-KEG-L2,Kegalle,GN,102H,94.0,,7.331372,80.308082,synthetic,True
+GN-KEG-L2-017,SC-KEG-L2,Kegalle,GN,557M,206.0,,7.147034,80.453956,synthetic,True
+GN-KEG-L2-018,SC-KEG-L2,Kegalle,GN,556E,490.0,,7.174468,80.436802,synthetic,True
+GN-KEG-L2-019,SC-KEG-L2,Kegalle,GN,393L,80.0,,7.195121,80.391546,synthetic,True
+GN-KEG-L2-020,SC-KEG-L2,Kegalle,GN,208B,34.0,,7.188781,80.488299,synthetic,True
+GN-KEG-L2-021,SC-KEG-L2,Kegalle,GN,352H,96.0,,7.187645,80.496352,synthetic,True
+GN-KEG-L2-022,SC-KEG-L2,Kegalle,GN,511H,196.0,,7.331077,80.308887,synthetic,True
+GN-KEG-L2-023,SC-KEG-L2,Kegalle,GN,349J,317.0,,7.190412,80.487161,synthetic,True
+GN-KEG-L2-024,SC-KEG-L2,Kegalle,GN,114F,315.0,,7.263741,80.317467,synthetic,True
+GN-KEG-L2-025,SC-KEG-L2,Kegalle,GN,228E,221.0,,7.187867,80.486549,synthetic,True
+GN-KEG-L2-026,SC-KEG-L2,Kegalle,GN,555M,138.0,,7.187021,80.434331,synthetic,True
+GN-KEG-L2-027,SC-KEG-L2,Kegalle,GN,513J,209.0,,7.181513,80.48803,synthetic,True
+GN-KEG-L2-028,SC-KEG-L2,Kegalle,GN,222J,397.0,,7.187382,80.491102,synthetic,True
+GN-KLT-F1-001,SC-KLT-F1,Kalutara,GN,248J,154.0,,6.598092,80.087155,synthetic,True
+GN-KLT-F1-002,SC-KLT-F1,Kalutara,GN,219A,67.0,,6.51312,80.110444,synthetic,True
+GN-KLT-F1-003,SC-KLT-F1,Kalutara,GN,114M,498.0,,6.537166,80.186205,synthetic,True
+GN-KLT-F1-004,SC-KLT-F1,Kalutara,GN,362A,41.0,,6.505143,80.123218,synthetic,True
+GN-KLT-F1-005,SC-KLT-F1,Kalutara,GN,153L,742.0,,6.533619,80.187815,synthetic,True
+GN-KLT-F1-006,SC-KLT-F1,Kalutara,GN,513D,279.0,,6.607569,80.061818,synthetic,True
+GN-KLT-F1-007,SC-KLT-F1,Kalutara,GN,406C,331.0,,6.533344,80.184676,synthetic,True
+GN-KLT-F1-008,SC-KLT-F1,Kalutara,GN,337E,157.0,,6.50734,80.116248,synthetic,True
+GN-KLT-F1-009,SC-KLT-F1,Kalutara,GN,528C,89.0,,6.488542,80.117391,synthetic,True
+GN-KLT-F1-010,SC-KLT-F1,Kalutara,GN,208L,73.0,,6.510559,80.129303,synthetic,True
+GN-KLT-F1-011,SC-KLT-F1,Kalutara,GN,227E,191.0,,6.599592,80.073672,synthetic,True
+GN-KLT-F1-012,SC-KLT-F1,Kalutara,GN,416K,124.0,,6.600729,80.073638,synthetic,True
+GN-KLT-F1-013,SC-KLT-F1,Kalutara,GN,148L,215.0,,6.545818,80.192875,synthetic,True
+GN-KLT-F1-014,SC-KLT-F1,Kalutara,GN,200G,324.0,,6.539029,80.196428,synthetic,True
+GN-KLT-F2-001,SC-KLT-F2,Kalutara,GN,526J,238.0,,6.724014,80.055537,synthetic,True
+GN-KLT-F2-002,SC-KLT-F2,Kalutara,GN,242F,159.0,,6.524251,80.109469,synthetic,True
+GN-KLT-F2-003,SC-KLT-F2,Kalutara,GN,514G,179.0,,6.589693,80.075823,synthetic,True
+GN-KLT-F2-004,SC-KLT-F2,Kalutara,GN,453J,253.0,,6.548116,80.188832,synthetic,True
+GN-KLT-F2-005,SC-KLT-F2,Kalutara,GN,485D,296.0,,6.554129,80.19401,synthetic,True
+GN-KLT-F2-006,SC-KLT-F2,Kalutara,GN,392C,407.0,,6.602051,80.095634,synthetic,True
+GN-KLT-F2-007,SC-KLT-F2,Kalutara,GN,506J,124.0,,6.534592,80.09795,synthetic,True
+GN-KLT-F2-008,SC-KLT-F2,Kalutara,GN,153A,199.0,,6.593719,80.097081,synthetic,True
+GN-KLT-F2-009,SC-KLT-F2,Kalutara,GN,439J,201.0,,6.606851,80.085666,synthetic,True
+GN-KLT-F2-010,SC-KLT-F2,Kalutara,GN,478E,165.0,,6.561424,80.185,synthetic,True
+GN-KLT-F2-011,SC-KLT-F2,Kalutara,GN,141B,100.0,,6.731305,80.052395,synthetic,True
+GN-KLT-F2-012,SC-KLT-F2,Kalutara,GN,415B,497.0,,6.72914,80.040476,synthetic,True
+GN-KLT-F2-013,SC-KLT-F2,Kalutara,GN,189K,61.0,,6.72629,80.064827,synthetic,True
+GN-KLT-F2-014,SC-KLT-F2,Kalutara,GN,400H,511.0,,6.522357,80.090219,synthetic,True
+GN-KLT-F2-015,SC-KLT-F2,Kalutara,GN,173D,191.0,,6.554049,80.207583,synthetic,True
+GN-KLT-F2-016,SC-KLT-F2,Kalutara,GN,393G,162.0,,6.523701,80.098794,synthetic,True
+GN-KLT-F2-017,SC-KLT-F2,Kalutara,GN,295E,303.0,,6.538742,80.099215,synthetic,True
+GN-KLT-F2-018,SC-KLT-F2,Kalutara,GN,460C,474.0,,6.546343,80.187798,synthetic,True
+GN-KLT-F2-019,SC-KLT-F2,Kalutara,GN,485C,679.0,,6.737296,80.050261,synthetic,True
+GN-KLT-F2-020,SC-KLT-F2,Kalutara,GN,371A,165.0,,6.53017,80.098239,synthetic,True
+GN-KLT-F2-021,SC-KLT-F2,Kalutara,GN,500C,75.0,,6.539085,80.098255,synthetic,True
+GN-KLT-F2-022,SC-KLT-F2,Kalutara,GN,470H,473.0,,6.635423,80.084582,synthetic,True
+GN-KLT-F2-023,SC-KLT-F2,Kalutara,GN,544G,397.0,,6.722766,80.043747,synthetic,True
+GN-KLT-F2-024,SC-KLT-F2,Kalutara,GN,233D,176.0,,6.541205,80.196171,synthetic,True
+GN-KLT-F2-025,SC-KLT-F2,Kalutara,GN,103D,134.0,,6.738581,80.054025,synthetic,True
+GN-KLT-F2-026,SC-KLT-F2,Kalutara,GN,330J,91.0,,6.547839,80.194995,synthetic,True
+GN-KLT-F2-027,SC-KLT-F2,Kalutara,GN,280G,141.0,,6.618561,80.076312,synthetic,True
+GN-KLT-F2-028,SC-KLT-F2,Kalutara,GN,313C,171.0,,6.548073,80.187297,synthetic,True
+GN-KLT-L1-001,SC-KLT-L1,Kalutara,GN,327D,169.0,,6.766198,80.144352,synthetic,True
+GN-KLT-L1-002,SC-KLT-L1,Kalutara,GN,405J,137.0,,6.677222,80.187439,synthetic,True
+GN-KLT-L1-003,SC-KLT-L1,Kalutara,GN,530C,230.0,,6.767876,80.152815,synthetic,True
+GN-KLT-L1-004,SC-KLT-L1,Kalutara,GN,487K,569.0,,6.769329,80.140622,synthetic,True
+GN-KLT-L1-005,SC-KLT-L1,Kalutara,GN,281K,44.0,,6.561874,80.170086,synthetic,True
+GN-KLT-L1-006,SC-KLT-L1,Kalutara,GN,476D,77.0,,6.476337,80.081454,synthetic,True
+GN-KLT-L1-007,SC-KLT-L1,Kalutara,GN,381J,543.0,,6.512505,80.186895,synthetic,True
+GN-KLT-L1-008,SC-KLT-L1,Kalutara,GN,515F,567.0,,6.510621,80.189633,synthetic,True
+GN-KLT-L1-009,SC-KLT-L1,Kalutara,GN,527J,321.0,,6.559793,80.178321,synthetic,True
+GN-KLT-L1-010,SC-KLT-L1,Kalutara,GN,149A,244.0,,6.687009,80.185316,synthetic,True
+GN-KLT-L1-011,SC-KLT-L1,Kalutara,GN,432E,182.0,,6.556633,80.175166,synthetic,True
+GN-KLT-L1-012,SC-KLT-L1,Kalutara,GN,411J,174.0,,6.555487,80.168918,synthetic,True
+GN-KLT-L1-013,SC-KLT-L1,Kalutara,GN,209F,375.0,,6.50826,80.185863,synthetic,True
+GN-KLT-L1-014,SC-KLT-L1,Kalutara,GN,122G,72.0,,6.55848,80.166266,synthetic,True
+GN-KLT-L2-001,SC-KLT-L2,Kalutara,GN,271B,128.0,,6.544866,80.133286,synthetic,True
+GN-KLT-L2-002,SC-KLT-L2,Kalutara,GN,425H,160.0,,6.685052,80.165785,synthetic,True
+GN-KLT-L2-003,SC-KLT-L2,Kalutara,GN,156M,139.0,,6.540126,80.145509,synthetic,True
+GN-KLT-L2-004,SC-KLT-L2,Kalutara,GN,412G,125.0,,6.548794,80.146528,synthetic,True
+GN-KLT-L2-005,SC-KLT-L2,Kalutara,GN,218K,206.0,,6.489196,80.049747,synthetic,True
+GN-KLT-L2-006,SC-KLT-L2,Kalutara,GN,450H,216.0,,6.51705,80.200268,synthetic,True
+GN-KLT-L2-007,SC-KLT-L2,Kalutara,GN,338J,246.0,,6.489089,80.044025,synthetic,True
+GN-KLT-L2-008,SC-KLT-L2,Kalutara,GN,322C,454.0,,6.545678,80.141711,synthetic,True
+GN-KLT-L2-009,SC-KLT-L2,Kalutara,GN,459L,210.0,,6.541243,80.146758,synthetic,True
+GN-KLT-L2-010,SC-KLT-L2,Kalutara,GN,189K,98.0,,6.492257,80.054119,synthetic,True
+GN-KLT-L2-011,SC-KLT-L2,Kalutara,GN,556J,202.0,,6.49838,80.061435,synthetic,True
+GN-KLT-L2-012,SC-KLT-L2,Kalutara,GN,261G,82.0,,6.523218,80.192376,synthetic,True
+GN-KLT-L2-013,SC-KLT-L2,Kalutara,GN,267M,252.0,,6.542636,80.136971,synthetic,True
+GN-KLT-L2-014,SC-KLT-L2,Kalutara,GN,542D,71.0,,6.482565,80.056523,synthetic,True
+GN-KLT-L2-015,SC-KLT-L2,Kalutara,GN,147D,123.0,,6.494869,80.062478,synthetic,True
+GN-KLT-L2-016,SC-KLT-L2,Kalutara,GN,539A,268.0,,6.740501,80.141683,synthetic,True
+GN-KLT-L2-017,SC-KLT-L2,Kalutara,GN,443H,339.0,,6.54718,80.146111,synthetic,True
+GN-KLT-L2-018,SC-KLT-L2,Kalutara,GN,217K,209.0,,6.498739,80.049579,synthetic,True
+GN-KLT-L2-019,SC-KLT-L2,Kalutara,GN,549H,290.0,,6.733321,80.140286,synthetic,True
+GN-KLT-L2-020,SC-KLT-L2,Kalutara,GN,187B,197.0,,6.544355,80.138362,synthetic,True
+GN-KLT-L2-021,SC-KLT-L2,Kalutara,GN,112J,396.0,,6.719922,80.152178,synthetic,True
+GN-KLT-L2-022,SC-KLT-L2,Kalutara,GN,356L,290.0,,6.689621,80.172886,synthetic,True
+GN-KLT-L2-023,SC-KLT-L2,Kalutara,GN,163K,134.0,,6.549037,80.140521,synthetic,True
+GN-KLT-L2-024,SC-KLT-L2,Kalutara,GN,336B,161.0,,6.68432,80.20044,synthetic,True
+GN-KLT-L2-025,SC-KLT-L2,Kalutara,GN,277F,121.0,,6.714533,80.144056,synthetic,True
+GN-KLT-L2-026,SC-KLT-L2,Kalutara,GN,419F,434.0,,6.685949,80.200669,synthetic,True
+GN-KLT-L2-027,SC-KLT-L2,Kalutara,GN,359E,85.0,,6.687957,80.197781,synthetic,True
+GN-KLT-L2-028,SC-KLT-L2,Kalutara,GN,414L,196.0,,6.517444,80.201549,synthetic,True
+GN-BDL-F1-001,SC-BDL-F1,Badulla,GN,489L,80.0,,7.327313,81.0142,synthetic,True
+GN-BDL-F1-002,SC-BDL-F1,Badulla,GN,286D,199.0,,6.94746,81.168863,synthetic,True
+GN-BDL-F1-003,SC-BDL-F1,Badulla,GN,238G,215.0,,7.336562,81.013904,synthetic,True
+GN-BDL-F1-004,SC-BDL-F1,Badulla,GN,484D,786.0,,7.350267,81.011417,synthetic,True
+GN-BDL-F1-005,SC-BDL-F1,Badulla,GN,317B,161.0,,7.342229,81.000239,synthetic,True
+GN-BDL-F1-006,SC-BDL-F1,Badulla,GN,443B,270.0,,6.938278,81.165849,synthetic,True
+GN-BDL-F1-007,SC-BDL-F1,Badulla,GN,107A,187.0,,7.008581,81.068472,synthetic,True
+GN-BDL-F1-008,SC-BDL-F1,Badulla,GN,407A,160.0,,7.337107,81.010086,synthetic,True
+GN-BDL-F1-009,SC-BDL-F1,Badulla,GN,480M,229.0,,6.945323,81.16919,synthetic,True
+GN-BDL-F1-010,SC-BDL-F1,Badulla,GN,148J,337.0,,7.338564,81.014933,synthetic,True
+GN-BDL-F1-011,SC-BDL-F1,Badulla,GN,544A,142.0,,7.332297,81.004112,synthetic,True
+GN-BDL-F1-012,SC-BDL-F1,Badulla,GN,261L,459.0,,6.988849,81.045952,synthetic,True
+GN-BDL-F1-013,SC-BDL-F1,Badulla,GN,429M,163.0,,7.335598,80.999945,synthetic,True
+GN-BDL-F1-014,SC-BDL-F1,Badulla,GN,379C,527.0,,6.924934,81.151912,synthetic,True
+GN-BDL-F2-001,SC-BDL-F2,Badulla,GN,437E,170.0,,6.889968,80.877975,synthetic,True
+GN-BDL-F2-002,SC-BDL-F2,Badulla,GN,457F,196.0,,7.335779,80.961429,synthetic,True
+GN-BDL-F2-003,SC-BDL-F2,Badulla,GN,164J,156.0,,6.883176,80.881051,synthetic,True
+GN-BDL-F2-004,SC-BDL-F2,Badulla,GN,437A,194.0,,6.99828,81.040241,synthetic,True
+GN-BDL-F2-005,SC-BDL-F2,Badulla,GN,397M,797.0,,7.33012,80.958417,synthetic,True
+GN-BDL-F2-006,SC-BDL-F2,Badulla,GN,444K,118.0,,6.879921,80.884199,synthetic,True
+GN-BDL-F2-007,SC-BDL-F2,Badulla,GN,111G,173.0,,7.340717,80.960175,synthetic,True
+GN-BDL-F2-008,SC-BDL-F2,Badulla,GN,550M,113.0,,6.933326,81.14808,synthetic,True
+GN-BDL-F2-009,SC-BDL-F2,Badulla,GN,156M,441.0,,6.933901,81.122057,synthetic,True
+GN-BDL-F2-010,SC-BDL-F2,Badulla,GN,503K,318.0,,6.933954,81.137017,synthetic,True
+GN-BDL-F2-011,SC-BDL-F2,Badulla,GN,288D,35.0,,7.346395,80.944887,synthetic,True
+GN-BDL-F2-012,SC-BDL-F2,Badulla,GN,353J,88.0,,6.927586,81.135023,synthetic,True
+GN-BDL-F2-013,SC-BDL-F2,Badulla,GN,483E,335.0,,7.335055,80.96391,synthetic,True
+GN-BDL-F2-014,SC-BDL-F2,Badulla,GN,557K,520.0,,6.990033,81.028083,synthetic,True
+GN-BDL-F2-015,SC-BDL-F2,Badulla,GN,283G,309.0,,7.346177,80.944105,synthetic,True
+GN-BDL-F2-016,SC-BDL-F2,Badulla,GN,377F,117.0,,6.932227,81.133663,synthetic,True
+GN-BDL-F2-017,SC-BDL-F2,Badulla,GN,465C,264.0,,6.926458,81.139503,synthetic,True
+GN-BDL-F2-018,SC-BDL-F2,Badulla,GN,126C,327.0,,6.892533,80.872472,synthetic,True
+GN-BDL-F2-019,SC-BDL-F2,Badulla,GN,335M,72.0,,7.338719,80.957311,synthetic,True
+GN-BDL-F2-020,SC-BDL-F2,Badulla,GN,170A,119.0,,6.935982,81.127106,synthetic,True
+GN-BDL-F2-021,SC-BDL-F2,Badulla,GN,273A,159.0,,7.005722,81.029165,synthetic,True
+GN-BDL-F2-022,SC-BDL-F2,Badulla,GN,482F,226.0,,7.331083,80.946528,synthetic,True
+GN-BDL-F2-023,SC-BDL-F2,Badulla,GN,147D,41.0,,6.940693,81.126516,synthetic,True
+GN-BDL-F2-024,SC-BDL-F2,Badulla,GN,364F,199.0,,7.326564,80.942789,synthetic,True
+GN-BDL-F2-025,SC-BDL-F2,Badulla,GN,469H,84.0,,6.872476,80.880387,synthetic,True
+GN-BDL-F2-026,SC-BDL-F2,Badulla,GN,505B,566.0,,6.923022,81.139695,synthetic,True
+GN-BDL-F2-027,SC-BDL-F2,Badulla,GN,405J,196.0,,7.009125,81.039443,synthetic,True
+GN-BDL-F2-028,SC-BDL-F2,Badulla,GN,501H,26.0,,6.864024,80.876121,synthetic,True
+GN-BDL-L1-001,SC-BDL-L1,Badulla,GN,328G,280.0,,6.923481,80.92184,synthetic,True
+GN-BDL-L1-002,SC-BDL-L1,Badulla,GN,517A,74.0,,6.95594,81.061244,synthetic,True
+GN-BDL-L1-003,SC-BDL-L1,Badulla,GN,305E,477.0,,6.780881,80.996482,synthetic,True
+GN-BDL-L1-004,SC-BDL-L1,Badulla,GN,539L,85.0,,6.857356,80.984065,synthetic,True
+GN-BDL-L1-005,SC-BDL-L1,Badulla,GN,340A,213.0,,6.926654,80.922856,synthetic,True
+GN-BDL-L1-006,SC-BDL-L1,Badulla,GN,532G,313.0,,6.851435,80.991036,synthetic,True
+GN-BDL-L1-007,SC-BDL-L1,Badulla,GN,500A,173.0,,6.85374,80.981233,synthetic,True
+GN-BDL-L1-008,SC-BDL-L1,Badulla,GN,177A,313.0,,6.784759,81.000611,synthetic,True
+GN-BDL-L1-009,SC-BDL-L1,Badulla,GN,124A,94.0,,6.928338,80.917425,synthetic,True
+GN-BDL-L1-010,SC-BDL-L1,Badulla,GN,507L,196.0,,6.917277,80.915753,synthetic,True
+GN-BDL-L1-011,SC-BDL-L1,Badulla,GN,186D,338.0,,6.777198,80.997407,synthetic,True
+GN-BDL-L1-012,SC-BDL-L1,Badulla,GN,325M,40.0,,6.922738,80.914622,synthetic,True
+GN-BDL-L1-013,SC-BDL-L1,Badulla,GN,431L,112.0,,6.85233,80.986716,synthetic,True
+GN-BDL-L1-014,SC-BDL-L1,Badulla,GN,167B,191.0,,6.92458,80.916011,synthetic,True
+GN-BDL-L2-001,SC-BDL-L2,Badulla,GN,329H,223.0,,6.794073,80.967418,synthetic,True
+GN-BDL-L2-002,SC-BDL-L2,Badulla,GN,235F,514.0,,6.803717,80.965076,synthetic,True
+GN-BDL-L2-003,SC-BDL-L2,Badulla,GN,438C,144.0,,6.982502,81.127711,synthetic,True
+GN-BDL-L2-004,SC-BDL-L2,Badulla,GN,489A,209.0,,6.981231,81.119535,synthetic,True
+GN-BDL-L2-005,SC-BDL-L2,Badulla,GN,496F,115.0,,6.879428,80.908152,synthetic,True
+GN-BDL-L2-006,SC-BDL-L2,Badulla,GN,297A,94.0,,6.800316,80.966215,synthetic,True
+GN-BDL-L2-007,SC-BDL-L2,Badulla,GN,453B,409.0,,6.810176,80.983941,synthetic,True
+GN-BDL-L2-008,SC-BDL-L2,Badulla,GN,480K,338.0,,6.978068,81.123107,synthetic,True
+GN-BDL-L2-009,SC-BDL-L2,Badulla,GN,381H,91.0,,6.886726,80.900386,synthetic,True
+GN-BDL-L2-010,SC-BDL-L2,Badulla,GN,417D,533.0,,6.805535,80.986815,synthetic,True
+GN-BDL-L2-011,SC-BDL-L2,Badulla,GN,478L,48.0,,6.950808,81.074796,synthetic,True
+GN-BDL-L2-012,SC-BDL-L2,Badulla,GN,556H,117.0,,6.870319,80.908046,synthetic,True
+GN-BDL-L2-013,SC-BDL-L2,Badulla,GN,304K,236.0,,6.80082,81.001508,synthetic,True
+GN-BDL-L2-014,SC-BDL-L2,Badulla,GN,537B,137.0,,6.786211,80.971605,synthetic,True
+GN-BDL-L2-015,SC-BDL-L2,Badulla,GN,210F,124.0,,6.870211,80.904206,synthetic,True
+GN-BDL-L2-016,SC-BDL-L2,Badulla,GN,207E,395.0,,6.809807,80.988164,synthetic,True
+GN-BDL-L2-017,SC-BDL-L2,Badulla,GN,509M,70.0,,6.795794,80.968611,synthetic,True
+GN-BDL-L2-018,SC-BDL-L2,Badulla,GN,545B,267.0,,6.800107,80.984591,synthetic,True
+GN-BDL-L2-019,SC-BDL-L2,Badulla,GN,340J,327.0,,6.890031,80.91009,synthetic,True
+GN-BDL-L2-020,SC-BDL-L2,Badulla,GN,229D,68.0,,6.797652,81.003333,synthetic,True
+GN-BDL-L2-021,SC-BDL-L2,Badulla,GN,245C,530.0,,6.779972,80.961439,synthetic,True
+GN-BDL-L2-022,SC-BDL-L2,Badulla,GN,451J,104.0,,6.786419,80.974598,synthetic,True
+GN-BDL-L2-023,SC-BDL-L2,Badulla,GN,347B,336.0,,6.804931,80.967754,synthetic,True
+GN-BDL-L2-024,SC-BDL-L2,Badulla,GN,546K,179.0,,6.89457,80.900183,synthetic,True
+GN-BDL-L2-025,SC-BDL-L2,Badulla,GN,462H,174.0,,6.808443,80.979727,synthetic,True
+GN-BDL-L2-026,SC-BDL-L2,Badulla,GN,369K,522.0,,6.786621,80.957773,synthetic,True
+GN-BDL-L2-027,SC-BDL-L2,Badulla,GN,554G,61.0,,6.793766,80.996749,synthetic,True
+GN-BDL-L2-028,SC-BDL-L2,Badulla,GN,266M,525.0,,6.876231,80.90423,synthetic,True
+GN-NWE-F1-001,SC-NWE-F1,Nuwara Eliya,GN,396F,48.0,,7.0684,80.844021,synthetic,True
+GN-NWE-F1-002,SC-NWE-F1,Nuwara Eliya,GN,141M,34.0,,6.910965,80.602878,synthetic,True
+GN-NWE-F1-003,SC-NWE-F1,Nuwara Eliya,GN,473B,546.0,,7.036761,80.626849,synthetic,True
+GN-NWE-F1-004,SC-NWE-F1,Nuwara Eliya,GN,408C,244.0,,7.035388,80.85146,synthetic,True
+GN-NWE-F1-005,SC-NWE-F1,Nuwara Eliya,GN,152D,133.0,,7.039013,80.850937,synthetic,True
+GN-NWE-F1-006,SC-NWE-F1,Nuwara Eliya,GN,537L,165.0,,6.897769,80.593206,synthetic,True
+GN-NWE-F1-007,SC-NWE-F1,Nuwara Eliya,GN,531E,199.0,,6.906901,80.602831,synthetic,True
+GN-NWE-F1-008,SC-NWE-F1,Nuwara Eliya,GN,374J,338.0,,7.064832,80.844162,synthetic,True
+GN-NWE-F1-009,SC-NWE-F1,Nuwara Eliya,GN,122L,239.0,,7.030048,80.614058,synthetic,True
+GN-NWE-F1-010,SC-NWE-F1,Nuwara Eliya,GN,256D,725.0,,6.896112,80.5898,synthetic,True
+GN-NWE-F1-011,SC-NWE-F1,Nuwara Eliya,GN,243L,142.0,,7.030136,80.62269,synthetic,True
+GN-NWE-F1-012,SC-NWE-F1,Nuwara Eliya,GN,491E,187.0,,7.041717,80.836349,synthetic,True
+GN-NWE-F1-013,SC-NWE-F1,Nuwara Eliya,GN,217C,212.0,,7.045063,80.624265,synthetic,True
+GN-NWE-F1-014,SC-NWE-F1,Nuwara Eliya,GN,542H,289.0,,6.898795,80.600492,synthetic,True
+GN-NWE-F2-001,SC-NWE-F2,Nuwara Eliya,GN,489K,64.0,,7.134879,80.754871,synthetic,True
+GN-NWE-F2-002,SC-NWE-F2,Nuwara Eliya,GN,388E,136.0,,7.131863,80.757925,synthetic,True
+GN-NWE-F2-003,SC-NWE-F2,Nuwara Eliya,GN,180D,106.0,,7.038289,80.628267,synthetic,True
+GN-NWE-F2-004,SC-NWE-F2,Nuwara Eliya,GN,482M,42.0,,7.008676,80.600674,synthetic,True
+GN-NWE-F2-005,SC-NWE-F2,Nuwara Eliya,GN,163A,76.0,,7.13109,80.760226,synthetic,True
+GN-NWE-F2-006,SC-NWE-F2,Nuwara Eliya,GN,397M,317.0,,7.139052,80.768031,synthetic,True
+GN-NWE-F2-007,SC-NWE-F2,Nuwara Eliya,GN,414E,276.0,,7.117644,80.763533,synthetic,True
+GN-NWE-F2-008,SC-NWE-F2,Nuwara Eliya,GN,558J,286.0,,7.003782,80.594834,synthetic,True
+GN-NWE-F2-009,SC-NWE-F2,Nuwara Eliya,GN,394D,217.0,,7.038988,80.62609,synthetic,True
+GN-NWE-F2-010,SC-NWE-F2,Nuwara Eliya,GN,111B,421.0,,7.030291,80.814978,synthetic,True
+GN-NWE-F2-011,SC-NWE-F2,Nuwara Eliya,GN,298L,76.0,,7.035981,80.626555,synthetic,True
+GN-NWE-F2-012,SC-NWE-F2,Nuwara Eliya,GN,101H,100.0,,7.035404,80.62804,synthetic,True
+GN-NWE-F2-013,SC-NWE-F2,Nuwara Eliya,GN,189C,175.0,,7.029715,80.626118,synthetic,True
+GN-NWE-F2-014,SC-NWE-F2,Nuwara Eliya,GN,376A,172.0,,7.002501,80.601738,synthetic,True
+GN-NWE-F2-015,SC-NWE-F2,Nuwara Eliya,GN,555D,88.0,,7.117838,80.749275,synthetic,True
+GN-NWE-F2-016,SC-NWE-F2,Nuwara Eliya,GN,501D,96.0,,6.904046,80.586924,synthetic,True
+GN-NWE-F2-017,SC-NWE-F2,Nuwara Eliya,GN,162C,288.0,,7.006203,80.592837,synthetic,True
+GN-NWE-F2-018,SC-NWE-F2,Nuwara Eliya,GN,214M,255.0,,6.925792,80.58179,synthetic,True
+GN-NWE-F2-019,SC-NWE-F2,Nuwara Eliya,GN,136L,490.0,,7.026449,80.6161,synthetic,True
+GN-NWE-F2-020,SC-NWE-F2,Nuwara Eliya,GN,260L,264.0,,7.039302,80.828567,synthetic,True
+GN-NWE-F2-021,SC-NWE-F2,Nuwara Eliya,GN,337D,162.0,,7.122092,80.76265,synthetic,True
+GN-NWE-F2-022,SC-NWE-F2,Nuwara Eliya,GN,251M,150.0,,7.035934,80.822942,synthetic,True
+GN-NWE-F2-023,SC-NWE-F2,Nuwara Eliya,GN,116D,158.0,,6.922954,80.587598,synthetic,True
+GN-NWE-F2-024,SC-NWE-F2,Nuwara Eliya,GN,485A,248.0,,6.931491,80.582324,synthetic,True
+GN-NWE-F2-025,SC-NWE-F2,Nuwara Eliya,GN,133L,498.0,,7.137942,80.759316,synthetic,True
+GN-NWE-F2-026,SC-NWE-F2,Nuwara Eliya,GN,244C,104.0,,7.007047,80.583227,synthetic,True
+GN-NWE-F2-027,SC-NWE-F2,Nuwara Eliya,GN,390C,84.0,,6.916388,80.593653,synthetic,True
+GN-NWE-F2-028,SC-NWE-F2,Nuwara Eliya,GN,225B,64.0,,7.042407,80.616056,synthetic,True
+GN-NWE-L1-001,SC-NWE-L1,Nuwara Eliya,GN,108K,180.0,,7.010544,80.606948,synthetic,True
+GN-NWE-L1-002,SC-NWE-L1,Nuwara Eliya,GN,258J,434.0,,6.971566,80.712879,synthetic,True
+GN-NWE-L1-003,SC-NWE-L1,Nuwara Eliya,GN,402M,432.0,,7.080109,80.844698,synthetic,True
+GN-NWE-L1-004,SC-NWE-L1,Nuwara Eliya,GN,503G,218.0,,6.964707,80.712449,synthetic,True
+GN-NWE-L1-005,SC-NWE-L1,Nuwara Eliya,GN,261E,250.0,,7.01333,80.604794,synthetic,True
+GN-NWE-L1-006,SC-NWE-L1,Nuwara Eliya,GN,468B,636.0,,7.130027,80.797737,synthetic,True
+GN-NWE-L1-007,SC-NWE-L1,Nuwara Eliya,GN,348A,112.0,,6.965106,80.71074,synthetic,True
+GN-NWE-L1-008,SC-NWE-L1,Nuwara Eliya,GN,175K,147.0,,7.021625,80.601982,synthetic,True
+GN-NWE-L1-009,SC-NWE-L1,Nuwara Eliya,GN,469E,106.0,,7.135431,80.792528,synthetic,True
+GN-NWE-L1-010,SC-NWE-L1,Nuwara Eliya,GN,353K,84.0,,7.085923,80.840417,synthetic,True
+GN-NWE-L1-011,SC-NWE-L1,Nuwara Eliya,GN,346L,130.0,,6.96605,80.709764,synthetic,True
+GN-NWE-L1-012,SC-NWE-L1,Nuwara Eliya,GN,544C,393.0,,6.968524,80.710456,synthetic,True
+GN-NWE-L1-013,SC-NWE-L1,Nuwara Eliya,GN,338M,176.0,,7.015438,80.742185,synthetic,True
+GN-NWE-L1-014,SC-NWE-L1,Nuwara Eliya,GN,209E,114.0,,7.013942,80.614672,synthetic,True
+GN-NWE-L2-001,SC-NWE-L2,Nuwara Eliya,GN,464J,368.0,,6.966704,80.721834,synthetic,True
+GN-NWE-L2-002,SC-NWE-L2,Nuwara Eliya,GN,357J,466.0,,7.020719,80.70394,synthetic,True
+GN-NWE-L2-003,SC-NWE-L2,Nuwara Eliya,GN,503B,122.0,,7.179065,80.769747,synthetic,True
+GN-NWE-L2-004,SC-NWE-L2,Nuwara Eliya,GN,127F,212.0,,7.175183,80.776474,synthetic,True
+GN-NWE-L2-005,SC-NWE-L2,Nuwara Eliya,GN,343A,362.0,,6.964646,80.711127,synthetic,True
+GN-NWE-L2-006,SC-NWE-L2,Nuwara Eliya,GN,467J,151.0,,6.956652,80.720885,synthetic,True
+GN-NWE-L2-007,SC-NWE-L2,Nuwara Eliya,GN,322C,463.0,,7.021049,80.710129,synthetic,True
+GN-NWE-L2-008,SC-NWE-L2,Nuwara Eliya,GN,458H,234.0,,6.958228,80.721743,synthetic,True
+GN-NWE-L2-009,SC-NWE-L2,Nuwara Eliya,GN,121A,288.0,,6.989344,80.853806,synthetic,True
+GN-NWE-L2-010,SC-NWE-L2,Nuwara Eliya,GN,127C,125.0,,7.168812,80.765706,synthetic,True
+GN-NWE-L2-011,SC-NWE-L2,Nuwara Eliya,GN,340G,107.0,,7.169401,80.761144,synthetic,True
+GN-NWE-L2-012,SC-NWE-L2,Nuwara Eliya,GN,311G,273.0,,7.021535,80.704013,synthetic,True
+GN-NWE-L2-013,SC-NWE-L2,Nuwara Eliya,GN,528L,387.0,,7.176213,80.765744,synthetic,True
+GN-NWE-L2-014,SC-NWE-L2,Nuwara Eliya,GN,548C,313.0,,7.171829,80.761368,synthetic,True
+GN-NWE-L2-015,SC-NWE-L2,Nuwara Eliya,GN,268G,170.0,,6.962882,80.720239,synthetic,True
+GN-NWE-L2-016,SC-NWE-L2,Nuwara Eliya,GN,107F,314.0,,7.067181,80.648156,synthetic,True
+GN-NWE-L2-017,SC-NWE-L2,Nuwara Eliya,GN,344G,95.0,,6.999021,80.628841,synthetic,True
+GN-NWE-L2-018,SC-NWE-L2,Nuwara Eliya,GN,144J,271.0,,6.963988,80.711843,synthetic,True
+GN-NWE-L2-019,SC-NWE-L2,Nuwara Eliya,GN,427D,207.0,,6.99354,80.848287,synthetic,True
+GN-NWE-L2-020,SC-NWE-L2,Nuwara Eliya,GN,375L,59.0,,7.177149,80.765126,synthetic,True
+GN-NWE-L2-021,SC-NWE-L2,Nuwara Eliya,GN,546K,301.0,,7.01924,80.704977,synthetic,True
+GN-NWE-L2-022,SC-NWE-L2,Nuwara Eliya,GN,238H,313.0,,7.064593,80.650335,synthetic,True
+GN-NWE-L2-023,SC-NWE-L2,Nuwara Eliya,GN,125E,158.0,,7.16911,80.755113,synthetic,True
+GN-NWE-L2-024,SC-NWE-L2,Nuwara Eliya,GN,521C,107.0,,6.955141,80.763179,synthetic,True
+GN-NWE-L2-025,SC-NWE-L2,Nuwara Eliya,GN,435L,178.0,,6.987706,80.849207,synthetic,True
+GN-NWE-L2-026,SC-NWE-L2,Nuwara Eliya,GN,365L,173.0,,7.180121,80.756624,synthetic,True
+GN-NWE-L2-027,SC-NWE-L2,Nuwara Eliya,GN,446M,690.0,,6.960327,80.763801,synthetic,True
+GN-NWE-L2-028,SC-NWE-L2,Nuwara Eliya,GN,517G,36.0,,7.067038,80.639907,synthetic,True
