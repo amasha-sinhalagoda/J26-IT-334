@@ -344,6 +344,21 @@ then stay unchanged. The current provider is not a network API or a live feed.
 To run the dispatch and reservation unit tests, use
 `python -m unittest discover -s tests -v`.
 
+## Local allocation dashboard
+
+Launch the desktop UI from the repository root with
+`python scripts/resource_dispatch_dashboard.py`. It provides a preview of
+proposed allocations, request fulfillment, inventory after reservations, and a
+same-scenario comparison with the greedy reference heuristic. District,
+hazard, and resource filters only affect the displayed rows; they do not rerun
+or alter the allocation.
+
+Generating a preview does not reserve resources. The **Approve and reserve
+plan** button requires confirmation and writes reservations to the local CSV
+ledger. This is a desktop research-prototype UI: it reads the prepared CSV
+inputs and workbook inventory snapshot, and does not connect to live DDMC
+inventory or dispatch systems.
+
 ## Dispatch evaluation metrics
 
 `resource_dispatch.evaluation` provides reusable metrics for evaluating the
