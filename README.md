@@ -297,6 +297,16 @@ evacuation assignments appear as separate route lines. OpenStreetMap tiles
 and the MapLibre browser library are loaded from public services, so mapping
 requires browser network access. Attribution is displayed in the map.
 
+The same page also includes the **Resource dispatch** view. It calculates a
+read-only preview from prepared allocation CSVs, the current workbook inventory
+snapshot, and the local reservation ledger. The map shows alert locations and
+assigned resource locations; straight-line proximity estimates are labeled as
+such and are not drawn as road routes. The UI does not dispatch resources or
+reserve inventory. Both views use a dark, map-led layout and are available at
+`http://127.0.0.1:8000/map` after starting the API above. The dispatch preview
+endpoint does not require PostGIS; rescue and evacuation routing still require
+the local routing database.
+
 Run the mock alert contract tests with:
 
 ```powershell
