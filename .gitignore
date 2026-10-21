@@ -216,3 +216,43 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# === Human Impact Research Project ===
+
+# macOS
+.DS_Store
+
+# Frontend dependencies and build files
+node_modules/
+dist/
+build/
+
+# Local environments and backups
+anaconda_projects/
+environment_backup/
+data/backups/
+
+# Secrets
+.env.*
+!.env.example
+
+# Trained model binaries
+*.joblib
+*.pkl
+*.pickle
+
+# Generated and large research files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.geojson
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.tif
+*.tiff
+
+# Generated outputs
+outputs/
