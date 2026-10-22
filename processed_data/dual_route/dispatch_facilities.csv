@@ -1,0 +1,46 @@
+facility_id,facility_type,district,name,latitude,longitude,operational_status,source_type,is_synthetic,accepted_for_prototype
+FAC-RTN-D01,DDMC_station,Ratnapura,DDMC Ratnapura,6.679599,80.401478,operational,synthetic,True,True
+FAC-RTN-D02,DDMC_station,Ratnapura,DS Division Disaster Management Unit - Kuruwita,6.786144,80.371485,operational,synthetic,True,True
+FAC-RTN-D03,DDMC_station,Ratnapura,DS Division Disaster Management Unit - Eheliyagoda,6.851944,80.265193,operational,synthetic,True,True
+FAC-RTN-D04,DDMC_station,Ratnapura,DS Division Disaster Management Unit - Pelmadulla,6.623704,80.536989,operational,synthetic,True,True
+FAC-RTN-D05,DDMC_station,Ratnapura,DS Division Disaster Management Unit - Balangoda,6.643815,80.694469,limited,synthetic,True,True
+FAC-RTN-D06,DDMC_station,Ratnapura,DS Division Disaster Management Unit - Kahawatta,6.616959,80.321977,operational,synthetic,True,True
+FAC-RTN-H01,hospital,Ratnapura,Teaching Hospital Ratnapura,6.685728,80.40348,operational,synthetic,True,True
+FAC-RTN-H02,hospital,Ratnapura,Base Hospital Balangoda,6.663883,80.699284,operational,synthetic,True,True
+FAC-RTN-H03,hospital,Ratnapura,Base Hospital Pelmadulla,6.615936,80.539718,operational,synthetic,True,True
+FAC-KEG-D01,DDMC_station,Kegalle,DDMC Kegalle,7.248054,80.348657,operational,synthetic,True,True
+FAC-KEG-D02,DDMC_station,Kegalle,DS Division Disaster Management Unit - Mawanella,7.261101,80.447362,operational,synthetic,True,True
+FAC-KEG-D03,DDMC_station,Kegalle,DS Division Disaster Management Unit - Rambukkana,7.319275,80.401309,operational,synthetic,True,True
+FAC-KEG-D04,DDMC_station,Kegalle,DS Division Disaster Management Unit - Aranayake,7.176215,80.468445,operational,synthetic,True,True
+FAC-KEG-D05,DDMC_station,Kegalle,DS Division Disaster Management Unit - Bulathkohupitiya,7.163388,80.268428,limited,synthetic,True,True
+FAC-KEG-D06,DDMC_station,Kegalle,DS Division Disaster Management Unit - Warakapola,7.22391,80.200103,operational,synthetic,True,True
+FAC-KEG-H01,hospital,Kegalle,Teaching Hospital Kegalle,7.242453,80.348522,operational,synthetic,True,True
+FAC-KEG-H02,hospital,Kegalle,Base Hospital Mawanella,7.25314,80.442707,limited,synthetic,True,True
+FAC-KEG-H03,hospital,Kegalle,Base Hospital Warakapola,7.225017,80.199006,limited,synthetic,True,True
+FAC-KLT-D01,DDMC_station,Kalutara,DDMC Kalutara,6.589162,79.957516,operational,synthetic,True,True
+FAC-KLT-D02,DDMC_station,Kalutara,DS Division Disaster Management Unit - Horana,6.723269,80.059891,operational,synthetic,True,True
+FAC-KLT-D03,DDMC_station,Kalutara,DS Division Disaster Management Unit - Ingiriya,6.753745,80.14111,operational,synthetic,True,True
+FAC-KLT-D04,DDMC_station,Kalutara,DS Division Disaster Management Unit - Matugama,6.515703,80.120987,limited,synthetic,True,True
+FAC-KLT-D05,DDMC_station,Kalutara,DS Division Disaster Management Unit - Agalawatta,6.533733,80.164717,operational,synthetic,True,True
+FAC-KLT-D06,DDMC_station,Kalutara,DS Division Disaster Management Unit - Bulathsinhala,6.676677,80.167632,operational,synthetic,True,True
+FAC-KLT-H01,hospital,Kalutara,Nagoda Teaching Hospital,6.5763,79.973556,operational,synthetic,True,True
+FAC-KLT-H02,hospital,Kalutara,Base Hospital Horana,6.71364,80.064091,operational,synthetic,True,True
+FAC-KLT-H03,hospital,Kalutara,Base Hospital Panadura,6.715009,79.904347,operational,synthetic,True,True
+FAC-BDL-D01,DDMC_station,Badulla,DDMC Badulla,6.993144,81.047567,operational,synthetic,True,True
+FAC-BDL-D02,DDMC_station,Badulla,DS Division Disaster Management Unit - Bandarawela,6.830804,80.990614,limited,synthetic,True,True
+FAC-BDL-D03,DDMC_station,Badulla,DS Division Disaster Management Unit - Haputale,6.769852,80.951328,limited,synthetic,True,True
+FAC-BDL-D04,DDMC_station,Badulla,DS Division Disaster Management Unit - Mahiyangana,7.331225,80.995018,limited,synthetic,True,True
+FAC-BDL-D05,DDMC_station,Badulla,DS Division Disaster Management Unit - Passara,6.925621,81.142217,limited,synthetic,True,True
+FAC-BDL-D06,DDMC_station,Badulla,DS Division Disaster Management Unit - Welimada,6.899977,80.914848,limited,synthetic,True,True
+FAC-BDL-H01,hospital,Badulla,Provincial General Hospital Badulla,6.993563,81.054467,operational,synthetic,True,True
+FAC-BDL-H02,hospital,Badulla,Base Hospital Bandarawela,6.832799,80.985622,operational,synthetic,True,True
+FAC-BDL-H03,hospital,Badulla,Base Hospital Mahiyangana,7.333014,80.992241,operational,synthetic,True,True
+FAC-NWE-D01,DDMC_station,Nuwara Eliya,DDMC Nuwara Eliya,6.971249,80.767903,operational,synthetic,True,True
+FAC-NWE-D02,DDMC_station,Nuwara Eliya,DS Division Disaster Management Unit - Hatton,6.888231,80.606009,operational,synthetic,True,True
+FAC-NWE-D03,DDMC_station,Nuwara Eliya,DS Division Disaster Management Unit - Kotmale,7.038872,80.598173,operational,synthetic,True,True
+FAC-NWE-D04,DDMC_station,Nuwara Eliya,DS Division Disaster Management Unit - Walapane,7.059308,80.845642,operational,synthetic,True,True
+FAC-NWE-D05,DDMC_station,Nuwara Eliya,DS Division Disaster Management Unit - Hanguranketha,7.14741,80.762534,operational,synthetic,True,True
+FAC-NWE-D06,DDMC_station,Nuwara Eliya,DS Division Disaster Management Unit - Ragala,6.998493,80.726538,operational,synthetic,True,True
+FAC-NWE-H01,hospital,Nuwara Eliya,District General Hospital Nuwara Eliya,6.962941,80.767375,operational,synthetic,True,True
+FAC-NWE-H02,hospital,Nuwara Eliya,Base Hospital Hanguranketha,7.151545,80.764255,operational,synthetic,True,True
+FAC-NWE-H03,hospital,Nuwara Eliya,Base Hospital Kotmale,7.027532,80.597469,operational,synthetic,True,True

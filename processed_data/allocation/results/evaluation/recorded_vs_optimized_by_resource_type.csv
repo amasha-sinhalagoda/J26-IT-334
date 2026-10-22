@@ -1,0 +1,6 @@
+﻿requested_resource_type,requested_quantity_recorded,assigned_quantity,unfilled_quantity_recorded,assignment_rate,requested_quantity_optimized,allocated_quantity,unfilled_quantity_optimized,fulfillment_rate
+AMB,50,50.0,0.0,1.0,50,26,24,0.52
+BOAT,5,5.0,0.0,1.0,5,5,0,1.0
+RLF,2087,2087.0,0.0,1.0,2087,2087,0,1.0
+RT,61,57.0,4.0,0.9344262295081968,61,8,53,0.13114754098360656
+SHL,3493,3493.0,0.0,1.0,3493,3493,0,1.0

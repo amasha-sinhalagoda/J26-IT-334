@@ -1,0 +1,15 @@
+Resource-aware dispatch preprocessing report
+Inputs: project alert requests, resource inventory, and dispatch assignments.
+Resource coordinates are approximate DS-centre locations as labeled in source data.
+
+alerts: 99 rows, 14 columns
+  Missing values: none
+resources: 159 rows, 16 columns
+  Missing values: {'assigned_alert_id': 84}
+assignments: 148 rows, 16 columns
+  Missing values: none
+population_5_districts: 2968 rows, 17 columns
+population districts: ['Badulla', 'Kalutara', 'Kegalle', 'Nuwara Eliya', 'Ratnapura']
+district/resource demand comparison: 23 pairs, 9 shortage pairs
+
+Validation: PASSED

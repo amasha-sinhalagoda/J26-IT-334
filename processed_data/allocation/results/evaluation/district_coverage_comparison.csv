@@ -1,0 +1,5 @@
+﻿approach,response_window_minutes,alerted_districts,districts_covered,district_coverage_rate,scarce_districts,scarce_districts_covered,scarcity_district_coverage_rate
+recorded_assignments_within_window,30.0,5,5,1.0,5,5,1.0
+recorded_assignments_within_window,60.0,5,5,1.0,5,5,1.0
+recorded_assignments_within_window,120.0,5,5,1.0,5,5,1.0
+optimized_plan_eventual_allocation,,5,5,1.0,5,4,0.8

@@ -1,0 +1,24 @@
+Resource allocation solver run
+Method: OR-Tools CP-SAT, solved separately for each resource type.
+Dispatch score = 0.80*alert priority score + 0.20*local scarcity score.
+Local scarcity is the district/resource demand fraction not covered by local supply.
+Stage 1 maximizes dispatch-score-weighted allocated units.
+Stage 2 minimizes straight-line distance while preserving the stage-1 objective.
+Mode: preview
+Inventory provider: WorkbookInventoryProvider (recorded workbook snapshot).
+Existing reserved units subtracted before optimization: 0
+Inventory reservation ledger: C:\Users\palih\Desktop\J26-IT-334\processed_data\allocation\reservations.csv
+This is a research prototype using the supplied project datasets; coordinates are approximate and distances are not route distances.
+Request rows: 99
+Fully satisfied requests: 59
+Partially/unfilled requests: 40
+Requested quantity: 5696
+Allocated quantity: 5619
+Unfilled quantity: 77
+
+Solver status by resource type:
+AMB: combined priority/scarcity=17739581, alert priority=17632811, scarcity=18166673, priority_status=OPTIMAL, distance_status=OPTIMAL
+BOAT: combined priority/scarcity=1918141, alert priority=2397677, scarcity=0, priority_status=OPTIMAL, distance_status=OPTIMAL
+RLF: combined priority/scarcity=1009491261, alert priority=1261864397, scarcity=0, priority_status=OPTIMAL, distance_status=OPTIMAL
+RT: combined priority/scarcity=6842012, alert priority=6590980, scarcity=7846154, priority_status=OPTIMAL, distance_status=OPTIMAL
+SHL: combined priority/scarcity=1682709951, alert priority=2103387890, scarcity=0, priority_status=OPTIMAL, distance_status=OPTIMAL

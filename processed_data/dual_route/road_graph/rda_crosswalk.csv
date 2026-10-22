@@ -1,0 +1,235 @@
+osm_ref,normalized_osm_ref,edge_count,rda_code,rda_class,rda_subclass,rda_road_name,rda_road_length_km,match_status,candidate_codes,match_basis
+644,644,16,,,,,,unmatched,[],No unique normalized RDA route-code match
+A1,A1,476,,,,,,ambiguous_a_subclass,"[""AA001"", ""AB001"", ""AC001""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A16,A16,181,,,,,,ambiguous_a_subclass,"[""AA016"", ""AB016"", ""AC016""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A17,A17,100,,,,,,ambiguous_a_subclass,"[""AA017"", ""AB017"", ""AC017""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A18,A18,456,,,,,,ambiguous_a_subclass,"[""AA018"", ""AB018"", ""AC018""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A19,A19,130,,,,,,ambiguous_a_subclass,"[""AA019"", ""AB019"", ""AC019""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A2,A2,1004,,,,,,ambiguous_a_subclass,"[""AA002"", ""AB002"", ""AC002""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A21,A21,247,,,,,,ambiguous_a_subclass,"[""AA021"", ""AB021"", ""AC021""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A22,A22,10,,,,,,ambiguous_a_subclass,"[""AA022"", ""AB022"", ""AC022""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A23,A23,68,,,,,,ambiguous_a_subclass,"[""AA023"", ""AB023"", ""AC023""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A26,A26,173,,,,,,ambiguous_a_subclass,"[""AA026"", ""AB026"", ""AC026""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A4,A4,1015,,,,,,ambiguous_a_subclass,"[""AA004"", ""AB004"", ""AC004""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A5,A5,778,,,,,,ambiguous_a_subclass,"[""AA005"", ""AB005"", ""AC005""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A6,A6,114,,,,,,ambiguous_a_subclass,"[""AA006"", ""AB006"", ""AC006""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A7,A7,586,,,,,,ambiguous_a_subclass,"[""AA007"", ""AB007"", ""AC007""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+A8,A8,792,,,,,,ambiguous_a_subclass,"[""AA008"", ""AB008"", ""AC008""]",A-number is ambiguous across RDA AA/AB/AC subclasses
+AB11,AB11,110,AB011,A,AB,Galle Road New Deviation (Cross Junc. to Egoda Uyana),6.98,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB13,AB13,34,AB013,A,AB,Gampola - Nawalapitiya,17.54,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB14,AB14,30,AB014,A,AB,"Hospital - Esplanade road, Ratnapura",1.66,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB27,AB27,35,AB027,A,AB,"Old Colombo - Galle Road, Panadura",1.9,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB35,AB35,14,AB035,A,AB,"Section A - B NEW TOWN ROAD, Ratnapura",1.85,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB44,AB44,119,AB044,A,AB,Mahiyangana - Dimbulagala - Dalukkane,72.6,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB45,AB45,6,AB045,A,AB,Avissawela By pass,0.88,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB6,AB6,2,AB006,A,AB,Avissawella Town Road,0.06,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB7,AB7,13,AB007,A,AB,Balangoda By Pass,1.13,matched_normalized_code,[],Normalized route code; leading zeroes removed
+AB8,AB8,7,AB008,A,AB,Bandarawela By Pass,0.51,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B027,B27,4,B027,B,B,Approach Roads to Railway Stations,17.68,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B049,B49,25,B049,B,B,"Bazaar Street, Ambalangoda",1.69,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B100,B100,38,B100,B,B,Dickwella - Jangulla - Talpitigala,24.14,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B102,B102,10,B102,B,B,Diyatalawa - Aluthwela North,2.81,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B103,B103,12,B103,B,B,Diyatalawa - Aluthwela South,1.96,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B104,B104,18,B104,B,B,Diyatalawa - Mirahawatta,6.44,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B105,B105,26,B105,B,B,Diyatalawa - Welanhinna - Walagahawela,5.63,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B110,B110,82,B110,B,B,Eheliyagoda - Dehiowita,16.78,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B113,B113,102,B113,B,B,Ella - Passara,27.55,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B114,B114,152,B114,B,B,Elpitiya - Avittawa - Lewwanduwa,27.56,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B115,B115,156,B115,B,B,Embilipitiya - Panamure - Bulutota,38.62,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B122,B122,4,B122,B,B,Galagedara - Rambukkana,18.5,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B123,B123,154,B123,B,B,Galagedera - Horana,19.05,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B124,B124,12,B124,B,B,Galagoda - Weligepola,7.24,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B127,B127,148,B127,B,B,Galigomuwa - Ruwanwella,22.53,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B132,B132,4,B132,B,B,Gampola - Craighead,15.93,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B136,B136,52,B136,B,B,Gevilipitiya - Hettimulla,15.37,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B144,B144,6,B144,B,B,Halwatura Estate Road,1.0,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B147,B147,28,B147,B,B,Haputale - Dambetenne,9.32,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B148,B148,50,B148,B,B,Harangala - Kalapitiya - Kumbaloluwa,23.39,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B149,B149,136,B149,B,B,Hatton - Maskeliya - Dalhousie,32.97,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B157,B157,728,B157,B,B,Horana - Anguruwatota - Aluthgama,54.14,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B158,B158,226,B158,B,B,Horawela - Pelawatte - Pitigala,25.74,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B160,B160,80,B160,B,B,Idangoda - Ayagama,13.68,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B163,B163,26,B163,B,B,Ingiriya - Halwatura,2.96,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B172,B172,2,B172,B,B,Kadugannawa - Gampola,17.3,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B181,B181,164,B181,B,B,Kalawana - Depdene - Rakwana,46.66,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B188,B188,14,B188,B,B,Kaluaggala - Labugama,14.0,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B189,B189,18,B189,B,B,Kalugala - Polpitiya - Laxapana,11.26,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B191,B191,74,B191,B,B,Kalutara - Nagoda,5.74,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B199,B199,86,B199,B,B,Karandupona - Rambukkana,8.85,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B207,B207,204,B207,B,B,Katukurunda - Neboda,16.49,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B216,B216,118,B216,B,B,Kesbewa - Kindelpitiya - Bandaragama,11.78,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B222,B222,146,B222,B,B,Kiriella - Nedurana - Eheliyagoda,14.08,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B223,B223,18,B223,B,B,Kirimetitenna - Galgoda,5.63,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B224,B224,240,B224,B,B,Kirimetiya - Yala,17.17,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B235,B235,186,B235,B,B,Koralawella - Egoda-Uyana,5.84,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B236,B236,30,B236,B,B,Koslande - Poonagala,11.55,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B239,B239,85,B239,B,B,Kottawa - Talagala,15.48,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B249,B249,78,B249,B,B,Lady Macallums Drive,5.63,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B25,B25,4,B025,B,B,Approach Road to Laxapana Power House,11.54,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B252,B252,60,B252,B,B,Lindula to end of Agras Road,22.24,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B253,B253,12,B253,B,B,Lowland - Panaliya,1.8,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B26,B26,6,B026,B,B,Approach Road to Midford Power House,0.97,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B265,B265,38,B265,B,B,Malwala - Carney,14.48,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B27-12,B27-12,6,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-14,B27-14,11,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-18,B27-18,6,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-19,B27-19,16,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-20,B27-20,4,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-25,B27-25,2,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-26,B27-26,8,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-5,B27-5,2,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-6,B27-6,2,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-7,B27-7,8,,,,,,unmatched,[],No unique normalized RDA route-code match
+B27-8,B27-8,6,,,,,,unmatched,[],No unique normalized RDA route-code match
+B273,B273,35,B273,B,B,Maskeliya - Upcot,8.7,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B278,B278,80,B278,B,B,Mawanella - Aranayake - Horawela,14.45,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B279,B279,94,B279,B,B,Mawanella - Hemmaththagama - Singhapitiya,25.8,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B281,B281,4,B281,B,B,Mawathagama - Muwankanda,8.85,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B285,B285,112,B285,B,B,Meepe - Ingiriya,18.09,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B286,B286,48,B286,B,B,Middeniya - Panamure,13.27,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B30-9,B30-9,14,,,,,,unmatched,[],No unique normalized RDA route-code match
+B302,B302,62,B302,B,B,Nagoda - Gallassa Colony Road,3.7,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B304,B304,649,B304,B,B,Nagoda - Kalawellawa - Bellapitiya,55.51,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B310,B310,20,B310,B,B,Nartupana - Warakagoda,3.22,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B317,B317,106,B317,B,B,Nawalapitiya - Dimbula,31.18,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B318,B318,12,B318,B,B,Nawalapitiya - Dolosbage,19.71,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B319,B319,56,B319,B,B,Nawalapitiya - Ginigathena,12.07,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B328,B328,38,B328,B,B,Norton - Maskeliya,16.8,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B329,B329,66,B329,B,B,Norwood - Bogowantalawa - Campion,16.89,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B330,B330,30,B330,B,B,Norwood - Upcot,12.71,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B331,B331,34,B331,B,B,Nuwara Eliya Town Road,2.41,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B331-3,B331-3,16,,,,,,unmatched,[],No unique normalized RDA route-code match
+B331-4,B331-4,5,,,,,,unmatched,[],No unique normalized RDA route-code match
+B331-5,B331-5,4,,,,,,unmatched,[],No unique normalized RDA route-code match
+B332,B332,178,B332,B,B,Nuwara Eliya - Uda Pussellawa,46.0,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B339,B339,64,B339,B,B,Olugantota - Pinnawala - Bogowantalawa,35.14,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B34,B34,100,B034,B,B,Ayagama - Kukulegama,16.89,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B351,B351,38,B351,B,B,Pallebedde - Medaganoya - Weligepola,12.47,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B353,B353,96,B353,B,B,Palugama - Boralande - Haputale,26.55,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B358,B358,18,B358,B,B,Parussella - Panapitiya,5.12,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B359,B359,8,B359,B,B,Passara - Hingurukaduwa - Pelwatte,30.17,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B36,B36,184,B036,B,B,Badulla - Karametiya - Andaulpotha,48.1,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B360,B360,72,B360,B,B,Passara - Madulsima - Metigahatenna,29.93,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B363,B363,148,B363,B,B,Pelawatta - Kankotayawatta - Tinniyawela - Morawaka,53.18,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B364,B364,74,B364,B,B,Peradeniya - Deltota - Rikiligaskada,52.13,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B38,B38,70,B038,B,B,Balangoda - Bowatte - Kaltota,28.96,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B38/ B593,B38/B593,2,,,,,,unmatched,[],No unique normalized RDA route-code match
+B381,B381,20,B381,B,B,Radaella Short Cut Road,3.38,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B383,B383,14,B383,B,B,Rakwana - Bulutota,1.13,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B384,B384,55,B384,B,B,Rambukkana - Katupitiya,9.81,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B385,B385,74,B385,B,B,Rambukkana - Mawanella,16.89,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B39,B39,56,B039,B,B,Balangoda - Rassagala - Uwella,13.26,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B390,B390,199,B390,B,B,Ratnapura - Palawela - Karawita,22.53,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B391,B391,90,B391,B,B,Ratnapura - Wewelwatte,28.0,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B396,B396,66,B396,B,B,Roehampton - Diyatalawa - Bandarawela,9.9,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B404,B404,4,B404,B,B,"Sri Ariyavilasa Road, Horana",0.5,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B405,B405,14,B405,B,B,"Sri Somananda Mawatha, Horana",0.85,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B406,B406,38,B406,B,B,Stony Cliff - Kotagala,6.31,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B408,B408,110,B408,B,B,Talduwa - Meewitigammana,18.9,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B412,B412,102,B412,B,B,Tawalantenne - Talawakela,33.36,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B413,B413,174,B413,B,B,Tennekumbura - Rikiligaskada - Ragala,72.67,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B42,B42,66,B042,B,B,Bandarawela - Liyangahawela - Poonagala,21.56,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B421,B421,390,B421,B,B,Tiruwanaketiya - Agalawatte,67.98,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B426,B426,6,B426,B,B,Tummodera - Puwakpitiya,9.65,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B427,B427,32,B427,B,B,Udawalawe - Tanamalwila,35.4,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B43,B43,98,B043,B,B,Bandarawela - Uva Hihglands - Ettampitiya,16.49,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B431,B431,32,B431,B,B,Ulapane - Pussellawa,22.53,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B44,B44,118,B044,B,B,Bandarawela - Welimada,21.72,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B445,B445,72,B445,B,B,Veyangoda - Ruwanwella,32.18,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B449,B449,88,B449,B,B,Wadduwa - Morontuduwa,5.28,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B456,B456,10,B456,B,B,Warakapola - Kandalama,10.86,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B457,B457,66,B457,B,B,Warakapola - Ruwanwella,22.53,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B458,B458,164,B458,B,B,Waskaduwa - Bandaragama,12.07,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B467,B467,10,B467,B,B,Weligepola - Handagiriya,10.06,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B471,B471,85,B471,B,B,Welimada - Kirklees,17.83,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B474,B474,52,B474,B,B,Weragantota - Randenigala,22.2,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B475,B475,42,B475,B,B,Bulugolla - Dombemada - Wahawa,13.64,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B476,B476,10,B476,B,B,Weweldeniya - Mirigama,6.44,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B477,B477,24,B477,B,B,Wewelwatte - Agarsland - Uwella,9.49,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B481,B481,34,B481,B,B,Yatadolawatta Road,2.82,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B482,B482,48,B482,B,B,Yatiyantota - Poonagala - Meenagala,24.14,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B484,B484,6,B484,B,B,Handungamuwa - Hettipola - Hasalaka,45.05,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B486,B486,126,B486,B,B,Embilipitiya - Middeniya,14.48,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B491,B491,2,B491,B,B,Kotmale Dam Crest- Harangala Road,1.4,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B492,B492,80,B492,B,B,Kandehandiya - Adikarigama - Randenigala - Loggal Oya,54.4,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B493,B493,4,B493,B,B,Moragahamula - Victoriya Damtop,8.4,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B494,B494,4,B494,B,B,Victoriya Damtop - Adikarigama,2.3,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B495,B495,18,B495,B,B,Edandawela - Kahahengama,2.0,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B497,B497,46,B497,B,B,51st Mile post - Ulhitiyawa,8.04,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B498,B498,48,B498,B,B,Barrier Junction - Girandura Kotte,7.0,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B506,B506,48,B506,B,B,Nawalapitiya - Harangala,11.52,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B507,B507,20,B507,B,B,Rendapola - Ambewela,8.24,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B508,B508,92,B508,B,B,Welimade - Borelanda - Ohiya - Horton Plains,32.47,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B511,B511,6,B511,B,B,Keerthibandrapura - Naranthalawa,4.42,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B512,B512,96,B512,B,B,Blackpool Ambewela Pattipola Horton Plains,28.16,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B528,B528,34,B528,B,B,Bodagma - Hambegamuwa - Kaltota,48.2,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B539,B539,28,,,,,,unmatched,[],No unique normalized RDA route-code match
+B540,B540,52,,,,,,unmatched,[],No unique normalized RDA route-code match
+B544,B544,52,,,,,,unmatched,[],No unique normalized RDA route-code match
+B549,B549,60,,,,,,unmatched,[],No unique normalized RDA route-code match
+B55,B55,4,B055,B,B,Bentara - Uragaha - Elpitiya,26.95,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B563,B563,20,,,,,,unmatched,[],No unique normalized RDA route-code match
+B57,B57,187,B057,B,B,Bibile - Uraniya - Mahiyangana,39.58,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B577,B577,34,,,,,,unmatched,[],No unique normalized RDA route-code match
+B580,B580,10,,,,,,unmatched,[],No unique normalized RDA route-code match
+B581,B581,6,,,,,,unmatched,[],No unique normalized RDA route-code match
+B582,B582,18,,,,,,unmatched,[],No unique normalized RDA route-code match
+B583,B583,30,,,,,,unmatched,[],No unique normalized RDA route-code match
+B584,B584,60,,,,,,unmatched,[],No unique normalized RDA route-code match
+B585,B585,18,,,,,,unmatched,[],No unique normalized RDA route-code match
+B587,B587,4,,,,,,unmatched,[],No unique normalized RDA route-code match
+B588,B588,34,,,,,,unmatched,[],No unique normalized RDA route-code match
+B589,B589,40,,,,,,unmatched,[],No unique normalized RDA route-code match
+B592,B592,32,,,,,,unmatched,[],No unique normalized RDA route-code match
+B593,B593,58,,,,,,unmatched,[],No unique normalized RDA route-code match
+B599,B599,14,,,,,,unmatched,[],No unique normalized RDA route-code match
+B600,B600,40,,,,,,unmatched,[],No unique normalized RDA route-code match
+B601,B601,16,,,,,,unmatched,[],No unique normalized RDA route-code match
+B602,B602,16,,,,,,unmatched,[],No unique normalized RDA route-code match
+B603,B603,44,,,,,,unmatched,[],No unique normalized RDA route-code match
+B604,B604,34,,,,,,unmatched,[],No unique normalized RDA route-code match
+B605,B605,20,,,,,,unmatched,[],No unique normalized RDA route-code match
+B612,B612,8,,,,,,unmatched,[],No unique normalized RDA route-code match
+B613,B613,4,,,,,,unmatched,[],No unique normalized RDA route-code match
+B624,B624,30,,,,,,unmatched,[],No unique normalized RDA route-code match
+B643,B643,66,,,,,,unmatched,[],No unique normalized RDA route-code match
+B656,B656,80,,,,,,unmatched,[],No unique normalized RDA route-code match
+B67,B67,32,B067,B,B,Bulathkohupitiya - Dedugala,12.47,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B68,B68,72,B068,B,B,Ingiriya - Halwatura - Egaloya,8.85,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B71,B71,42,B071,B,B,Carolina - Norton - Wanarajah,23.73,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B8,B8,10,B008,B,B,Alawwa - Dampelessa,14.64,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B84,B84,111,B084,B,B,Colombo - Horana,28.01,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B86,B86,30,B086,B,B,Dambagahapitiya - Pinnagolla - Arawa - Meegahakiula,13.32,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B87,B87,6,B087,B,B,Dambokka - Katupitiya,8.85,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B9,B9,16,B009,B,B,Alawwa - Maharagama,14.63,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B93,B93,106,B093,B,B,Dehiowita - Deraniyagala - Noori,27.96,matched_normalized_code,[],Normalized route code; leading zeroes removed
+B97,B97,54,B097,B,B,Demodera - Spring Valley - Badulla,21.32,matched_normalized_code,[],Normalized route code; leading zeroes removed
+C071,C71,2,,,,,,unmatched,[],No unique normalized RDA route-code match
+C1001,C1001,4,,,,,,unmatched,[],No unique normalized RDA route-code match
+C17,C17,8,,,,,,unmatched,[],No unique normalized RDA route-code match
+C2,C2,18,,,,,,unmatched,[],No unique normalized RDA route-code match
+C22,C22,40,,,,,,unmatched,[],No unique normalized RDA route-code match
+C223,C223,22,,,,,,unmatched,[],No unique normalized RDA route-code match
+C235,C235,6,,,,,,unmatched,[],No unique normalized RDA route-code match
+C413,C413,26,,,,,,unmatched,[],No unique normalized RDA route-code match
+C416,C416,76,,,,,,unmatched,[],No unique normalized RDA route-code match
+C421,C421,30,,,,,,unmatched,[],No unique normalized RDA route-code match
+C433,C433,42,,,,,,unmatched,[],No unique normalized RDA route-code match
+C45,C45,40,,,,,,unmatched,[],No unique normalized RDA route-code match
+C54,C54,42,,,,,,unmatched,[],No unique normalized RDA route-code match
+C56,C56,2,,,,,,unmatched,[],No unique normalized RDA route-code match
+C57,C57,6,,,,,,unmatched,[],No unique normalized RDA route-code match
+C601,C601,16,,,,,,unmatched,[],No unique normalized RDA route-code match
+C602,C602,58,,,,,,unmatched,[],No unique normalized RDA route-code match
+C603,C603,2,,,,,,unmatched,[],No unique normalized RDA route-code match
+C629,C629,76,,,,,,unmatched,[],No unique normalized RDA route-code match
+C631,C631,18,,,,,,unmatched,[],No unique normalized RDA route-code match
+C633,C633,10,,,,,,unmatched,[],No unique normalized RDA route-code match
+C656,C656,62,,,,,,unmatched,[],No unique normalized RDA route-code match
+C665,C665,8,,,,,,unmatched,[],No unique normalized RDA route-code match
+D170,D170,12,,,,,,unmatched,[],No unique normalized RDA route-code match
+E001,E1,156,E001,E,E,Southern Expressway,200.451,matched_normalized_code,[],Normalized route code; leading zeroes removed
+Link,LINK,4,,,,,,unmatched,[],No unique normalized RDA route-code match
+Thissapura Main Road,THISSAPURAMAINROAD,18,,,,,,unmatched,[],No unique normalized RDA route-code match
+name,NAME,4,,,,,,unmatched,[],No unique normalized RDA route-code match
+road,ROAD,2,,,,,,unmatched,[],No unique normalized RDA route-code match

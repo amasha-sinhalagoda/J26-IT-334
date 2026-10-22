@@ -1,0 +1,24 @@
+{
+  "ambiguous_edge_count": 6130,
+  "annotated_geopackage": "C:\\Users\\palih\\Desktop\\J26-IT-334\\processed_data\\dual_route\\road_graph\\five_districts_rda.gpkg",
+  "annotated_graphml": "C:\\Users\\palih\\Desktop\\J26-IT-334\\processed_data\\dual_route\\road_graph\\five_districts_rda.graphml",
+  "crosswalk_csv": "C:\\Users\\palih\\Desktop\\J26-IT-334\\processed_data\\dual_route\\road_graph\\rda_crosswalk.csv",
+  "edge_status_counts": {
+    "ambiguous_a_subclass": 6130,
+    "matched_normalized_code": 10647,
+    "missing_osm_ref": 135304,
+    "unmatched": 1710
+  },
+  "matched_edge_count": 10647,
+  "missing_ref_edge_count": 135304,
+  "rda_workbook": "C:\\Users\\palih\\Desktop\\J26-IT-334\\RDA_National_Road_Network.xlsx",
+  "source_edges": "C:\\Users\\palih\\Desktop\\J26-IT-334\\processed_data\\dual_route\\road_graph\\five_districts.gpkg",
+  "unique_osm_refs": 234,
+  "unique_ref_status_counts": {
+    "ambiguous_a_subclass": 15,
+    "matched_normalized_code": 145,
+    "unmatched": 74
+  },
+  "unmatched_edge_count": 1710,
+  "use_restriction": "RDA class/subclass is a road-priority/fallback attribute only; it is not hazard evidence and must not override hard blocks."
+}

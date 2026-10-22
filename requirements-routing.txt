@@ -1,0 +1,11 @@
+# Install with: py -3.13 -m pip install -r requirements-routing.txt
+-r requirements.txt
+osmnx==2.1.1
+pyrosm==0.22.0
+scipy>=1.13,<2
+sqlalchemy>=2.0,<3
+geoalchemy2>=0.15,<1
+psycopg2-binary>=2.9.9,<3
+fastapi>=0.110,<1
+uvicorn>=0.27,<1
+httpx>=0.27,<1

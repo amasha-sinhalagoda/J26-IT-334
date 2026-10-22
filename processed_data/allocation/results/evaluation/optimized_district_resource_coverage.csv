@@ -1,0 +1,24 @@
+﻿district,local_scarcity_score,allocated_quantity,covered,scarcity_area
+Badulla,0.6363636363636364,9.0,True,True
+Badulla,0.0,197.0,True,False
+Badulla,0.9230769230769232,2.0,True,True
+Badulla,0.0,757.0,True,False
+Kalutara,0.1666666666666666,1.0,True,True
+Kalutara,0.0,2.0,True,False
+Kalutara,0.0,544.0,True,False
+Kalutara,0.7333333333333333,0.0,False,True
+Kalutara,0.0,834.0,True,False
+Kegalle,0.9,10.0,True,True
+Kegalle,0.0,2.0,True,False
+Kegalle,0.0,550.0,True,False
+Kegalle,0.7692307692307693,0.0,False,True
+Kegalle,0.0,754.0,True,False
+Nuwara Eliya,0.5454545454545454,6.0,True,True
+Nuwara Eliya,0.0,609.0,True,False
+Nuwara Eliya,1.0,6.0,True,True
+Nuwara Eliya,0.0,821.0,True,False
+Ratnapura,0.0,0.0,False,False
+Ratnapura,0.0,1.0,True,False
+Ratnapura,0.0,187.0,True,False
+Ratnapura,1.0,0.0,False,True
+Ratnapura,0.0,327.0,True,False

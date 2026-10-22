@@ -1,0 +1,50 @@
+{
+  "boundary_buffer_meters": 1000,
+  "created_at_utc": "2026-10-18T09:32:23.277327+00:00",
+  "directed_edge_count": 153791,
+  "districts": [
+    "Badulla",
+    "Kalutara",
+    "Kegalle",
+    "Nuwara Eliya",
+    "Ratnapura"
+  ],
+  "fallback_speed_kmh": {
+    "living_street": 15,
+    "motorway": 80,
+    "motorway_link": 50,
+    "primary": 50,
+    "primary_link": 35,
+    "residential": 25,
+    "road": 25,
+    "secondary": 40,
+    "secondary_link": 30,
+    "service": 15,
+    "tertiary": 35,
+    "tertiary_link": 25,
+    "trunk": 60,
+    "trunk_link": 40,
+    "unclassified": 30
+  },
+  "geopackage": "five_districts.gpkg",
+  "geopackage_layers": [
+    "road_edges",
+    "road_nodes",
+    "district_boundaries"
+  ],
+  "graphml": "five_districts.graphml",
+  "network_type": "driving",
+  "networkx_version": "3.7",
+  "node_count": 68218,
+  "osmnx_version": "2.1.1",
+  "source": {
+    "osm_data_timestamp_utc": "2026-10-17T20:20:51Z",
+    "pbf_file": "sri-lanka-261017.osm.pbf",
+    "pbf_sha256": "5b923c1e27c2cf536a042c2514461b3fbca05797913c8c3d1a783b03f122f149",
+    "pbf_size_bytes": 144465650,
+    "provider": "Geofabrik"
+  },
+  "speed_method": "OSM maxspeed tags where parseable; otherwise explicit uncalibrated prototype fallback speeds by highway class",
+  "target_crs": "EPSG:5234",
+  "unknown_highway_fallback_kmh": 20
+}
