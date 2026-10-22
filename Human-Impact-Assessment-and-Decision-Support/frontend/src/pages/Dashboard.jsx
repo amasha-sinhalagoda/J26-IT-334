@@ -272,6 +272,23 @@ export default function Dashboard() {
           {/* SAFETY LOCATIONS */}
           {activePage === "safety" && <SafetyPlacesPanel />}
 
+          
+          {/* RESEARCH DISCLAIMER */}
+          <p
+            style={{
+              color: "#fbbf24",
+              fontSize: "12px",
+              lineHeight: 1.7,
+              marginTop: "20px",
+            }}
+          >
+            Research demonstration only. Hazard inputs and exposure
+            estimates are simulated or provisional. Machine learning
+            predictions are experimental. This dashboard does not issue
+            official disaster warnings, evacuation orders, or emergency
+            notifications.
+          </p>
+
           {/* FORECAST TIMELINE */}
           {activePage === "timeline" && <ForecastTimeline />}
         
