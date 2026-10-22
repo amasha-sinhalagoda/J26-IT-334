@@ -1,0 +1,135 @@
+District,Division,Date,source_record_count,affected_min,affected_max,affected_sum_unverified,source_sheets,target_status,affected_target,episode_number,episode_id
+Nuwara Eliya,Ambagamuwakorale,1974-07-27,1,15.0,15.0,15.0,Sheet9,single_report,15.0,1,LANDSLIDE_Nuwara_Eliya_0001
+Nuwara Eliya,Ambagamuwakorale,1985-06-30,1,5.0,5.0,5.0,Sheet9,single_report,5.0,2,LANDSLIDE_Nuwara_Eliya_0002
+Nuwara Eliya,Kothmale,1985-10-22,1,290.0,290.0,290.0,Sheet9,single_report,290.0,3,LANDSLIDE_Nuwara_Eliya_0003
+Nuwara Eliya,Hanguranketha,1986-01-08,2,7.0,1300.0,1307.0,Sheet9,needs_review,,4,LANDSLIDE_Nuwara_Eliya_0004
+Nuwara Eliya,Walapane,1986-01-20,1,525.0,525.0,525.0,Sheet9,single_report,525.0,5,LANDSLIDE_Nuwara_Eliya_0005
+Nuwara Eliya,Hanguranketha,1986-05-10,1,1000.0,1000.0,1000.0,Sheet9,single_report,1000.0,6,LANDSLIDE_Nuwara_Eliya_0006
+Nuwara Eliya,Walapane,1986-05-10,1,750.0,750.0,750.0,Sheet9,single_report,750.0,6,LANDSLIDE_Nuwara_Eliya_0006
+Nuwara Eliya,Ambagamuwakorale,1999-04-26,1,16.0,16.0,16.0,Sheet9,single_report,16.0,7,LANDSLIDE_Nuwara_Eliya_0007
+Nuwara Eliya,Nuwara Eliya,2003-05-17,1,445.0,445.0,445.0,Sheet10,single_report,445.0,8,LANDSLIDE_Nuwara_Eliya_0008
+Nuwara Eliya,Nuwara Eliya,2003-05-18,2,30.0,30.0,60.0,Sheet10,needs_review,,8,LANDSLIDE_Nuwara_Eliya_0008
+Nuwara Eliya,Ambagamuwakorale,2003-05-20,1,535.0,535.0,535.0,Sheet9,single_report,535.0,8,LANDSLIDE_Nuwara_Eliya_0008
+Nuwara Eliya,Walapane,2004-01-11,1,4.0,4.0,4.0,Sheet9,single_report,4.0,9,LANDSLIDE_Nuwara_Eliya_0009
+Nuwara Eliya,Nuwara Eliya,2004-12-10,1,5.0,5.0,5.0,Sheet9,single_report,5.0,10,LANDSLIDE_Nuwara_Eliya_0010
+Nuwara Eliya,Nuwara Eliya,2004-12-12,1,5.0,5.0,5.0,Sheet9,single_report,5.0,10,LANDSLIDE_Nuwara_Eliya_0010
+Nuwara Eliya,Walapane,2004-12-19,2,5.0,100.0,105.0,Sheet9,needs_review,,11,LANDSLIDE_Nuwara_Eliya_0011
+Nuwara Eliya,Walapane,2006-01-14,1,10365.0,10365.0,10365.0,Sheet10,single_report,10365.0,12,LANDSLIDE_Nuwara_Eliya_0012
+Nuwara Eliya,Ambagamuwakorale,2006-11-15,1,10.0,10.0,10.0,Sheet9,single_report,10.0,13,LANDSLIDE_Nuwara_Eliya_0013
+Nuwara Eliya,Kothmale,2006-12-04,1,310.0,310.0,310.0,Sheet9,single_report,310.0,14,LANDSLIDE_Nuwara_Eliya_0014
+Nuwara Eliya,Kothmale,2006-12-05,1,5.0,5.0,5.0,Sheet9,single_report,5.0,14,LANDSLIDE_Nuwara_Eliya_0014
+Nuwara Eliya,Hanguranketha,2006-12-25,1,35.0,35.0,35.0,Sheet9,single_report,35.0,15,LANDSLIDE_Nuwara_Eliya_0015
+Nuwara Eliya,Hanguranketha,2007-01-11,11,10.0,5302.0,5472.0,Sheet9,needs_review,,16,LANDSLIDE_Nuwara_Eliya_0016
+Nuwara Eliya,Nuwara Eliya,2007-01-11,1,5.0,5.0,5.0,Sheet10,single_report,5.0,16,LANDSLIDE_Nuwara_Eliya_0016
+Nuwara Eliya,Hanguranketha,2007-01-12,4,38.0,200.0,445.0,Sheet9,needs_review,,16,LANDSLIDE_Nuwara_Eliya_0016
+Nuwara Eliya,Walapane,2007-01-12,34,10.0,1733.0,8013.0,Sheet9,needs_review,,16,LANDSLIDE_Nuwara_Eliya_0016
+Nuwara Eliya,Walapane,2007-01-13,4,5.0,410.0,630.0,Sheet10,needs_review,,16,LANDSLIDE_Nuwara_Eliya_0016
+Nuwara Eliya,Hanguranketha,2007-01-14,2,25.0,150.0,175.0,Sheet9,needs_review,,16,LANDSLIDE_Nuwara_Eliya_0016
+Nuwara Eliya,Walapane,2007-01-15,10,10.0,750.0,1830.0,"Sheet10, Sheet9",needs_review,,16,LANDSLIDE_Nuwara_Eliya_0016
+Nuwara Eliya,Walapane,2007-02-01,1,360.0,360.0,360.0,Sheet10,single_report,360.0,17,LANDSLIDE_Nuwara_Eliya_0017
+Nuwara Eliya,Walapane,2007-05-09,1,1343.0,1343.0,1343.0,Sheet10,single_report,1343.0,18,LANDSLIDE_Nuwara_Eliya_0018
+Nuwara Eliya,Hanguranketha,2007-06-25,7,4.0,10.0,44.0,Sheet9,needs_review,,19,LANDSLIDE_Nuwara_Eliya_0019
+Nuwara Eliya,Nuwara Eliya,2007-06-25,1,201.0,201.0,201.0,Sheet9,single_report,201.0,19,LANDSLIDE_Nuwara_Eliya_0019
+Nuwara Eliya,Walapane,2007-06-25,2,15.0,15.0,30.0,Sheet9,needs_review,,19,LANDSLIDE_Nuwara_Eliya_0019
+Nuwara Eliya,Walapane,2007-10-11,1,40.0,40.0,40.0,Sheet9,single_report,40.0,20,LANDSLIDE_Nuwara_Eliya_0020
+Nuwara Eliya,Walapane,2007-10-12,1,1180.0,1180.0,1180.0,Sheet10,single_report,1180.0,20,LANDSLIDE_Nuwara_Eliya_0020
+Nuwara Eliya,Nuwara Eliya,2008-03-13,1,6.0,6.0,6.0,Sheet10,single_report,6.0,21,LANDSLIDE_Nuwara_Eliya_0021
+Nuwara Eliya,Walapane,2008-03-31,1,300.0,300.0,300.0,Sheet9,single_report,300.0,22,LANDSLIDE_Nuwara_Eliya_0022
+Nuwara Eliya,Walapane,2008-04-11,1,5.0,5.0,5.0,Sheet9,single_report,5.0,23,LANDSLIDE_Nuwara_Eliya_0023
+Nuwara Eliya,Nuwara Eliya,2008-05-06,1,14.0,14.0,14.0,Sheet9,single_report,14.0,24,LANDSLIDE_Nuwara_Eliya_0024
+Nuwara Eliya,Ambagamuwakorale,2008-06-01,2,15.0,68.0,83.0,Sheet10,needs_review,,25,LANDSLIDE_Nuwara_Eliya_0025
+Nuwara Eliya,Nuwara Eliya,2008-11-25,2,3.0,15.0,18.0,Sheet10,needs_review,,26,LANDSLIDE_Nuwara_Eliya_0026
+Nuwara Eliya,Nuwara Eliya,2008-12-08,1,15.0,15.0,15.0,Sheet10,single_report,15.0,27,LANDSLIDE_Nuwara_Eliya_0027
+Nuwara Eliya,Nuwara Eliya,2009-05-20,1,5.0,5.0,5.0,Sheet10,single_report,5.0,28,LANDSLIDE_Nuwara_Eliya_0028
+Nuwara Eliya,Ambagamuwakorale,2009-05-23,1,20.0,20.0,20.0,Sheet10,single_report,20.0,28,LANDSLIDE_Nuwara_Eliya_0028
+Nuwara Eliya,Kothmale,2009-05-24,3,2.0,4.0,10.0,Sheet10,needs_review,,28,LANDSLIDE_Nuwara_Eliya_0028
+Nuwara Eliya,Nuwara Eliya,2009-05-25,1,8.0,8.0,8.0,Sheet10,single_report,8.0,28,LANDSLIDE_Nuwara_Eliya_0028
+Nuwara Eliya,Nuwara Eliya,2009-05-26,1,20.0,20.0,20.0,Sheet10,single_report,20.0,28,LANDSLIDE_Nuwara_Eliya_0028
+Nuwara Eliya,Nuwara Eliya,2009-06-11,1,5.0,5.0,5.0,Sheet10,single_report,5.0,29,LANDSLIDE_Nuwara_Eliya_0029
+Nuwara Eliya,Nuwara Eliya,2009-07-02,2,4.0,12.0,16.0,Sheet10,needs_review,,30,LANDSLIDE_Nuwara_Eliya_0030
+Nuwara Eliya,Nuwara Eliya,2009-07-03,1,11.0,11.0,11.0,Sheet10,single_report,11.0,30,LANDSLIDE_Nuwara_Eliya_0030
+Nuwara Eliya,Nuwara Eliya,2009-07-22,1,35.0,35.0,35.0,Sheet10,single_report,35.0,31,LANDSLIDE_Nuwara_Eliya_0031
+Nuwara Eliya,Nuwara Eliya,2009-10-14,1,7.0,7.0,7.0,Sheet10,single_report,7.0,32,LANDSLIDE_Nuwara_Eliya_0032
+Nuwara Eliya,Nuwara Eliya,2009-11-10,1,6.0,6.0,6.0,Sheet10,single_report,6.0,33,LANDSLIDE_Nuwara_Eliya_0033
+Nuwara Eliya,Ambagamuwakorale,2009-11-14,1,5.0,5.0,5.0,Sheet10,single_report,5.0,34,LANDSLIDE_Nuwara_Eliya_0034
+Nuwara Eliya,Nuwara Eliya,2009-11-16,1,5.0,5.0,5.0,Sheet10,single_report,5.0,34,LANDSLIDE_Nuwara_Eliya_0034
+Nuwara Eliya,Nuwara Eliya,2010-04-20,1,130.0,130.0,130.0,Sheet10,single_report,130.0,35,LANDSLIDE_Nuwara_Eliya_0035
+Nuwara Eliya,Kothmale,2010-05-19,1,5.0,5.0,5.0,Sheet10,single_report,5.0,36,LANDSLIDE_Nuwara_Eliya_0036
+Nuwara Eliya,Nuwara Eliya,2010-05-22,1,6.0,6.0,6.0,Sheet10,single_report,6.0,36,LANDSLIDE_Nuwara_Eliya_0036
+Nuwara Eliya,Kothmale,2010-05-27,1,5.0,5.0,5.0,Sheet10,single_report,5.0,37,LANDSLIDE_Nuwara_Eliya_0037
+Nuwara Eliya,Nuwara Eliya,2010-10-06,1,5.0,5.0,5.0,Sheet10,single_report,5.0,38,LANDSLIDE_Nuwara_Eliya_0038
+Nuwara Eliya,Nuwara Eliya,2010-10-09,1,5.0,5.0,5.0,Sheet10,single_report,5.0,38,LANDSLIDE_Nuwara_Eliya_0038
+Nuwara Eliya,Kothmale,2010-10-13,1,128.0,128.0,128.0,Sheet10,single_report,128.0,39,LANDSLIDE_Nuwara_Eliya_0039
+Nuwara Eliya,Kothmale,2010-12-05,1,16.0,16.0,16.0,Sheet10,single_report,16.0,40,LANDSLIDE_Nuwara_Eliya_0040
+Nuwara Eliya,Ambagamuwakorale,2012-07-09,1,6.0,6.0,6.0,Sheet10,single_report,6.0,41,LANDSLIDE_Nuwara_Eliya_0041
+Nuwara Eliya,Nuwara Eliya,2013-05-24,1,78.0,78.0,78.0,Sheet10,single_report,78.0,42,LANDSLIDE_Nuwara_Eliya_0042
+Nuwara Eliya,Nuwara Eliya,2013-06-05,1,4.0,4.0,4.0,Sheet10,single_report,4.0,43,LANDSLIDE_Nuwara_Eliya_0043
+Nuwara Eliya,Nuwara Eliya,2013-06-23,1,85.0,85.0,85.0,Sheet10,single_report,85.0,44,LANDSLIDE_Nuwara_Eliya_0044
+Nuwara Eliya,Hanguranketha,2013-06-24,1,4.0,4.0,4.0,Sheet10,single_report,4.0,44,LANDSLIDE_Nuwara_Eliya_0044
+Nuwara Eliya,Kothmale,2013-06-24,1,30.0,30.0,30.0,Sheet10,single_report,30.0,44,LANDSLIDE_Nuwara_Eliya_0044
+Nuwara Eliya,Nuwara Eliya,2013-06-26,1,117.0,117.0,117.0,Sheet10,single_report,117.0,44,LANDSLIDE_Nuwara_Eliya_0044
+Nuwara Eliya,Ambagamuwakorale,2013-09-09,1,15.0,15.0,15.0,Sheet10,single_report,15.0,45,LANDSLIDE_Nuwara_Eliya_0045
+Nuwara Eliya,Nuwara Eliya,2013-12-11,1,11.0,11.0,11.0,Sheet10,single_report,11.0,46,LANDSLIDE_Nuwara_Eliya_0046
+Nuwara Eliya,Kothmale,2014-04-30,1,3.0,3.0,3.0,Sheet10,single_report,3.0,47,LANDSLIDE_Nuwara_Eliya_0047
+Nuwara Eliya,Nuwara Eliya,2014-06-12,1,37.0,37.0,37.0,Sheet10,single_report,37.0,48,LANDSLIDE_Nuwara_Eliya_0048
+Nuwara Eliya,Ambagamuwakorale,2014-06-22,1,36.0,36.0,36.0,Sheet10,single_report,36.0,49,LANDSLIDE_Nuwara_Eliya_0049
+Nuwara Eliya,Kothmale,2014-07-02,1,4.0,4.0,4.0,Sheet10,single_report,4.0,50,LANDSLIDE_Nuwara_Eliya_0050
+Nuwara Eliya,Nuwara Eliya,2014-08-02,1,27.0,27.0,27.0,Sheet10,single_report,27.0,51,LANDSLIDE_Nuwara_Eliya_0051
+Nuwara Eliya,Kothmale,2014-09-26,1,5.0,5.0,5.0,Sheet10,single_report,5.0,52,LANDSLIDE_Nuwara_Eliya_0052
+Nuwara Eliya,Nuwara Eliya,2014-09-26,1,10.0,10.0,10.0,Sheet10,single_report,10.0,52,LANDSLIDE_Nuwara_Eliya_0052
+Nuwara Eliya,Nuwara Eliya,2014-09-28,1,19.0,19.0,19.0,Sheet10,single_report,19.0,52,LANDSLIDE_Nuwara_Eliya_0052
+Nuwara Eliya,Hanguranketha,2014-12-18,1,307.0,307.0,307.0,Sheet10,single_report,307.0,53,LANDSLIDE_Nuwara_Eliya_0053
+Nuwara Eliya,Nuwara Eliya,2014-12-22,1,9.0,9.0,9.0,Sheet10,single_report,9.0,54,LANDSLIDE_Nuwara_Eliya_0054
+Nuwara Eliya,Walapane,2014-12-23,1,438.0,438.0,438.0,Sheet10,single_report,438.0,54,LANDSLIDE_Nuwara_Eliya_0054
+Nuwara Eliya,Nuwara Eliya,2015-02-11,1,154.0,154.0,154.0,Sheet10,single_report,154.0,55,LANDSLIDE_Nuwara_Eliya_0055
+Nuwara Eliya,Nuwara Eliya,2015-04-03,1,4.0,4.0,4.0,Sheet10,single_report,4.0,56,LANDSLIDE_Nuwara_Eliya_0056
+Nuwara Eliya,Nuwara Eliya,2015-05-07,1,6.0,6.0,6.0,Sheet10,single_report,6.0,57,LANDSLIDE_Nuwara_Eliya_0057
+Nuwara Eliya,Nuwara Eliya,2015-05-11,2,6.0,7.0,13.0,Sheet10,needs_review,,58,LANDSLIDE_Nuwara_Eliya_0058
+Nuwara Eliya,Nuwara Eliya,2015-07-20,1,3.0,3.0,3.0,Sheet10,single_report,3.0,59,LANDSLIDE_Nuwara_Eliya_0059
+Nuwara Eliya,Nuwara Eliya,2015-07-27,1,6.0,6.0,6.0,Sheet10,single_report,6.0,60,LANDSLIDE_Nuwara_Eliya_0060
+Nuwara Eliya,Kothmale,2015-09-25,1,49.0,49.0,49.0,Sheet10,single_report,49.0,61,LANDSLIDE_Nuwara_Eliya_0061
+Nuwara Eliya,Nuwara Eliya,2015-10-19,1,14.0,14.0,14.0,Sheet10,single_report,14.0,62,LANDSLIDE_Nuwara_Eliya_0062
+Nuwara Eliya,Nuwara Eliya,2015-11-05,1,264.0,264.0,264.0,Sheet10,single_report,264.0,63,LANDSLIDE_Nuwara_Eliya_0063
+Nuwara Eliya,Ambagamuwakorale,2016-02-23,1,17.0,17.0,17.0,Sheet10,single_report,17.0,64,LANDSLIDE_Nuwara_Eliya_0064
+Nuwara Eliya,Kothmale,2017-05-28,1,63.0,63.0,63.0,Sheet10,single_report,63.0,65,LANDSLIDE_Nuwara_Eliya_0065
+Nuwara Eliya,Nuwara Eliya,2017-05-28,1,245.0,245.0,245.0,Sheet10,single_report,245.0,65,LANDSLIDE_Nuwara_Eliya_0065
+Nuwara Eliya,Ambagamuwakorale,2018-04-25,1,4.0,4.0,4.0,Sheet10,single_report,4.0,66,LANDSLIDE_Nuwara_Eliya_0066
+Nuwara Eliya,Ambagamuwakorale,2018-10-15,1,35.0,35.0,35.0,Sheet10,single_report,35.0,67,LANDSLIDE_Nuwara_Eliya_0067
+Nuwara Eliya,Nuwara Eliya,2018-10-22,1,14.0,14.0,14.0,Sheet10,single_report,14.0,68,LANDSLIDE_Nuwara_Eliya_0068
+Nuwara Eliya,Nuwara Eliya,2018-11-08,1,7.0,7.0,7.0,Sheet10,single_report,7.0,69,LANDSLIDE_Nuwara_Eliya_0069
+Nuwara Eliya,Nuwara Eliya,2019-06-22,1,6.0,6.0,6.0,Sheet10,single_report,6.0,70,LANDSLIDE_Nuwara_Eliya_0070
+Nuwara Eliya,Nuwara Eliya,2019-07-18,1,9.0,9.0,9.0,Sheet10,single_report,9.0,71,LANDSLIDE_Nuwara_Eliya_0071
+Nuwara Eliya,Ambagamuwakorale,2019-07-19,1,14.0,14.0,14.0,Sheet10,single_report,14.0,71,LANDSLIDE_Nuwara_Eliya_0071
+Nuwara Eliya,Nuwara Eliya,2019-07-19,1,14.0,14.0,14.0,Sheet10,single_report,14.0,71,LANDSLIDE_Nuwara_Eliya_0071
+Nuwara Eliya,Kothmale,2019-08-13,1,142.0,142.0,142.0,Sheet10,single_report,142.0,72,LANDSLIDE_Nuwara_Eliya_0072
+Nuwara Eliya,Nuwara Eliya,2019-08-13,1,42.0,42.0,42.0,Sheet10,single_report,42.0,72,LANDSLIDE_Nuwara_Eliya_0072
+Nuwara Eliya,Ambagamuwakorale,2019-08-14,1,59.0,59.0,59.0,Sheet11,single_report,59.0,72,LANDSLIDE_Nuwara_Eliya_0072
+Nuwara Eliya,Ambagamuwakorale,2019-09-18,1,33.0,33.0,33.0,Sheet10,single_report,33.0,73,LANDSLIDE_Nuwara_Eliya_0073
+Nuwara Eliya,Nuwara Eliya,2019-10-08,1,3.0,3.0,3.0,Sheet10,single_report,3.0,74,LANDSLIDE_Nuwara_Eliya_0074
+Nuwara Eliya,Nuwara Eliya,2019-10-09,1,18.0,18.0,18.0,Sheet10,single_report,18.0,74,LANDSLIDE_Nuwara_Eliya_0074
+Nuwara Eliya,Nuwara Eliya,2019-11-30,1,59.0,59.0,59.0,Sheet10,single_report,59.0,75,LANDSLIDE_Nuwara_Eliya_0075
+Nuwara Eliya,Walapane,2019-11-30,1,75.0,75.0,75.0,Sheet10,single_report,75.0,75,LANDSLIDE_Nuwara_Eliya_0075
+Nuwara Eliya,Nuwara Eliya,2019-12-04,1,102.0,102.0,102.0,Sheet10,single_report,102.0,76,LANDSLIDE_Nuwara_Eliya_0076
+Nuwara Eliya,Nuwara Eliya,2019-12-19,1,5.0,5.0,5.0,Sheet10,single_report,5.0,77,LANDSLIDE_Nuwara_Eliya_0077
+Nuwara Eliya,Nuwara Eliya,2020-04-16,1,5.0,5.0,5.0,Sheet11,single_report,5.0,78,LANDSLIDE_Nuwara_Eliya_0078
+Nuwara Eliya,Ambagamuwakorale,2021-08-12,1,49.0,49.0,49.0,Sheet11,single_report,49.0,79,LANDSLIDE_Nuwara_Eliya_0079
+Nuwara Eliya,Nuwara Eliya,2021-10-01,1,1.0,1.0,1.0,Sheet11,single_report,1.0,80,LANDSLIDE_Nuwara_Eliya_0080
+Nuwara Eliya,Nuwara Eliya,2021-10-29,1,28.0,28.0,28.0,Sheet11,single_report,28.0,81,LANDSLIDE_Nuwara_Eliya_0081
+Nuwara Eliya,Kothmale,2021-11-09,2,54.0,54.0,108.0,Sheet11,needs_review,,82,LANDSLIDE_Nuwara_Eliya_0082
+Nuwara Eliya,Nuwara Eliya,2021-11-09,2,5.0,5.0,10.0,Sheet11,needs_review,,82,LANDSLIDE_Nuwara_Eliya_0082
+Nuwara Eliya,Kothmale,2022-08-01,1,25.0,25.0,25.0,Sheet11,single_report,25.0,83,LANDSLIDE_Nuwara_Eliya_0083
+Nuwara Eliya,Nuwara Eliya,2022-08-01,1,10.0,10.0,10.0,Sheet11,single_report,10.0,83,LANDSLIDE_Nuwara_Eliya_0083
+Nuwara Eliya,Nuwara Eliya,2022-08-02,1,18.0,18.0,18.0,Sheet11,single_report,18.0,83,LANDSLIDE_Nuwara_Eliya_0083
+Nuwara Eliya,Nuwara Eliya,2022-08-04,1,68.0,68.0,68.0,Sheet11,single_report,68.0,83,LANDSLIDE_Nuwara_Eliya_0083
+Nuwara Eliya,Ambagamuwakorale,2022-08-05,1,5.0,5.0,5.0,Sheet11,single_report,5.0,83,LANDSLIDE_Nuwara_Eliya_0083
+Nuwara Eliya,Nuwara Eliya,2022-08-06,1,5.0,5.0,5.0,Sheet11,single_report,5.0,83,LANDSLIDE_Nuwara_Eliya_0083
+Nuwara Eliya,Ambagamuwakorale,2022-10-21,1,8.0,8.0,8.0,Sheet11,single_report,8.0,84,LANDSLIDE_Nuwara_Eliya_0084
+Nuwara Eliya,Kothmale,2022-10-21,1,2.0,2.0,2.0,Sheet11,single_report,2.0,84,LANDSLIDE_Nuwara_Eliya_0084
+Nuwara Eliya,Nuwara Eliya,2022-10-21,1,26.0,26.0,26.0,Sheet11,single_report,26.0,84,LANDSLIDE_Nuwara_Eliya_0084
+Nuwara Eliya,Nuwara Eliya,2022-10-30,1,3.0,3.0,3.0,Sheet11,single_report,3.0,85,LANDSLIDE_Nuwara_Eliya_0085
+Nuwara Eliya,Ambagamuwakorale,2023-10-13,1,25.0,25.0,25.0,Sheet11,single_report,25.0,86,LANDSLIDE_Nuwara_Eliya_0086
+Nuwara Eliya,Nuwara Eliya,2023-10-17,1,2.0,2.0,2.0,Sheet11,single_report,2.0,87,LANDSLIDE_Nuwara_Eliya_0087
+Nuwara Eliya,Hanguranketha,2025-10-17,1,2.0,2.0,2.0,Sheet11,single_report,2.0,88,LANDSLIDE_Nuwara_Eliya_0088
+Nuwara Eliya,Ambagamuwakorale,2025-10-19,1,7.0,7.0,7.0,Sheet11,single_report,7.0,88,LANDSLIDE_Nuwara_Eliya_0088
+Nuwara Eliya,Nuwara Eliya,2025-11-21,1,27.0,27.0,27.0,Sheet11,single_report,27.0,89,LANDSLIDE_Nuwara_Eliya_0089
+Nuwara Eliya,Nuwara Eliya,2025-11-23,1,8.0,8.0,8.0,Sheet11,single_report,8.0,89,LANDSLIDE_Nuwara_Eliya_0089
