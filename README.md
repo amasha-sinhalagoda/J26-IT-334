@@ -23,8 +23,8 @@ Department of Information Technology, Sri Lanka Institute of Information Technol
 | Last updated | October 2026 |
 | Institution | Sri Lanka Institute of Information Technology (SLIIT) |
 | Research cluster | Center of Excellence for AI (CEAI) |
-| Supervisor | [To be confirmed] |
-| Co-supervisor | [To be confirmed] |
+| Supervisor | Dr. Kapila Disanayaka |
+| Co-supervisor | Mr.Uchira Wichramarathne |
 | Repository status | Active development (research prototype) |
 
 ---
